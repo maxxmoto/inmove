@@ -257,7 +257,11 @@
         #scrollToTop { position: fixed; bottom: 24px; right: 24px; width: 42px; height: 42px; border-radius: 50%; background: var(--accent); color: white; border: none; font-size: 1.3rem; cursor: pointer; display: none; align-items: center; justify-content: center; z-index: 200; box-shadow: 0 4px 16px rgba(248,126,0,0.3); transition: all 0.3s; }
         #scrollToTop.show { display: flex; }
         #scrollToTop:hover { transform: translateY(-2px); }
-
+        .pagination { display: flex; justify-content: center; align-items: center; gap: 0.5rem; padding: 2rem 0; flex-wrap: wrap; }
+        .page-link { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; background: var(--card-bg); border: 1px solid var(--card-border); color: var(--text); text-decoration: none; font-weight: 500; font-size: 0.85rem; transition: all 0.2s; }
+        .page-link:hover { border-color: var(--accent); color: var(--accent); }
+        .page-link.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+        .page-link.prev, .page-link.next { width: auto; border-radius: 8px; padding: 0 12px; }
 
 
         .edition-dots { display: flex; gap: 4px; padding: 4px 0; }
@@ -326,6 +330,9 @@
             .contacts-section { padding: 2rem 1rem; }
             .map-wrap iframe { height: 200px; }
             .catalog-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+            .pagination { gap: 0.3rem; }
+            .page-link { width: 30px; height: 30px; font-size: 0.75rem; }
+            .page-link.prev, .page-link.next { padding: 0 8px; font-size: 0.75rem; }
             .card-body { padding: 0.6rem 0.7rem 0.8rem; }
             .card-title { font-size: 0.9rem; }
             .card-price { font-size: 1rem; }
@@ -483,18 +490,18 @@
             <input type="text" class="search-input" id="searchInput" placeholder="Поиск...">
         </div>
         <div class="pills" id="filterBar">
-            <button class="pill active" data-category="all">Все</button>
-            <button class="pill" data-category="scooter">Электросамокаты</button>
-            <button class="pill" data-category="ebike">Электровелосипеды</button>
-            <button class="pill" data-category="moped">Электроскутеры</button>
-            <button class="pill" data-category="pitbike">Питбайки</button>
-            <button class="pill" data-category="moto">Мототехника</button>
-            <button class="pill" data-category="atv">Квадроциклы</button>
+            <a href="/?sort={{ sort }}&category=all" class="pill{% if current_category == 'all' %} active{% endif %}">Все</a>
+            <a href="/?sort={{ sort }}&category=scooter" class="pill{% if current_category == 'scooter' %} active{% endif %}">Электросамокаты</a>
+            <a href="/?sort={{ sort }}&category=ebike" class="pill{% if current_category == 'ebike' %} active{% endif %}">Электровелосипеды</a>
+            <a href="/?sort={{ sort }}&category=moped" class="pill{% if current_category == 'moped' %} active{% endif %}">Электроскутеры</a>
+            <a href="/?sort={{ sort }}&category=pitbike" class="pill{% if current_category == 'pitbike' %} active{% endif %}">Питбайки</a>
+            <a href="/?sort={{ sort }}&category=moto" class="pill{% if current_category == 'moto' %} active{% endif %}">Мототехника</a>
+            <a href="/?sort={{ sort }}&category=atv" class="pill{% if current_category == 'atv' %} active{% endif %}">Квадроциклы</a>
         </div>
         <div class="sort-group">
-            <a href="/?sort=default" class="sort-btn{% if sort == 'default' %} active{% endif %}">По умолч.</a>
-            <a href="/?sort=price_asc" class="sort-btn{% if sort == 'price_asc' %} active{% endif %}">Цена ↑</a>
-            <a href="/?sort=price_desc" class="sort-btn{% if sort == 'price_desc' %} active{% endif %}">Цена ↓</a>
+            <a href="/?sort=default&category={{ current_category }}" class="sort-btn{% if sort == 'default' %} active{% endif %}">По умолч.</a>
+            <a href="/?sort=price_asc&category={{ current_category }}" class="sort-btn{% if sort == 'price_asc' %} active{% endif %}">Цена ↑</a>
+            <a href="/?sort=price_desc&category={{ current_category }}" class="sort-btn{% if sort == 'price_desc' %} active{% endif %}">Цена ↓</a>
         </div>
     </div>
 </div>
@@ -502,7 +509,7 @@
 <div class="section">
     <div class="section-head">
         <h2 class="section-title">Каталог</h2>
-        <span style="font-size:0.85rem;color:var(--text-secondary);">{{ motos|length }} товаров</span>
+        <span style="font-size:0.85rem;color:var(--text-secondary);">{{ total_products }} товаров{% if total_pages > 1 %} · страница {{ page }} из {{ total_pages }}{% endif %}</span>
     </div>
     <div class="catalog-empty" id="catalogEmpty" style="display:none;text-align:center;padding:3rem 1rem;color:var(--text-secondary);">
         <div style="font-size:3rem;margin-bottom:1rem;opacity:0.3;">🔍</div>
@@ -568,6 +575,20 @@
         </div>
         {% endfor %}
     </div>
+
+{% if total_pages > 1 %}
+<div class="pagination">
+    {% if page > 1 %}
+    <a href="/?page={{ page-1 }}&sort={{ sort }}&category={{ current_category }}#catalog" class="page-link prev">‹ Назад</a>
+    {% endif %}
+    {% for p in range(1, total_pages + 1) %}
+    <a href="/?page={{ p }}&sort={{ sort }}&category={{ current_category }}#catalog" class="page-link {% if p == page %}active{% endif %}">{{ p }}</a>
+    {% endfor %}
+    {% if page < total_pages %}
+    <a href="/?page={{ page+1 }}&sort={{ sort }}&category={{ current_category }}#catalog" class="page-link next">Вперед ›</a>
+    {% endif %}
+</div>
+{% endif %}
 </div>
 
 <section class="why-section" id="why">
@@ -726,23 +747,7 @@
         {% endfor %}
     ];
 
-    const filterBtns = document.querySelectorAll('.pill');
     const cards = document.querySelectorAll('.card');
-    filterBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            filterBtns.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            const category = btn.dataset.category;
-            let visible = 0;
-            cards.forEach(card => {
-                const show = (category === 'all' || card.dataset.category === category);
-                card.style.display = show ? '' : 'none';
-                if (show) visible++;
-            });
-            document.getElementById('catalogEmpty').style.display = (visible === 0) ? '' : 'none';
-        });
-    });
-
     const searchInput = document.getElementById('searchInput');
     searchInput.addEventListener('input', function() {
         const query = this.value.toLowerCase().trim();
