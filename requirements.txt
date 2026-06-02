@@ -1,5 +1,3 @@
 flask
-pyTelegramBotAPI
-requests
-Pillow
 gunicorn
+Pillow

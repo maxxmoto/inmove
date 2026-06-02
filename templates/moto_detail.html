@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="{{ moto.name }} — {{ moto.category }}. {{ (moto.short_description or moto.description)[:150] }}">
+    <meta name="keywords" content="{{ moto.name }}, купить {{ moto.name }}, INMOVE, электротранспорт, Санкт-Петербург">
     <meta property="og:title" content="{{ moto.name }} — INMOVE">
     <meta property="og:description" content="{{ (moto.short_description or moto.description)[:200] }}">
     <meta property="og:image" content="{{ (moto.photos[0] if moto.photos else 'inmove_logo.png')|photo_url }}">
     <meta property="og:type" content="product">
-    <meta property="og:url" content="http://localhost:5000/moto/{{ moto.id }}">
+    <meta property="og:url" content="https://in-move.online/moto/{{ moto.id }}">
     <meta name="twitter:card" content="summary_large_image">
-    <link rel="canonical" href="http://localhost:5000/moto/{{ moto.id }}">
+    <link rel="canonical" href="https://in-move.online/moto/{{ moto.id }}">
     <link rel="icon" type="image/png" href="/static/inmove_logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ moto.name }} — INMOVE</title>
