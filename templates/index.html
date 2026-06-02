@@ -289,6 +289,7 @@
             .sort-btn { flex: 1; text-align: center; }
             .section { padding: 28px 14px; }
             .catalog-grid { gap: 0.75rem; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+            .hero { min-height: auto; padding: 2rem 0; }
         }
         @media (max-width: 768px) {
             .hero-inner { flex-direction: column; text-align: center; padding: 1rem; }
@@ -333,10 +334,18 @@
         }
         @media (max-width: 480px) {
             .catalog-grid { grid-template-columns: 1fr 1fr; gap: 0.4rem; }
-            .card-img-carousel { height: 120px; }
-            .card-body h3 { font-size: 0.75rem; }
-            .card-body .price { font-size: 0.8rem; }
-            .card-actions .btn { font-size: 0.65rem; padding: 3px 6px; }
+            .card-img-carousel { height: 100px; }
+            .card-body { padding: 0.4rem; }
+            .card-body h3 { font-size: 0.7rem; }
+            .card-body .price { font-size: 0.75rem; }
+            .card-category { font-size: 0.6rem; }
+            .card-actions .btn { font-size: 0.6rem; padding: 2px 5px; }
+            .pill { font-size: 0.7rem; padding: 3px 8px; }
+            .ed-dot { width: 16px; height: 16px; }
+        }
+        @media (max-width: 360px) {
+            .catalog-grid { grid-template-columns: 1fr; }
+            .card-img-carousel { height: 180px; }
         }
     </style>
 </head>
@@ -494,6 +503,11 @@
     <div class="section-head">
         <h2 class="section-title">Каталог</h2>
         <span style="font-size:0.85rem;color:var(--text-secondary);">{{ motos|length }} товаров</span>
+    </div>
+    <div class="catalog-empty" id="catalogEmpty" style="display:none;text-align:center;padding:3rem 1rem;color:var(--text-secondary);">
+        <div style="font-size:3rem;margin-bottom:1rem;opacity:0.3;">🔍</div>
+        <p style="font-size:1.1rem;font-weight:600;">В этой категории пока нет товаров</p>
+        <p style="font-size:0.85rem;margin-top:0.3rem;">Попробуйте выбрать другую категорию</p>
     </div>
     <div class="catalog-grid" id="catalogGrid">
         {% for moto in motos %}
@@ -719,19 +733,27 @@
             filterBtns.forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
             const category = btn.dataset.category;
+            let visible = 0;
             cards.forEach(card => {
-                card.style.display = (category === 'all' || card.dataset.category === category) ? '' : 'none';
+                const show = (category === 'all' || card.dataset.category === category);
+                card.style.display = show ? '' : 'none';
+                if (show) visible++;
             });
+            document.getElementById('catalogEmpty').style.display = (visible === 0) ? '' : 'none';
         });
     });
 
     const searchInput = document.getElementById('searchInput');
     searchInput.addEventListener('input', function() {
         const query = this.value.toLowerCase().trim();
+        let visible = 0;
         cards.forEach(card => {
             const title = card.querySelector('.card-title').textContent.toLowerCase();
-            card.style.display = title.includes(query) ? '' : 'none';
+            const show = title.includes(query);
+            card.style.display = show ? '' : 'none';
+            if (show) visible++;
         });
+        document.getElementById('catalogEmpty').style.display = (visible === 0) ? '' : 'none';
     });
 
     const themeToggle = document.getElementById('themeToggle');
