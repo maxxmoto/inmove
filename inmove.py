@@ -936,10 +936,15 @@ bdb.commit()
 bdb.close()
 
 if __name__ == '__main__':
-    # Start Telegram bots in background
+    # Start Telegram admin bot in background
     try:
-        import bot_runner
-        bot_runner.start_bots()
+        import threading
+        def run_bot():
+            import admin_bot
+            admin_bot.admin_bot.polling(none_stop=True)
+        t = threading.Thread(target=run_bot, daemon=True)
+        t.start()
+        print('Admin bot started')
     except Exception as e:
         print(f'Bot startup skipped: {e}')
     app.run(host='0.0.0.0', port=5000)
