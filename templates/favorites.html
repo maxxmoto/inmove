@@ -17,6 +17,21 @@
     .card-body p { font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 0.5rem; }
     .card-body a { color: var(--accent); font-weight: 600; font-size: 0.85rem; text-decoration: none; }
     .empty { text-align: center; padding: 3rem; color: var(--text-secondary); }
+    @media (max-width: 768px) {
+        .container { padding: 1rem; padding-top: calc(var(--nav-h) + 0.5rem); }
+        h1 { font-size: 1.4rem; margin: 0.5rem 0 1rem; }
+        .grid { grid-template-columns: repeat(2, 1fr); gap: 0.6rem; }
+        .card img { height: 120px; }
+        .card-body { padding: 0.6rem; }
+        .card-body h3 { font-size: 0.85rem; }
+        .card-body p { font-size: 0.72rem; }
+        .card-body a { font-size: 0.78rem; }
+    }
+    @media (max-width: 480px) {
+        .grid { grid-template-columns: 1fr; }
+        .card img { height: 160px; }
+        .empty { padding: 2rem 1rem; }
+    }
 </style>
 {% endblock %}
 {% block content %}
