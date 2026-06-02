@@ -4,6 +4,9 @@ import uuid
 import sqlite3
 from datetime import date
 from flask import Flask, render_template, request, redirect, url_for, session, jsonify, send_from_directory
+from cachetools import TTLCache
+
+index_cache = TTLCache(maxsize=256, ttl=60)
 
 app = Flask(__name__)
 app.secret_key = os.environ.get('SECRET_KEY', 'InMoVe_SeCrEt_2026!')
@@ -222,37 +225,44 @@ def health():
 
 @app.route('/')
 def index():
-    db = get_db()
-    db.execute("UPDATE stats SET value=value+1 WHERE key='total_visits'")
-    db.commit()
     sort = request.args.get('sort', 'default')
     category = request.args.get('category', 'all')
     page = request.args.get('page', 1, type=int)
     per_page = 12
 
-    ALLOWED_SORTS = {'default': 'id', 'price_asc': 'CAST(price AS INTEGER) ASC, id', 'price_desc': 'CAST(price AS INTEGER) DESC, id'}
-    order = ALLOWED_SORTS.get(sort, 'id')
-
-    # Build query with optional category filter
-    if category and category != 'all':
-        rows = db.execute(f"SELECT * FROM motos WHERE category=? ORDER BY {order}", (category,)).fetchall()
+    cache_key = f"{sort}_{category}_{page}"
+    cached = index_cache.get(cache_key)
+    if cached:
+        motos, total, total_pages, reviews, banners = cached
     else:
-        rows = db.execute(f"SELECT * FROM motos ORDER BY {order}").fetchall()
-        category = 'all'
+        db = get_db()
+        db.execute("UPDATE stats SET value=value+1 WHERE key='total_visits'")
+        db.commit()
 
-    all_motos = [row_to_moto(r) for r in rows]
-    total = len(all_motos)
-    total_pages = max(1, (total + per_page - 1) // per_page)
-    if page < 1: page = 1
-    if page > total_pages: page = total_pages
-    start = (page - 1) * per_page
-    motos = all_motos[start:start + per_page]
+        ALLOWED_SORTS = {'default': 'id', 'price_asc': 'CAST(price AS INTEGER) ASC, id', 'price_desc': 'CAST(price AS INTEGER) DESC, id'}
+        order = ALLOWED_SORTS.get(sort, 'id')
 
-    review_rows = db.execute("SELECT * FROM reviews WHERE visible=1 ORDER BY id").fetchall()
-    reviews = [dict(r) for r in review_rows]
-    banner_rows = db.execute("SELECT * FROM banners ORDER BY sort_order").fetchall()
-    banners = [dict(r) for r in banner_rows]
-    db.close()
+        if category and category != 'all':
+            rows = db.execute(f"SELECT * FROM motos WHERE category=? ORDER BY {order}", (category,)).fetchall()
+        else:
+            rows = db.execute(f"SELECT * FROM motos ORDER BY {order}").fetchall()
+            category = 'all'
+
+        all_motos = [row_to_moto(r) for r in rows]
+        total = len(all_motos)
+        total_pages = max(1, (total + per_page - 1) // per_page)
+        if page < 1: page = 1
+        if page > total_pages: page = total_pages
+        start = (page - 1) * per_page
+        motos = all_motos[start:start + per_page]
+
+        review_rows = db.execute("SELECT * FROM reviews WHERE visible=1 ORDER BY id").fetchall()
+        reviews = [dict(r) for r in review_rows]
+        banner_rows = db.execute("SELECT * FROM banners ORDER BY sort_order").fetchall()
+        banners = [dict(r) for r in banner_rows]
+        db.close()
+        index_cache[cache_key] = (motos, total, total_pages, reviews, banners)
+
     return render_template('index.html', motos=motos, reviews=reviews, banners=banners, sort=sort, page=page, total_pages=total_pages, total_products=total, current_category=category)
 
 @app.template_filter('specs_table')

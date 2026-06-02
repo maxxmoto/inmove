@@ -339,7 +339,7 @@
                 <div class="carousel-slides" id="slides-{{ moto.id }}">
                     {% if moto.photos %}
                     {% for photo in moto.photos %}
-                    <img src="{{ photo|photo_url }}" alt="{{ moto.name }}" {% if loop.first and is_first_product %}fetchpriority="high" loading="eager"{% else %}loading="lazy"{% endif %} width="270" height="194">
+                    <img {% if loop.first %}src="{{ photo|photo_url }}"{% else %}data-src="{{ photo|photo_url }}"{% endif %} alt="{{ moto.name }}" {% if loop.first and is_first_product %}fetchpriority="high"{% endif %} width="270" height="194">
                     {% endfor %}
                     {% else %}
                     <div class="no-photo-placeholder"><img src="/static/inmove_logo.png" alt="INMOVE" style="width:48px;height:48px;opacity:0.3;"></div>
@@ -532,8 +532,14 @@
     });
     function updateCarousel(id) {
         const container = slidesContainers[id];
-        document.getElementById(`slides-${id}`).style.transform = `translateX(-${container.index * 100}%)`;
+        const slider = document.getElementById(`slides-${id}`);
+        slider.style.transform = `translateX(-${container.index * 100}%)`;
         document.querySelectorAll(`#dots-${id} .carousel-dot`).forEach((d, i) => d.classList.toggle('active', i === container.index));
+        const img = slider.children[container.index];
+        if (img && img.dataset.src) {
+            img.src = img.dataset.src;
+            img.removeAttribute('data-src');
+        }
     }
     window.moveSlide = function(id, dir) {
         const c = slidesContainers[id];
