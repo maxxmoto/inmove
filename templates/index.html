@@ -490,18 +490,18 @@
             <input type="text" class="search-input" id="searchInput" placeholder="Поиск...">
         </div>
         <div class="pills" id="filterBar">
-            <a href="/?sort={{ sort }}&category=all" class="pill{% if current_category == 'all' %} active{% endif %}">Все</a>
-            <a href="/?sort={{ sort }}&category=scooter" class="pill{% if current_category == 'scooter' %} active{% endif %}">Электросамокаты</a>
-            <a href="/?sort={{ sort }}&category=ebike" class="pill{% if current_category == 'ebike' %} active{% endif %}">Электровелосипеды</a>
-            <a href="/?sort={{ sort }}&category=moped" class="pill{% if current_category == 'moped' %} active{% endif %}">Электроскутеры</a>
-            <a href="/?sort={{ sort }}&category=pitbike" class="pill{% if current_category == 'pitbike' %} active{% endif %}">Питбайки</a>
-            <a href="/?sort={{ sort }}&category=moto" class="pill{% if current_category == 'moto' %} active{% endif %}">Мототехника</a>
-            <a href="/?sort={{ sort }}&category=atv" class="pill{% if current_category == 'atv' %} active{% endif %}">Квадроциклы</a>
+            <a href="/?sort={{ sort }}&category=all#catalog" class="pill{% if current_category == 'all' %} active{% endif %}">Все</a>
+            <a href="/?sort={{ sort }}&category=scooter#catalog" class="pill{% if current_category == 'scooter' %} active{% endif %}">Электросамокаты</a>
+            <a href="/?sort={{ sort }}&category=ebike#catalog" class="pill{% if current_category == 'ebike' %} active{% endif %}">Электровелосипеды</a>
+            <a href="/?sort={{ sort }}&category=moped#catalog" class="pill{% if current_category == 'moped' %} active{% endif %}">Электроскутеры</a>
+            <a href="/?sort={{ sort }}&category=pitbike#catalog" class="pill{% if current_category == 'pitbike' %} active{% endif %}">Питбайки</a>
+            <a href="/?sort={{ sort }}&category=moto#catalog" class="pill{% if current_category == 'moto' %} active{% endif %}">Мототехника</a>
+            <a href="/?sort={{ sort }}&category=atv#catalog" class="pill{% if current_category == 'atv' %} active{% endif %}">Квадроциклы</a>
         </div>
         <div class="sort-group">
-            <a href="/?sort=default&category={{ current_category }}" class="sort-btn{% if sort == 'default' %} active{% endif %}">По умолч.</a>
-            <a href="/?sort=price_asc&category={{ current_category }}" class="sort-btn{% if sort == 'price_asc' %} active{% endif %}">Цена ↑</a>
-            <a href="/?sort=price_desc&category={{ current_category }}" class="sort-btn{% if sort == 'price_desc' %} active{% endif %}">Цена ↓</a>
+            <a href="/?sort=default&category={{ current_category }}#catalog" class="sort-btn{% if sort == 'default' %} active{% endif %}">По умолч.</a>
+            <a href="/?sort=price_asc&category={{ current_category }}#catalog" class="sort-btn{% if sort == 'price_asc' %} active{% endif %}">Цена ↑</a>
+            <a href="/?sort=price_desc&category={{ current_category }}#catalog" class="sort-btn{% if sort == 'price_desc' %} active{% endif %}">Цена ↓</a>
         </div>
     </div>
 </div>

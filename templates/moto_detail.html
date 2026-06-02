@@ -260,10 +260,16 @@
             const img = el.dataset.img;
             const price = el.dataset.price;
             const sku = el.dataset.sku;
-            const mainImg = document.querySelector('.gallery-main img');
-            if (mainImg && img) mainImg.src = img;
-            const priceEl = document.querySelector('.moto-price');
-            if (priceEl && price) priceEl.textContent = Number(price).toLocaleString('ru-RU') + ' ₽';
+            const activeImg = document.querySelector('#gallery .active');
+            if (activeImg && img) {
+                activeImg.src = img;
+                activeImg.style.objectFit = 'cover';
+            }
+            const priceEl = document.querySelector('.detail-price');
+            if (priceEl && price) {
+                const num = Number(price.replace(/\s/g, ''));
+                priceEl.textContent = num.toLocaleString('ru-RU') + ' ₽';
+            }
             const skuEl = document.querySelector('.moto-sku');
             if (skuEl && sku) skuEl.textContent = 'Артикул: ' + sku;
         };
