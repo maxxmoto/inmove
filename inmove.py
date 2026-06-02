@@ -6,11 +6,12 @@ from datetime import date
 from flask import Flask, render_template, request, redirect, url_for, session, jsonify, send_from_directory
 
 app = Flask(__name__)
-app.secret_key = 'InMoVe_SeCrEt_2026!'
+app.secret_key = os.environ.get('SECRET_KEY', 'InMoVe_SeCrEt_2026!')
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DB_PATH = os.path.join(BASE_DIR, 'inmove.db')
-app.config['UPLOAD_FOLDER'] = os.path.join(BASE_DIR, 'static')
+app.config['STATIC_FOLDER'] = os.path.join(BASE_DIR, 'static')
+app.config['UPLOAD_FOLDER'] = os.path.join(BASE_DIR, 'static', 'uploads')
 app.config['MANUAL_FOLDER'] = os.path.join(BASE_DIR, 'static', 'manuals')
 
 @app.template_filter('photo_url')
@@ -23,7 +24,9 @@ def photo_url(path):
         return path
     if path.startswith('static/'):
         return '/' + path
-    return '/static/' + path
+    if path.startswith('prod_'):
+        return '/static/' + path
+    return '/static/uploads/' + path
 
 def compress_image(filepath, max_dim=1200, quality=85):
     try:
@@ -227,11 +230,8 @@ def index():
     page = request.args.get('page', 1, type=int)
     per_page = 12
 
-    order = "id"
-    if sort == 'price_asc':
-        order = "CAST(price AS INTEGER) ASC, id"
-    elif sort == 'price_desc':
-        order = "CAST(price AS INTEGER) DESC, id"
+    ALLOWED_SORTS = {'default': 'id', 'price_asc': 'CAST(price AS INTEGER) ASC, id', 'price_desc': 'CAST(price AS INTEGER) DESC, id'}
+    order = ALLOWED_SORTS.get(sort, 'id')
 
     # Build query with optional category filter
     if category and category != 'all':
@@ -362,7 +362,8 @@ def delete_moto():
         return jsonify({'success': False, 'message': 'Мотоцикл не найден'}), 404
     moto = row_to_moto(row)
     for photo in moto.get('photos', []):
-        p = os.path.join(app.config['UPLOAD_FOLDER'], photo)
+        folder = app.config['STATIC_FOLDER'] if photo.startswith('prod_') else app.config['UPLOAD_FOLDER']
+        p = os.path.join(folder, photo)
         if os.path.exists(p): os.remove(p)
     if moto.get('manual'):
         p = os.path.join(app.config['MANUAL_FOLDER'], moto['manual'])
@@ -414,7 +415,7 @@ def increment_view():
 
 @app.route('/static/<path:filename>')
 def static_files(filename):
-    resp = send_from_directory(app.config['UPLOAD_FOLDER'], filename)
+    resp = send_from_directory(app.config['STATIC_FOLDER'], filename)
     if any(filename.lower().endswith(ext) for ext in ['.jpg', '.jpeg', '.png', '.webp', '.gif', '.svg']):
         resp.headers['Cache-Control'] = 'public, max-age=604800, immutable'
     return resp
@@ -574,7 +575,9 @@ def delete_review():
         return jsonify({'success': False}), 404
     r = dict(row)
     if r.get('photo'):
-        p = os.path.join(app.config['UPLOAD_FOLDER'], r['photo'])
+        photo = r['photo']
+        folder = app.config['STATIC_FOLDER'] if photo.startswith('prod_') else app.config['UPLOAD_FOLDER']
+        p = os.path.join(folder, photo)
         if os.path.exists(p): os.remove(p)
     db.execute("DELETE FROM reviews WHERE id=?", (review_id,))
     db.commit()
@@ -720,9 +723,11 @@ def delete_banner():
     if not row:
         db.close()
         return jsonify({'success': False, 'message': 'Баннер не найден'}), 404
-    img_path = os.path.join(app.config['UPLOAD_FOLDER'], row['image'])
-    if row['image'] and os.path.exists(img_path):
-        os.remove(img_path)
+    img = row['image']
+    if img:
+        folder = app.config['STATIC_FOLDER'] if img.startswith('prod_') else app.config['UPLOAD_FOLDER']
+        img_path = os.path.join(folder, img)
+        if os.path.exists(img_path): os.remove(img_path)
     db.execute("DELETE FROM banners WHERE id=?", (banner_id,))
     db.commit()
     db.close()
@@ -744,7 +749,7 @@ def robots_txt():
 
 @app.route('/sitemap.xml')
 def sitemap_xml():
-    base = 'http://localhost:5000'
+    base = request.host_url.rstrip('/')
     urls = [
         {'loc': base + '/', 'priority': '1.0', 'changefreq': 'daily'},
         {'loc': base + '/reviews', 'priority': '0.8', 'changefreq': 'weekly'},
@@ -934,6 +939,8 @@ def bot_notify_new():
 
 # Initialize database on import (for WSGI)
 try:
+    if not os.path.exists(app.config['STATIC_FOLDER']):
+        os.makedirs(app.config['STATIC_FOLDER'])
     if not os.path.exists(app.config['UPLOAD_FOLDER']):
         os.makedirs(app.config['UPLOAD_FOLDER'])
     if not os.path.exists(app.config['MANUAL_FOLDER']):

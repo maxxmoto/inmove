@@ -1,76 +1,49 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/png" href="/static/inmove_logo.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Избранное — INMOVE</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --bg: #f5f5f7; --text: #1a1a1a; --accent: #f87e00;
-            --card-bg: rgba(255,255,255,0.7); --card-border: rgba(0,0,0,0.06);
-            --text-secondary: #6e6e73;
-        }
-        body.dark-theme {
-            --bg: #07070d; --text: #eeeef0; --accent: #f87e00;
-            --card-bg: rgba(255,255,255,0.04); --card-border: rgba(255,255,255,0.06);
-            --text-secondary: #8e8e96;
-        }
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body {
-            font-family: 'Inter', system-ui, sans-serif;
-            background: var(--bg); color: var(--text); padding: 2rem; transition: background 0.3s, color 0.3s;
-        }
-        .container { max-width: 1200px; margin: 0 auto; }
-        .back { color: var(--accent); text-decoration: none; font-weight: 500; font-size: 0.9rem; }
-        h1 { font-size: 2rem; font-weight: 800; color: var(--accent); margin: 1rem 0 1.5rem; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1rem; }
-        .card {
-            background: var(--card-bg); backdrop-filter: blur(12px);
-            border: 1px solid var(--card-border); border-radius: 16px;
-            overflow: hidden; transition: transform 0.2s;
-        }
-        .card:hover { transform: translateY(-2px); }
-        .card img { width: 100%; height: 160px; object-fit: cover; }
-        .card-body { padding: 1rem; }
-        .card-body h3 { font-size: 1rem; margin-bottom: 0.3rem; }
-        .card-body p { font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 0.5rem; }
-        .card-body a { color: var(--accent); font-weight: 600; font-size: 0.85rem; text-decoration: none; }
-        .empty { text-align: center; padding: 3rem; color: var(--text-secondary); }
-    </style>
-    <link rel="apple-touch-icon" href="/static/favicon.png">
-</head>
-<body>
-    <div class="container">
-        <a href="/" class="back">← Назад в каталог</a>
-        <h1>Избранное</h1>
-        {% if motos %}
-        <div class="grid">
-            {% for moto in motos %}
-            <div class="card">
-                {% if moto.photos and moto.photos[0] %}
-                <img src="{{ moto.photos[0]|photo_url }}" alt="{{ moto.name }}" loading="lazy">
-                {% endif %}
-                <div class="card-body">
-                    <h3>{{ moto.name }}</h3>
-                    <p>{{ moto.description[:100] }}{% if moto.description|length > 100 %}...{% endif %}</p>
-                    <a href="/moto/{{ moto.id }}">Подробнее</a>
-                </div>
+{% extends "base.html" %}
+{% block title %}Избранное — INMOVE{% endblock %}
+{% block meta %}
+<meta name="description" content="Избранные товары в магазине INMOVE">
+{% endblock %}
+{% block head_styles %}
+<style>
+    .container { max-width: 1200px; margin: 0 auto; padding: 2rem; padding-top: calc(var(--nav-h) + 1rem); }
+    .back { color: var(--accent); text-decoration: none; font-weight: 500; font-size: 0.9rem; }
+    h1 { font-size: 2rem; font-weight: 800; color: var(--accent); margin: 1rem 0 1.5rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1rem; }
+    .card { background: var(--card-bg); backdrop-filter: blur(12px); border: 1px solid var(--card-border); border-radius: 16px; overflow: hidden; transition: transform 0.2s; }
+    .card:hover { transform: translateY(-2px); }
+    .card img { width: 100%; height: 160px; object-fit: cover; }
+    .card-body { padding: 1rem; }
+    .card-body h3 { font-size: 1rem; margin-bottom: 0.3rem; }
+    .card-body p { font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 0.5rem; }
+    .card-body a { color: var(--accent); font-weight: 600; font-size: 0.85rem; text-decoration: none; }
+    .empty { text-align: center; padding: 3rem; color: var(--text-secondary); }
+</style>
+{% endblock %}
+{% block content %}
+<div class="container">
+    <a href="/" class="back">← Назад в каталог</a>
+    <h1>Избранное</h1>
+    {% if motos %}
+    <div class="grid">
+        {% for moto in motos %}
+        <div class="card">
+            {% if moto.photos and moto.photos[0] %}
+            <img src="{{ moto.photos[0]|photo_url }}" alt="{{ moto.name }}" loading="lazy">
+            {% endif %}
+            <div class="card-body">
+                <h3>{{ moto.name }}</h3>
+                <p>{{ moto.description[:100] }}{% if moto.description|length > 100 %}...{% endif %}</p>
+                <a href="/moto/{{ moto.id }}">Подробнее</a>
             </div>
-            {% endfor %}
         </div>
-        {% else %}
-        <div class="empty">
-            <p style="font-size:3rem;margin-bottom:1rem;">♡</p>
-            <p>У вас пока нет избранных мотоциклов.</p>
-            <a href="/" class="back" style="display:inline-block;margin-top:1rem;">Перейти в каталог</a>
-        </div>
-        {% endif %}
+        {% endfor %}
     </div>
-    <script>
-        const saved = localStorage.getItem('theme');
-        if (saved === 'dark') document.body.classList.add('dark-theme');
-    </script>
-</body>
-</html>
+    {% else %}
+    <div class="empty">
+        <p style="font-size:3rem;margin-bottom:1rem;">♡</p>
+        <p>У вас пока нет избранных товаров.</p>
+        <a href="/" class="back" style="display:inline-block;margin-top:1rem;">Перейти в каталог</a>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

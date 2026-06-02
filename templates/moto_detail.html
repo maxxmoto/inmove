@@ -155,7 +155,7 @@
             <img src="{{ photo|photo_url }}" alt="{{ moto.name }}" class="{% if loop.first %}active{% endif %}">
             {% endfor %}
             {% else %}
-            <div class="no-photo-placeholder" style="position:absolute;inset:0;">🛵</div>
+            <div class="no-photo-placeholder" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;"><img src="/static/inmove_logo.png" alt="INMOVE" style="width:64px;height:64px;opacity:0.2;"></div>
             {% endif %}
             <button class="gal-arrow gal-prev" onclick="changeSlide(-1)">&#10094;</button>
             <button class="gal-arrow gal-next" onclick="changeSlide(1)">&#10095;</button>
