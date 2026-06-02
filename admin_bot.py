@@ -9,8 +9,6 @@ import threading
 
 # ---------- НАСТРОЙКИ ----------
 ADMIN_BOT_TOKEN = '8567761901:AAHW0JdXxiOkJuOWdSjSti7RuXbcbST_D0Y'
-CLIENT_BOT_TOKEN = '8980504185:AAHXsZNvk-KPK-J8nmNxuJZbUfESlbSWzHM'
-REFERRAL_GROUP_ID = -1001234567890
 ADMIN_PASSWORD = 'inmove2024'
 
 API_BASE_URL = 'http://localhost:5000'
@@ -18,7 +16,6 @@ API_KEY = 'inmove_bot_secret_2026'
 HEADERS = {'X-API-Key': API_KEY}
 
 admin_bot = telebot.TeleBot(ADMIN_BOT_TOKEN)
-client_bot = telebot.TeleBot(CLIENT_BOT_TOKEN)
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -214,7 +211,7 @@ def broadcast_send(message):
     sent = 0; failed = 0
     for chat_id in subs:
         try:
-            client_bot.send_message(chat_id, f"📢 *INMOVE:*\n{text}", parse_mode='Markdown')
+            admin_bot.send_message(chat_id, f"📢 *INMOVE:*\n{text}", parse_mode='Markdown')
             sent += 1
             time.sleep(0.05)
         except:
@@ -469,18 +466,15 @@ def notify_new_moto(message):
     msg = f"🆕 *НОВОЕ ПОСТУПЛЕНИЕ!*\n\n*{moto['name']}*\nКатегория: {moto['category']}\nСтатус: {status_str}\n\n{moto.get('description', '')[:200]}..."
     markup = types.InlineKeyboardMarkup()
     markup.add(types.InlineKeyboardButton('📄 Открыть на сайте', url=f'http://localhost:5000/moto/{moto["id"]}'))
-    try:
-        if moto.get('photos'):
-            client_bot.send_photo(REFERRAL_GROUP_ID, f'{API_BASE_URL}/static/{moto["photos"][0]}',
-                                  caption=msg, parse_mode='Markdown', reply_markup=markup)
-        else:
-            client_bot.send_message(REFERRAL_GROUP_ID, msg, parse_mode='Markdown', reply_markup=markup)
-    except:
+    if moto.get('photos'):
         try:
-            client_bot.send_message(REFERRAL_GROUP_ID, msg, parse_mode='Markdown', reply_markup=markup)
+            admin_bot.send_photo(message.chat.id, f'{API_BASE_URL}/static/{moto["photos"][0]}',
+                                 caption=msg, parse_mode='Markdown', reply_markup=markup)
         except:
-            pass
-    admin_bot.send_message(message.chat.id, '✅ Уведомление о новинке отправлено в группу.')
+            admin_bot.send_message(message.chat.id, msg, parse_mode='Markdown', reply_markup=markup)
+    else:
+        admin_bot.send_message(message.chat.id, msg, parse_mode='Markdown', reply_markup=markup)
+    admin_bot.send_message(message.chat.id, '✅ Уведомление о новинке отправлено.')
 
 # ---------- ЭКСПОРТ КАТАЛОГА ----------
 @admin_bot.message_handler(func=lambda m: is_admin(m.chat.id) and 'экспорт' in m.text.lower())
@@ -514,10 +508,7 @@ def watch_leads():
             continue
         data = api_get('/api/bot/stats')
         if data and data['leads'] > last_count and last_count > 0:
-            try:
-                admin_bot.send_message(REFERRAL_GROUP_ID, f'🆕 Новая заявка! Всего: {data["leads"]}')
-            except:
-                pass
+            pass  # уведомления админам — добавить позже
         if data:
             last_count = data['leads']
 
