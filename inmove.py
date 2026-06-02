@@ -207,6 +207,10 @@ def parse_specs(text):
                 break
     return specs
 
+@app.route('/health')
+def health():
+    return 'ok'
+
 @app.route('/')
 def index():
     db = get_db()
@@ -923,21 +927,24 @@ def bot_notify_new():
     return jsonify({'success': True, 'moto': moto})
 
 # Initialize database on import (for WSGI)
-if not os.path.exists(app.config['UPLOAD_FOLDER']):
-    os.makedirs(app.config['UPLOAD_FOLDER'])
-if not os.path.exists(app.config['MANUAL_FOLDER']):
-    os.makedirs(app.config['MANUAL_FOLDER'])
-init_db()
-migrate_from_json()
+try:
+    if not os.path.exists(app.config['UPLOAD_FOLDER']):
+        os.makedirs(app.config['UPLOAD_FOLDER'])
+    if not os.path.exists(app.config['MANUAL_FOLDER']):
+        os.makedirs(app.config['MANUAL_FOLDER'])
+    init_db()
+    migrate_from_json()
 
-# Seed default banner if none exist
-bdb = get_db()
-bc = bdb.execute("SELECT COUNT(*) FROM banners").fetchone()[0]
-if bc == 0:
-    bdb.execute("INSERT INTO banners (image, text, link, sort_order) VALUES (?, ?, ?, ?)",
-        ('', 'Добро пожаловать в INMOVE! Широкий выбор электротранспорта', 'https://t.me/INMOVE812', 0))
-bdb.commit()
-bdb.close()
+    # Seed default banner if none exist
+    bdb = get_db()
+    bc = bdb.execute("SELECT COUNT(*) FROM banners").fetchone()[0]
+    if bc == 0:
+        bdb.execute("INSERT INTO banners (image, text, link, sort_order) VALUES (?, ?, ?, ?)",
+            ('', 'Добро пожаловать в INMOVE! Широкий выбор электротранспорта', 'https://t.me/INMOVE812', 0))
+    bdb.commit()
+    bdb.close()
+except Exception as e:
+    print(f'Startup init error: {e}')
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
