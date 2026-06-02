@@ -1,0 +1,14 @@
+meta:
+  environment: python
+  name: inmove
+  default-command: python inmove.py
+build:
+  requirements:
+    - flask
+    - pyTelegramBotAPI
+    - Pillow
+    - requests
+run:
+  command: python inmove.py
+  container-port: 5000
+  working-directory: /app
