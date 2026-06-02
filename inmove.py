@@ -15,8 +15,14 @@ app.config['MANUAL_FOLDER'] = os.path.join(BASE_DIR, 'static', 'manuals')
 
 @app.template_filter('photo_url')
 def photo_url(path):
+    if not path:
+        return '/static/inmove_logo.png'
     if path.startswith(('http://', 'https://')):
         return path
+    if path.startswith('/'):
+        return path
+    if path.startswith('static/'):
+        return '/' + path
     return '/static/' + path
 
 def compress_image(filepath, max_dim=1200, quality=85):

@@ -10,13 +10,13 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_1_0.png",
-        "static/prod_1_1.png",
-        "static/prod_1_2.png",
-        "static/prod_1_3.png",
-        "static/prod_1_4.png",
-        "static/prod_1_5.png",
-        "static/prod_1_6.png"
+        "prod_1_0.png",
+        "prod_1_1.png",
+        "prod_1_2.png",
+        "prod_1_3.png",
+        "prod_1_4.png",
+        "prod_1_5.png",
+        "prod_1_6.png"
       ],
       "price": "22900",
       "short_description": "",
@@ -42,20 +42,20 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_2_0.png",
-        "static/prod_2_1.png",
-        "static/prod_2_2.png",
-        "static/prod_2_3.png",
-        "static/prod_2_4.png",
-        "static/prod_2_5.png",
-        "static/prod_2_6.png",
-        "static/prod_2_7.png",
-        "static/prod_2_8.png",
-        "static/prod_2_9.png",
-        "static/prod_2_10.png",
-        "static/prod_2_11.png",
-        "static/prod_2_12.png",
-        "static/prod_2_13.png"
+        "prod_2_0.png",
+        "prod_2_1.png",
+        "prod_2_2.png",
+        "prod_2_3.png",
+        "prod_2_4.png",
+        "prod_2_5.png",
+        "prod_2_6.png",
+        "prod_2_7.png",
+        "prod_2_8.png",
+        "prod_2_9.png",
+        "prod_2_10.png",
+        "prod_2_11.png",
+        "prod_2_12.png",
+        "prod_2_13.png"
       ],
       "price": "29900",
       "short_description": "",
@@ -81,23 +81,23 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_3_0.png",
-        "static/prod_3_1.png",
+        "prod_3_0.png",
+        "prod_3_1.png",
         "https://static.tildacdn.com/stor6365-3331-4165-a461-646465363233/58177893.png",
-        "static/prod_3_3.png",
-        "static/prod_3_4.png",
-        "static/prod_3_5.png",
-        "static/prod_3_6.png",
-        "static/prod_3_7.png",
-        "static/prod_3_8.png",
-        "static/prod_3_9.png",
-        "static/prod_3_10.png",
-        "static/prod_3_11.png",
-        "static/prod_3_12.png",
-        "static/prod_3_13.png",
+        "prod_3_3.png",
+        "prod_3_4.png",
+        "prod_3_5.png",
+        "prod_3_6.png",
+        "prod_3_7.png",
+        "prod_3_8.png",
+        "prod_3_9.png",
+        "prod_3_10.png",
+        "prod_3_11.png",
+        "prod_3_12.png",
+        "prod_3_13.png",
         "https://static.tildacdn.com/stor3232-3438-4864-b639-326361366532/42477877.png",
-        "static/prod_3_15.png",
-        "static/prod_3_16.png"
+        "prod_3_15.png",
+        "prod_3_16.png"
       ],
       "price": "34900",
       "short_description": "",
@@ -123,13 +123,13 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_4_0.png",
-        "static/prod_4_1.png",
+        "prod_4_0.png",
+        "prod_4_1.png",
         "https://static.tildacdn.com/stor6236-6236-4339-b437-386331616163/88533306.png",
-        "static/prod_4_3.png",
-        "static/prod_4_4.png",
-        "static/prod_4_5.png",
-        "static/prod_4_6.png"
+        "prod_4_3.png",
+        "prod_4_4.png",
+        "prod_4_5.png",
+        "prod_4_6.png"
       ],
       "price": "45900",
       "short_description": "",
@@ -155,17 +155,17 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_5_0.png",
-        "static/prod_5_1.png",
-        "static/prod_5_2.png",
-        "static/prod_5_3.png",
-        "static/prod_5_4.png",
+        "prod_5_0.png",
+        "prod_5_1.png",
+        "prod_5_2.png",
+        "prod_5_3.png",
+        "prod_5_4.png",
         "https://static.tildacdn.com/stor3232-6362-4361-b965-643430343262/35245962.png",
-        "static/prod_5_6.png",
-        "static/prod_5_7.png",
-        "static/prod_5_8.png",
+        "prod_5_6.png",
+        "prod_5_7.png",
+        "prod_5_8.png",
         "https://static.tildacdn.com/stor6438-3766-4935-a263-623634376338/48040912.png",
-        "static/prod_5_10.png"
+        "prod_5_10.png"
       ],
       "price": "51900",
       "short_description": "",
@@ -191,11 +191,11 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_6_0.png",
-        "static/prod_6_1.png",
-        "static/prod_6_2.png",
-        "static/prod_6_3.png",
-        "static/prod_6_4.png",
+        "prod_6_0.png",
+        "prod_6_1.png",
+        "prod_6_2.png",
+        "prod_6_3.png",
+        "prod_6_4.png",
         "https://static.tildacdn.com/stor3635-3762-4062-a530-383061323366/29138220.png",
         "https://static.tildacdn.com/stor3564-3965-4166-b461-346433653931/73093084.png",
         "https://static.tildacdn.com/stor3433-6333-4536-a236-643737323833/88685374.png",
@@ -228,7 +228,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_7_0.png",
+        "prod_7_0.png",
         "https://static.tildacdn.com/stor3438-3137-4536-b564-346636363063/42632820.png",
         "https://static.tildacdn.com/stor6434-3736-4533-b165-613966636663/21728158.png",
         "https://static.tildacdn.com/stor3064-6264-4332-a230-346262323330/55845433.png",
@@ -268,7 +268,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_8_0.png",
+        "prod_8_0.png",
         "https://static.tildacdn.com/stor3731-3330-4538-b863-353137666339/69959972.png",
         "https://static.tildacdn.com/stor6266-3532-4234-b832-383930346432/15901470.png",
         "https://static.tildacdn.com/stor6636-3438-4639-b333-656137633935/58776234.png",
@@ -302,7 +302,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_9_0.png",
+        "prod_9_0.png",
         "https://static.tildacdn.com/stor6362-6562-4736-b235-353131303764/51696815.png",
         "https://static.tildacdn.com/stor6531-3730-4062-b334-313734386439/65472754.png",
         "https://static.tildacdn.com/stor3737-6138-4265-b161-323630656464/55781131.png",
@@ -339,7 +339,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_10_0.png",
+        "prod_10_0.png",
         "https://static.tildacdn.com/stor6664-6638-4365-b161-376630653831/90847561.png",
         "https://static.tildacdn.com/stor3530-3039-4462-a634-623865623864/54638877.png",
         "https://static.tildacdn.com/stor3062-6436-4737-a633-313333363166/64570948.png",
@@ -374,7 +374,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_11_0.png",
+        "prod_11_0.png",
         "https://static.tildacdn.com/stor6332-6131-4537-a339-333739303165/17785924.webp",
         "https://static.tildacdn.com/stor6663-3735-4438-b531-643765353966/35991227.png",
         "https://static.tildacdn.com/stor3931-6238-4833-b264-363366353961/41068767.png",
@@ -406,7 +406,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_12_0.png",
+        "prod_12_0.png",
         "https://static.tildacdn.com/stor3562-3762-4364-a337-613630393032/82215820.png",
         "https://static.tildacdn.com/stor3862-3030-4565-a464-666239306661/89018877.png",
         "https://static.tildacdn.com/stor3161-3939-4061-b262-383864633237/19126103.png",
@@ -444,7 +444,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_13_0.png",
+        "prod_13_0.png",
         "https://static.tildacdn.com/stor3131-3365-4237-b735-643262383861/65175651.png",
         "https://static.tildacdn.com/stor6631-3962-4463-b138-643561346331/87918896.png",
         "https://static.tildacdn.com/stor3333-3063-4231-b430-633362326165/28693023.png",
@@ -486,7 +486,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_14_0.png",
+        "prod_14_0.png",
         "https://static.tildacdn.com/stor3339-6661-4666-b535-623062363936/86742159.png",
         "https://static.tildacdn.com/stor6463-6636-4231-a465-396237373537/65291205.png",
         "https://static.tildacdn.com/stor3263-3065-4537-b963-363963353833/31094261.png",
@@ -526,7 +526,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_15_0.png",
+        "prod_15_0.png",
         "https://static.tildacdn.com/stor6137-3565-4866-a135-353139336537/25443936.png",
         "https://static.tildacdn.com/stor3730-6437-4538-b439-343435386436/30256813.png",
         "https://static.tildacdn.com/stor3137-6533-4232-b466-353037626630/18159125.png",
@@ -564,7 +564,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_16_0.png",
+        "prod_16_0.png",
         "https://static.tildacdn.com/stor3462-3536-4166-a666-633365656139/28019387.png",
         "https://static.tildacdn.com/stor3930-3962-4763-a331-636634633539/96207747.png",
         "https://static.tildacdn.com/stor3836-3065-4238-b232-393462346638/10799792.png",
@@ -602,7 +602,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_17_0.png",
+        "prod_17_0.png",
         "https://static.tildacdn.com/stor3930-3632-4666-a662-346635316561/16595058.png",
         "https://static.tildacdn.com/stor6661-6235-4230-a235-363734353134/76702507.png",
         "https://static.tildacdn.com/stor6638-6131-4663-b033-623437643637/31631374.png"
@@ -631,7 +631,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_18_0.png",
+        "prod_18_0.png",
         "https://static.tildacdn.com/stor3237-6639-4065-a162-346666663831/35835747.png",
         "https://static.tildacdn.com/stor3434-3137-4331-b532-393837623637/80835931.png",
         "https://static.tildacdn.com/stor3235-6135-4434-b137-613336653166/52081293.png",
@@ -670,7 +670,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_19_0.png",
+        "prod_19_0.png",
         "https://static.tildacdn.com/stor3165-3662-4466-b062-613335646662/87244155.png",
         "https://static.tildacdn.com/stor3230-3934-4736-b132-326463666462/28327473.png",
         "https://static.tildacdn.com/stor6337-6133-4539-b765-316538323132/30401068.png",
@@ -722,7 +722,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_20_0.png",
+        "prod_20_0.png",
         "https://static.tildacdn.com/stor6638-6130-4635-a436-363036383039/53540404.png",
         "https://static.tildacdn.com/stor3365-3336-4333-b530-306466653262/21823985.png",
         "https://static.tildacdn.com/stor3563-3639-4839-a533-303262313565/25179834.png",
@@ -757,7 +757,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_21_0.png",
+        "prod_21_0.png",
         "https://static.tildacdn.com/stor3162-3539-4132-a463-656364643837/61669645.png",
         "https://static.tildacdn.com/stor3331-3965-4264-b438-366634316464/24412955.png",
         "https://static.tildacdn.com/stor6439-3034-4866-a237-663836303930/93587805.png",
@@ -794,7 +794,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_22_0.png",
+        "prod_22_0.png",
         "https://static.tildacdn.com/stor6138-3631-4563-b531-656237613634/35287770.png",
         "https://static.tildacdn.com/stor3961-3766-4634-a565-613033646634/65287359.png",
         "https://static.tildacdn.com/stor3235-3163-4366-b365-363066386365/36142477.png",
@@ -829,7 +829,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_23_0.png",
+        "prod_23_0.png",
         "https://static.tildacdn.com/stor3738-3461-4934-b137-343637613937/95135507.png",
         "https://static.tildacdn.com/stor6434-6430-4438-a636-303662633235/18002885.png",
         "https://static.tildacdn.com/stor3161-3636-4639-b064-383163663231/65491558.png",
@@ -870,7 +870,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_24_0.png",
+        "prod_24_0.png",
         "https://static.tildacdn.com/stor3937-6665-4635-b934-343133323138/62464299.png",
         "https://static.tildacdn.com/stor3531-3730-4963-b565-396533626463/19083176.png",
         "https://static.tildacdn.com/stor3132-6164-4133-b732-346237336464/66958497.png",
@@ -907,7 +907,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_25_0.png",
+        "prod_25_0.png",
         "https://static.tildacdn.com/stor3534-6136-4865-a635-636237376461/65685780.png",
         "https://static.tildacdn.com/stor3434-3731-4161-a231-656135393364/36428664.png",
         "https://static.tildacdn.com/stor6163-3230-4063-b234-383836353439/25478986.png",
@@ -950,7 +950,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_26_0.png",
+        "prod_26_0.png",
         "https://static.tildacdn.com/stor6464-6663-4738-b636-356665343466/27814915.png",
         "https://static.tildacdn.com/stor3831-3066-4536-b930-393363663237/25827842.png",
         "https://static.tildacdn.com/stor6665-6133-4164-a139-396230356638/54752982.png",
@@ -1022,7 +1022,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_27_0.png",
+        "prod_27_0.png",
         "https://static.tildacdn.com/stor6638-3064-4133-a562-643432346635/10593079.png",
         "https://static.tildacdn.com/stor6530-6363-4162-b964-316630643532/73882896.png",
         "https://static.tildacdn.com/stor3164-3335-4466-a263-326232396238/93179110.png",
@@ -1055,7 +1055,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_28_0.png",
+        "prod_28_0.png",
         "https://static.tildacdn.com/stor3335-6630-4434-b664-396231613939/15603294.png",
         "https://static.tildacdn.com/stor3966-3461-4335-b961-353763326161/46862574.png",
         "https://static.tildacdn.com/stor6436-3339-4832-a638-356638626532/22737264.png",
@@ -1095,7 +1095,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_29_0.png",
+        "prod_29_0.png",
         "https://static.tildacdn.com/stor3062-3235-4064-b639-613738323537/16262315.png",
         "https://static.tildacdn.com/stor3931-3464-4038-a565-643366656433/95335247.png",
         "https://static.tildacdn.com/stor3039-3361-4839-b732-366562336663/59580554.png",
@@ -1132,7 +1132,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_30_0.png",
+        "prod_30_0.png",
         "https://static.tildacdn.com/stor3864-3165-4131-a363-326335336334/40690332.png",
         "https://static.tildacdn.com/stor3964-3338-4336-b561-663466636534/10175903.png",
         "https://static.tildacdn.com/stor3038-3736-4163-a461-353131386264/31694228.png",
@@ -1162,7 +1162,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_31_0.png",
+        "prod_31_0.png",
         "https://static.tildacdn.com/stor6164-6165-4532-b964-373235326438/38309292.png",
         "https://static.tildacdn.com/stor3664-3732-4236-b933-363636376437/72909054.png",
         "https://static.tildacdn.com/stor3037-6637-4238-a236-363665316564/81466846.png",
@@ -1193,7 +1193,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_32_0.png",
+        "prod_32_0.png",
         "https://static.tildacdn.com/stor6363-3632-4432-b133-633638343335/37377787.png",
         "https://static.tildacdn.com/stor3131-3536-4235-a534-623630393135/13866836.png",
         "https://static.tildacdn.com/stor3761-3466-4139-b766-343034613235/62461878.png"
@@ -1222,7 +1222,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_33_0.png",
+        "prod_33_0.png",
         "https://static.tildacdn.com/stor3039-6430-4863-a431-636431333535/55532371.png",
         "https://static.tildacdn.com/stor3464-3837-4636-b536-313261623835/67832012.png",
         "https://static.tildacdn.com/stor3934-3665-4534-b661-343237343333/39147947.png",
@@ -1255,7 +1255,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_34_0.png",
+        "prod_34_0.png",
         "https://static.tildacdn.com/stor6539-6333-4330-a135-656362363039/76891425.png",
         "https://static.tildacdn.com/stor6135-3431-4466-b938-323036636231/29141920.png",
         "https://static.tildacdn.com/stor3330-6136-4462-a637-333762323461/24756948.png",
@@ -1290,7 +1290,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_35_0.png",
+        "prod_35_0.png",
         "https://static.tildacdn.com/stor3334-3965-4138-b061-303036303337/43688849.png",
         "https://static.tildacdn.com/stor3038-3930-4132-b033-316234633834/11907588.png",
         "https://static.tildacdn.com/stor6631-6561-4131-b639-333637336633/46197729.png",
@@ -1329,7 +1329,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_36_0.png",
+        "prod_36_0.png",
         "https://static.tildacdn.com/stor6631-3463-4536-b333-653237663033/30556206.png",
         "https://static.tildacdn.com/stor6632-6130-4232-a531-356339366561/71864670.png",
         "https://static.tildacdn.com/stor3362-3961-4436-b561-643732363564/73925212.png",
@@ -1363,7 +1363,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_37_0.png",
+        "prod_37_0.png",
         "https://static.tildacdn.com/stor3665-3662-4961-a663-343333373338/79689852.png",
         "https://static.tildacdn.com/stor6538-3338-4864-a533-326336323364/56006727.png",
         "https://static.tildacdn.com/stor3933-3066-4466-b763-623135336361/23097987.png",
@@ -1396,7 +1396,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_38_0.png",
+        "prod_38_0.png",
         "https://static.tildacdn.com/stor6161-6663-4438-b364-333462353430/64103751.png",
         "https://static.tildacdn.com/stor6233-6537-4664-a433-643334643334/77549781.png",
         "https://static.tildacdn.com/stor3462-3230-4561-b136-343865333431/22534730.png",
@@ -1435,7 +1435,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_39_0.png",
+        "prod_39_0.png",
         "https://static.tildacdn.com/stor3766-3032-4162-b138-626438346561/93628673.png",
         "https://static.tildacdn.com/stor3734-6664-4837-a366-393033643138/43398566.png",
         "https://static.tildacdn.com/stor3534-3161-4163-b936-633437333864/19492137.png",
@@ -1465,7 +1465,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_40_0.png",
+        "prod_40_0.png",
         "https://static.tildacdn.com/stor3765-3435-4664-a530-323162356234/52429655.png",
         "https://static.tildacdn.com/stor6338-3135-4337-a333-373337633463/63395527.png",
         "https://static.tildacdn.com/stor3135-6565-4962-a139-313039346230/73786091.png",
@@ -1498,7 +1498,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_41_0.png",
+        "prod_41_0.png",
         "https://static.tildacdn.com/stor3962-3539-4936-a266-356632616164/91218315.png",
         "https://static.tildacdn.com/stor6431-3536-4333-b131-303264613134/49967775.png",
         "https://static.tildacdn.com/stor6530-3836-4839-b730-333334386132/66555464.png",
@@ -1532,7 +1532,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_42_0.png",
+        "prod_42_0.png",
         "https://static.tildacdn.com/stor3263-3635-4430-b365-383366623965/62523279.png",
         "https://static.tildacdn.com/stor6364-3831-4066-a266-613633396238/61805003.png",
         "https://static.tildacdn.com/stor3065-6531-4631-a638-613139323664/66769134.png",
@@ -1567,7 +1567,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_43_0.png",
+        "prod_43_0.png",
         "https://static.tildacdn.com/stor3663-3039-4136-a462-346262356439/14088443.png",
         "https://static.tildacdn.com/stor6233-3531-4266-b330-653565666231/90118851.png",
         "https://static.tildacdn.com/stor6130-3231-4261-a435-653732346664/15046873.png",
@@ -1601,7 +1601,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_44_0.png",
+        "prod_44_0.png",
         "https://static.tildacdn.com/stor6234-6437-4830-a339-616164323039/21462613.png",
         "https://static.tildacdn.com/stor3538-6335-4738-a439-363735373934/74178903.png",
         "https://static.tildacdn.com/stor3836-6432-4531-a565-343732363235/43194523.png",
@@ -1636,7 +1636,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_45_0.png",
+        "prod_45_0.png",
         "https://static.tildacdn.com/stor3239-3335-4433-a664-333562653932/55080595.png",
         "https://static.tildacdn.com/stor3963-3966-4536-b964-336436376162/30226413.png"
       ],
@@ -1664,7 +1664,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_46_0.png",
+        "prod_46_0.png",
         "https://static.tildacdn.com/stor6431-3632-4136-a136-316239306134/82078855.png",
         "https://static.tildacdn.com/stor6130-6536-4462-a131-643231353639/19371806.png",
         "https://static.tildacdn.com/stor6634-3131-4638-b331-616331396434/60273983.png",
@@ -1699,7 +1699,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_47_0.png",
+        "prod_47_0.png",
         "https://static.tildacdn.com/stor6166-6533-4464-b037-386564356566/35320036.png",
         "https://static.tildacdn.com/stor3833-3934-4666-b431-353639613532/85892115.png",
         "https://static.tildacdn.com/stor3039-6133-4631-b237-656463633239/76648140.png",
@@ -1732,7 +1732,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_48_0.png",
+        "prod_48_0.png",
         "https://static.tildacdn.com/stor6462-3930-4137-a331-623737343062/45417053.png",
         "https://static.tildacdn.com/stor3361-6638-4265-a165-336633306437/24522732.png",
         "https://static.tildacdn.com/stor3565-3239-4664-b837-346261663334/60958220.png",
@@ -1764,7 +1764,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_49_0.png",
+        "prod_49_0.png",
         "https://static.tildacdn.com/stor3638-6230-4034-b863-653037356363/80798022.png",
         "https://static.tildacdn.com/stor6161-3835-4563-a163-663238653635/46443433.png",
         "https://static.tildacdn.com/stor3033-3064-4331-b936-353432636333/71006622.png",
@@ -1797,7 +1797,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_50_0.png",
+        "prod_50_0.png",
         "https://static.tildacdn.com/stor6333-3262-4638-b335-323862393834/32283595.png",
         "https://static.tildacdn.com/stor3532-3136-4339-a562-303031643132/95080802.png",
         "https://static.tildacdn.com/stor3633-6266-4062-b535-393833333535/39567336.png",
@@ -1829,7 +1829,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_51_0.png",
+        "prod_51_0.png",
         "https://static.tildacdn.com/stor3761-6139-4261-a237-623034663138/72456413.png",
         "https://static.tildacdn.com/stor3036-3832-4235-a337-303833623666/39188015.png",
         "https://static.tildacdn.com/stor6133-6535-4762-a230-396564346465/78638595.png",
@@ -1862,7 +1862,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_52_0.png",
+        "prod_52_0.png",
         "https://static.tildacdn.com/stor3334-6130-4864-b130-653835666436/26198061.png",
         "https://static.tildacdn.com/stor3733-3061-4231-b265-393966653763/79387007.png",
         "https://static.tildacdn.com/stor6133-6234-4230-b962-633732373736/74396680.png",
@@ -1895,7 +1895,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_53_0.png",
+        "prod_53_0.png",
         "https://static.tildacdn.com/stor6539-6236-4562-b065-383866303862/61520384.png",
         "https://static.tildacdn.com/stor3161-3431-4537-a264-613534356232/58210207.png",
         "https://static.tildacdn.com/stor6234-6533-4662-b233-643739356364/54501995.png",
@@ -1931,7 +1931,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_54_0.png",
+        "prod_54_0.png",
         "https://static.tildacdn.com/stor3063-3536-4965-b362-633633303031/43025565.png",
         "https://static.tildacdn.com/stor3562-3262-4238-b766-323735646239/11682681.png",
         "https://static.tildacdn.com/stor3933-6365-4461-b765-346134306463/24664877.png",
@@ -1961,7 +1961,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_55_0.png",
+        "prod_55_0.png",
         "https://static.tildacdn.com/stor6430-3438-4734-a165-336364656530/66034964.png",
         "https://static.tildacdn.com/stor3734-6131-4530-b634-333232323661/46164008.png",
         "https://static.tildacdn.com/stor3438-6630-4736-a130-613330666331/56384697.png",
@@ -1994,7 +1994,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_56_0.png",
+        "prod_56_0.png",
         "https://static.tildacdn.com/stor6132-3737-4437-b530-626166333233/64838765.png",
         "https://static.tildacdn.com/stor3238-6337-4938-b961-386137376334/23403565.png",
         "https://static.tildacdn.com/stor3064-6531-4535-a363-393338323039/50616711.png",
@@ -2026,7 +2026,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_57_0.png",
+        "prod_57_0.png",
         "https://static.tildacdn.com/stor3765-3538-4531-b737-303564346536/66151567.png",
         "https://static.tildacdn.com/stor6133-3139-4735-b564-303334303936/44569992.png",
         "https://static.tildacdn.com/stor3432-3939-4766-b236-333638333136/86415485.png",
@@ -2060,7 +2060,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_58_0.png",
+        "prod_58_0.png",
         "https://static.tildacdn.com/stor3139-6532-4034-a566-386662386638/86567339.png",
         "https://static.tildacdn.com/stor3662-6163-4130-b565-666537636436/66070649.png",
         "https://static.tildacdn.com/stor3166-3431-4833-a239-656163343561/82896759.png",
@@ -2102,7 +2102,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_59_0.png",
+        "prod_59_0.png",
         "https://static.tildacdn.com/stor6166-3961-4436-b336-366361393638/35890433.png",
         "https://static.tildacdn.com/stor6666-6635-4533-b939-373236303931/29373804.png",
         "https://static.tildacdn.com/stor3763-6265-4765-b930-316266343861/53561025.png",
@@ -2135,7 +2135,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_60_0.png",
+        "prod_60_0.png",
         "https://static.tildacdn.com/stor3639-3531-4863-b837-386432663263/55631563.png",
         "https://static.tildacdn.com/stor3765-3037-4035-a165-386538323437/21916416.png",
         "https://static.tildacdn.com/stor6139-3364-4135-a134-323861383665/90691852.png",
@@ -2166,7 +2166,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_61_0.png",
+        "prod_61_0.png",
         "https://static.tildacdn.com/stor6530-3536-4631-a566-613030613133/48708812.png",
         "https://static.tildacdn.com/stor6138-3130-4634-b639-373766633937/91899598.png",
         "https://static.tildacdn.com/stor6439-6634-4937-b361-376362663733/27803853.png",
@@ -2205,7 +2205,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_62_0.png",
+        "prod_62_0.png",
         "https://static.tildacdn.com/stor3961-3966-4237-a533-336539633065/32093510.png",
         "https://static.tildacdn.com/stor3263-3630-4664-b335-383635363234/82862837.png",
         "https://static.tildacdn.com/stor6432-3064-4531-a662-616435346631/94120038.png",
@@ -2236,7 +2236,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_63_0.png",
+        "prod_63_0.png",
         "https://static.tildacdn.com/stor3430-3637-4439-b962-613735323462/77804873.png",
         "https://static.tildacdn.com/stor3365-3865-4463-a366-306334346337/25684030.png",
         "https://static.tildacdn.com/stor3335-3361-4363-a361-656237386134/92490306.png",
@@ -2269,7 +2269,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_64_0.png",
+        "prod_64_0.png",
         "https://static.tildacdn.com/stor6431-3632-4136-a136-316239306134/82078855.png",
         "https://static.tildacdn.com/stor6130-6536-4462-a131-643231353639/19371806.png",
         "https://static.tildacdn.com/stor6634-3131-4638-b331-616331396434/60273983.png",
@@ -2304,7 +2304,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_65_0.png",
+        "prod_65_0.png",
         "https://static.tildacdn.com/stor3733-6661-4634-b337-656661636139/26842692.png",
         "https://static.tildacdn.com/stor6135-6364-4263-a336-336535663332/58120141.png",
         "https://static.tildacdn.com/stor6465-3339-4465-a234-393630653461/20963523.png",
@@ -2340,7 +2340,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_66_0.png",
+        "prod_66_0.png",
         "https://static.tildacdn.com/stor3462-6232-4166-b836-633932326362/27946211.png",
         "https://static.tildacdn.com/stor3565-6262-4333-b632-393536636663/75770811.png",
         "https://static.tildacdn.com/stor6261-3162-4132-b366-343339323235/40377150.png",
@@ -2376,7 +2376,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_67_0.png",
+        "prod_67_0.png",
         "https://static.tildacdn.com/stor3935-6534-4362-a361-383034353538/20744709.png",
         "https://static.tildacdn.com/stor6333-6433-4339-b561-646361666661/12080818.png",
         "https://static.tildacdn.com/stor6132-6430-4736-b635-323166353032/30034916.png",
@@ -2409,7 +2409,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_68_0.png",
+        "prod_68_0.png",
         "https://static.tildacdn.com/stor3434-6436-4736-b962-663636333038/46811563.png",
         "https://static.tildacdn.com/stor6432-3862-4234-b165-616134316165/27394168.png",
         "https://static.tildacdn.com/stor3666-3539-4166-b233-313237313437/41443655.png",
@@ -2441,7 +2441,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_69_0.png",
+        "prod_69_0.png",
         "https://static.tildacdn.com/stor6635-6364-4538-b636-333766303064/97978040.png",
         "https://static.tildacdn.com/stor3032-3763-4134-b438-313761363138/13568873.png",
         "https://static.tildacdn.com/stor6366-3362-4566-a139-323431366536/45920339.png",
@@ -2488,7 +2488,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_70_0.png",
+        "prod_70_0.png",
         "https://static.tildacdn.com/stor3731-3462-4161-a135-323436613862/27108862.png",
         "https://static.tildacdn.com/stor3939-3235-4836-b932-633735633634/79163840.png",
         "https://static.tildacdn.com/stor3235-6466-4663-b434-613365636366/62980404.png",
@@ -2522,7 +2522,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_71_0.png",
+        "prod_71_0.png",
         "https://static.tildacdn.com/stor6665-6662-4564-b630-626139643631/83803639.png",
         "https://static.tildacdn.com/stor3333-6563-4532-a462-623835643461/23427590.png",
         "https://static.tildacdn.com/stor3530-3538-4739-b466-373732316530/54309510.png",
@@ -2554,7 +2554,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_72_0.png",
+        "prod_72_0.png",
         "https://static.tildacdn.com/stor3230-3737-4934-b736-623563303534/91303988.png",
         "https://static.tildacdn.com/stor6263-3736-4439-b836-353939346632/80212237.png",
         "https://static.tildacdn.com/stor3039-3533-4435-a661-356366303366/64492226.png",
@@ -2595,7 +2595,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_73_0.png",
+        "prod_73_0.png",
         "https://static.tildacdn.com/stor3139-3835-4464-b964-626330393436/76337336.png",
         "https://static.tildacdn.com/stor6235-3031-4634-b966-656232386339/46145647.png",
         "https://static.tildacdn.com/stor3339-6434-4962-b630-643233323630/32119870.png",
@@ -2628,7 +2628,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_74_0.png",
+        "prod_74_0.png",
         "https://static.tildacdn.com/stor6538-6539-4134-b365-306639363530/25791614.png",
         "https://static.tildacdn.com/stor6232-6366-4436-a462-323733646130/55414511.png",
         "https://static.tildacdn.com/stor3130-6137-4664-a334-643931376464/96981427.png",
@@ -2660,7 +2660,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_75_0.png",
+        "prod_75_0.png",
         "https://static.tildacdn.com/stor3961-6436-4464-b463-323063363136/79080773.png",
         "https://static.tildacdn.com/stor6163-3635-4539-b132-356337653635/67891983.png",
         "https://static.tildacdn.com/stor6530-3537-4634-b134-643336366466/65398829.png",
@@ -2690,7 +2690,7 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "static/prod_76_0.png",
+        "prod_76_0.png",
         "https://static.tildacdn.com/stor3336-3834-4137-a461-386632393266/98501869.png",
         "https://static.tildacdn.com/stor3234-3232-4332-a665-313261346637/22052677.png",
         "https://static.tildacdn.com/stor6533-6237-4534-a230-646364653938/73494375.png",
