@@ -1,7 +1,7 @@
 meta:
   environment: python
   name: inmove
-  default-command: python inmove.py
+  default-command: python bot_runner.py
 build:
   requirements:
     - flask
@@ -9,6 +9,6 @@ build:
     - Pillow
     - requests
 run:
-  command: python inmove.py
+  command: python bot_runner.py
   container-port: 5000
   working-directory: /app

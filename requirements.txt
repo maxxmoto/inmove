@@ -1,4 +1,5 @@
-flask>=3.0
-pyTelegramBotAPI>=4.30
-Pillow>=10.0
-requests>=2.30
+flask
+pyTelegramBotAPI
+Pillow
+requests
+gunicorn
