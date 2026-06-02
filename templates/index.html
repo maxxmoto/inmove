@@ -258,11 +258,7 @@
         #scrollToTop.show { display: flex; }
         #scrollToTop:hover { transform: translateY(-2px); }
 
-        .pagination { display: flex; justify-content: center; align-items: center; gap: 0.5rem; padding: 2rem 0; flex-wrap: wrap; }
-        .page-link { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; background: var(--card-bg); border: 1px solid var(--card-border); color: var(--text); text-decoration: none; font-weight: 500; font-size: 0.85rem; transition: all 0.2s; }
-        .page-link:hover { border-color: var(--accent); color: var(--accent); }
-        .page-link.active { background: var(--accent); color: #fff; border-color: var(--accent); }
-        .page-link.prev, .page-link.next { width: auto; border-radius: 8px; padding: 0 12px; }
+
 
         .edition-dots { display: flex; gap: 4px; padding: 4px 0; }
         .ed-dot { width: 22px; height: 22px; border-radius: 50%; border: 2px solid var(--card-border); background-size: cover; background-position: center; cursor: pointer; transition: border-color 0.2s; }
@@ -321,9 +317,7 @@
             .card-actions { flex-direction: column; gap: 0.25rem; }
             .card-actions .btn { font-size: 0.7rem; padding: 4px 8px; }
             .cart-toast { bottom: 70px; left: 10px; right: 10px; font-size: 0.8rem; }
-            .pagination { gap: 0.3rem; }
-            .page-link { width: 30px; height: 30px; font-size: 0.75rem; }
-            .page-link.prev, .page-link.next { padding: 0 8px; font-size: 0.75rem; }
+
         }
         @media (max-width: 600px) {
             .hero { min-height: 85vh; }
@@ -345,7 +339,6 @@
             .card-actions .btn { font-size: 0.65rem; padding: 3px 6px; }
         }
     </style>
-    <script>if('scrollRestoration'in history)history.scrollRestoration='manual'</script>
 </head>
 <body>
 
@@ -561,19 +554,6 @@
         </div>
         {% endfor %}
     </div>
-{% if total_pages > 1 %}
-<div class="pagination">
-    {% if page > 1 %}
-    <a href="/?page={{ page-1 }}&sort={{ sort }}#catalog" class="page-link prev">‹ Назад</a>
-    {% endif %}
-    {% for p in range(1, total_pages + 1) %}
-    <a href="/?page={{ p }}&sort={{ sort }}#catalog" class="page-link {% if p == page %}active{% endif %}">{{ p }}</a>
-    {% endfor %}
-    {% if page < total_pages %}
-    <a href="/?page={{ page+1 }}&sort={{ sort }}#catalog" class="page-link next">Вперед ›</a>
-    {% endif %}
-</div>
-{% endif %}
 </div>
 
 <section class="why-section" id="why">
@@ -904,10 +884,6 @@
     }
     document.addEventListener('DOMContentLoaded', () => {
         saveFavorites(getFavorites());
-        if (window.location.hash === '#catalog' || window.location.search.includes('page=')) {
-            const el = document.getElementById('catalogGrid') || document.getElementById('catalog');
-            if (el) setTimeout(() => el.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
-        }
     });
 </script>
 </body>

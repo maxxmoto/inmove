@@ -213,27 +213,19 @@ def index():
     db.execute("UPDATE stats SET value=value+1 WHERE key='total_visits'")
     db.commit()
     sort = request.args.get('sort', 'default')
-    page = request.args.get('page', 1, type=int)
-    per_page = 12
     order = "id"
     if sort == 'price_asc':
         order = "CAST(price AS INTEGER) ASC, id"
     elif sort == 'price_desc':
         order = "CAST(price AS INTEGER) DESC, id"
     rows = db.execute(f"SELECT * FROM motos ORDER BY {order}").fetchall()
-    all_motos = [row_to_moto(r) for r in rows]
-    total = len(all_motos)
-    total_pages = max(1, (total + per_page - 1) // per_page)
-    if page < 1: page = 1
-    if page > total_pages: page = total_pages
-    start = (page - 1) * per_page
-    motos = all_motos[start:start + per_page]
+    motos = [row_to_moto(r) for r in rows]
     review_rows = db.execute("SELECT * FROM reviews WHERE visible=1 ORDER BY id").fetchall()
     reviews = [dict(r) for r in review_rows]
     banner_rows = db.execute("SELECT * FROM banners ORDER BY sort_order").fetchall()
     banners = [dict(r) for r in banner_rows]
     db.close()
-    return render_template('index.html', motos=motos, reviews=reviews, banners=banners, sort=sort, page=page, total_pages=total_pages, total_products=total)
+    return render_template('index.html', motos=motos, reviews=reviews, banners=banners, sort=sort)
 
 @app.template_filter('specs_table')
 def specs_table_filter(text):
