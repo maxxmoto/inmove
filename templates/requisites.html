@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/static/inmove_logo.png">
+    <title>Реквизиты — INMOVE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root { --bg: #f5f5f7; --text: #1a1a1a; --text-secondary: #6e6e73; --accent: #f87e00; --card-bg: #ffffff; --card-border: rgba(0,0,0,0.06); }
+        body.dark-theme { --bg: #0a0a0a; --text: #e8e8ea; --text-secondary: #8e8e93; --card-bg: #141416; --card-border: rgba(255,255,255,0.06); }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', system-ui, sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; display: flex; flex-direction: column; min-height: 100vh; }
+        .nav { background: #111; padding: 0.8rem 2rem; display: flex; align-items: center; gap: 1rem; }
+        .nav a { color: rgba(255,255,255,0.6); text-decoration: none; font-weight: 500; font-size: 0.9rem; }
+        .nav a:hover { color: var(--accent); }
+        .nav .logo-small { font-weight: 900; color: var(--accent); font-size: 1.1rem; display: flex; align-items: center; gap: 6px; }
+        .nav .logo-small img { height: 1.6rem; width: auto; }
+        .container { max-width: 800px; margin: 2rem auto; padding: 0 1.5rem; flex: 1; }
+        h1 { font-size: 1.8rem; color: var(--accent); margin-bottom: 1.5rem; }
+        h2 { font-size: 1.1rem; color: var(--accent); margin: 1.5rem 0 0.8rem; border-bottom: 1px solid var(--card-border); padding-bottom: 0.4rem; }
+        .req-block { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 16px; padding: 1.5rem; margin-bottom: 1rem; }
+        .req-row { display: flex; padding: 0.6rem 0; border-bottom: 1px solid var(--card-border); }
+        .req-row:last-child { border-bottom: none; }
+        .req-label { font-weight: 600; color: var(--text-secondary); min-width: 200px; font-size: 0.85rem; flex-shrink: 0; }
+        .req-value { font-weight: 500; color: var(--text); font-size: 0.9rem; }
+        .footer { background: #0a0a0a; padding: 1.5rem; text-align: center; }
+        .footer p { color: rgba(255,255,255,0.4); font-size: 0.8rem; }
+        @media (max-width: 600px) {
+            .nav { padding: 0.6rem 1rem; }
+            .req-row { flex-direction: column; gap: 0.2rem; }
+            .req-label { min-width: auto; font-size: 0.75rem; }
+            .req-value { font-size: 0.85rem; }
+            h1 { font-size: 1.4rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo-small"><img src="/static/inmove_logo.png" alt="">INMOVE</div>
+        <a href="/">← На главную</a>
+    </div>
+    <div class="container">
+        <h1>Реквизиты</h1>
+
+        <div class="req-block">
+            <h2>Организация</h2>
+            <div class="req-row"><span class="req-label">Полное наименование</span><span class="req-value">ИНДИВИДУАЛЬНЫЙ ПРЕДПРИНИМАТЕЛЬ ГОГОЙ СОРИН ИВАНОВИЧ</span></div>
+            <div class="req-row"><span class="req-label">Сокращённое наименование</span><span class="req-value">ИП ГОГОЙ СОРИН ИВАНОВИЧ</span></div>
+        </div>
+
+        <div class="req-block">
+            <h2>Юридический адрес</h2>
+            <div class="req-row"><span class="req-label">Адрес</span><span class="req-value">606210, РОССИЯ, НИЖЕГОРОДСКАЯ ОБЛ, ЛЫСКОВСКИЙ Р-Н, Г ЛЫСКОВО, УЛ РЕПИНА, Д 26, КВ 3</span></div>
+        </div>
+
+        <div class="req-block">
+            <h2>Идентификационные коды</h2>
+            <div class="req-row"><span class="req-label">ИНН</span><span class="req-value">522299692563</span></div>
+            <div class="req-row"><span class="req-label">ОГРН</span><span class="req-value">323527500023152</span></div>
+        </div>
+
+        <div class="req-block">
+            <h2>Банковские реквизиты</h2>
+            <div class="req-row"><span class="req-label">Расчетный счет</span><span class="req-value">40802810600004343603</span></div>
+            <div class="req-row"><span class="req-label">Банк</span><span class="req-value">АО "ТИНЬКОФФ БАНК"</span></div>
+            <div class="req-row"><span class="req-label">ИНН банка</span><span class="req-value">7710140679</span></div>
+            <div class="req-row"><span class="req-label">БИК банка</span><span class="req-value">044525974</span></div>
+            <div class="req-row"><span class="req-label">Корр. счет банка</span><span class="req-value">30101810145250000974</span></div>
+            <div class="req-row"><span class="req-label">Юридический адрес банка</span><span class="req-value">Москва, 127287, ул. Хуторская 2-я, д. 38А, стр. 26</span></div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>© 2026 INMOVE</p>
+    </div>
+</body>
+</html>

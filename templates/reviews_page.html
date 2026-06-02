@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы — INMOVE</title>
+    <meta name="description" content="Отзывы клиентов INMOVE: электросамокаты, мототехника.">
+    <link rel="icon" type="image/png" href="/static/inmove_logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #f5f5f7; --text: #1a1a1a; --accent: #f87e00;
+            --card-bg: rgba(255,255,255,0.7); --card-border: rgba(0,0,0,0.06);
+            --text-secondary: #6e6e73; --shadow: 0 8px 32px rgba(0,0,0,0.06);
+        }
+        body.dark-theme {
+            --bg: #07070d; --text: #eeeef0; --accent: #ffffff;
+            --card-bg: rgba(255,255,255,0.04); --card-border: rgba(255,255,255,0.06);
+            --text-secondary: #8e8e96; --shadow: 0 8px 32px rgba(0,0,0,0.4);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background: var(--bg); color: var(--text); transition: background 0.3s, color 0.3s;
+        }
+        .nav {
+            background: var(--card-bg); backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--card-border);
+            padding: 1rem 2rem; display: flex; align-items: center; gap: 1rem;
+        }
+        .nav .logo { font-weight: 900; font-size: 1.1rem; color: var(--accent); }
+        .nav a { color: var(--text-secondary); text-decoration: none; font-weight: 500; font-size: 0.9rem; }
+        .nav a:hover { color: var(--accent); }
+        .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        h1 { font-size: 2rem; font-weight: 800; color: var(--accent); margin-bottom: 2rem; text-align: center; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.25rem; }
+        .card {
+            background: var(--card-bg); backdrop-filter: blur(12px);
+            border: 1px solid var(--card-border); border-radius: 16px;
+            overflow: hidden; box-shadow: var(--shadow);
+        }
+        .card img { width: 100%; height: 200px; object-fit: cover; }
+        .content { padding: 1.2rem; }
+        .text { font-style: italic; font-size: 0.9rem; margin-bottom: 0.5rem; color: var(--text); }
+        .author { font-weight: 700; color: var(--accent); font-size: 0.9rem; }
+        .empty { text-align: center; padding: 3rem; color: var(--text-secondary); }
+    </style>
+    <link rel="apple-touch-icon" href="/static/favicon.png">
+</head>
+<body>
+    <div class="nav">
+        <span class="logo">NEXTMOTO</span>
+        <a href="/">← Каталог</a>
+    </div>
+    <div class="container">
+        <h1>Отзывы клиентов</h1>
+        {% if reviews %}
+        <div class="grid">
+            {% for r in reviews %}
+            <div class="card">
+                {% if r.photo %}<img src="/static/{{ r.photo }}" alt="{{ r.name }}" loading="lazy">{% endif %}
+                <div class="content">
+                    <p class="text">«{{ r.text }}»</p>
+                    <p class="author">— {{ r.name }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
+        <div class="empty"><p>Пока нет отзывов.</p></div>
+        {% endif %}
+    </div>
+    <script>
+        const saved = localStorage.getItem('theme');
+        if (saved === 'dark') document.body.classList.add('dark-theme');
+    </script>
+</body>
+</html>

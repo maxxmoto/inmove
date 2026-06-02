@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="/static/inmove_logo.png">
+    <meta name="theme-color" content="#1a1a1a">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина — INMOVE</title>
+    <meta name="description" content="Корзина покупок в магазине INMOVE">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #f5f5f7; --bg-alt: #ffffff; --text: #1a1a1a;
+            --text-secondary: #6e6e73; --card-bg: rgba(255,255,255,0.7);
+            --card-border: rgba(0,0,0,0.06); --card-shadow: 0 8px 32px rgba(0,0,0,0.06);
+            --accent: #f87e00; --accent-hover: #e06e00; --accent-glow: rgba(248,126,0,0.12);
+            --header-bg: rgba(15,15,15,0.9); --modal-overlay: rgba(0,0,0,0.5);
+            --input-border: #d2d2d7; --input-bg: #ffffff;
+            --scrollbar-bg: #e8e8ed; --scrollbar-thumb: #b0b0b8;
+            --cart-color: #25a34a; --cart-glow: rgba(37,163,74,0.25);
+            --nav-h: 64px;
+        }
+        body.dark-theme {
+            --bg: #0a0a0a; --bg-alt: #141416; --text: #e8e8ea;
+            --text-secondary: #8e8e93; --card-bg: rgba(20,20,22,0.7);
+            --card-border: rgba(255,255,255,0.06); --card-shadow: 0 8px 32px rgba(0,0,0,0.3);
+            --modal-overlay: rgba(0,0,0,0.7); --input-bg: #1c1c1e; --input-border: #3a3a3c;
+            --scrollbar-bg: #1c1c1e; --scrollbar-thumb: #3a3a3c;
+            --cart-color: #2dbd57; --cart-glow: rgba(45,189,87,0.25);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: var(--scrollbar-bg); }
+        ::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb); border-radius: 3px; }
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background: var(--bg); color: var(--text);
+            transition: background 0.4s ease, color 0.3s ease;
+            line-height: 1.6; min-height: 100vh;
+        }
+        a { color: var(--accent); text-decoration: none; }
+        button { font-family: 'Inter', sans-serif; cursor: pointer; border: none; background: none; }
+
+        .navbar {
+            position: fixed; top: 0; left: 0; right: 0; height: var(--nav-h);
+            background: var(--header-bg); backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+            display: flex; align-items: center; padding: 0 28px; z-index: 900;
+        }
+        .nav-logo-wrap { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+        .nav-logo { font-size: 1.15rem; font-weight: 800; letter-spacing: 0.04em; color: #fff; display: flex; align-items: center; gap: 6px; }
+        .nav-logo img { height: 2rem; width: auto; }
+        .nav-sub { font-size: 0.55rem; font-weight: 500; letter-spacing: 0.08em; color: rgba(255,255,255,0.5); text-transform: uppercase; padding-left: 10px; border-left: 1px solid rgba(255,255,255,0.1); }
+        .nav-center { display: flex; align-items: center; gap: 1.5rem; margin: 0 auto; }
+        .nav-center a { font-size: 0.85rem; font-weight: 500; color: rgba(255,255,255,0.6); transition: color 0.18s; white-space: nowrap; }
+        .nav-center a:hover { color: var(--accent); }
+        .nav-right { display: flex; align-items: center; gap: 8px; flex-shrink: 0; margin-left: auto; position: relative; }
+        .nav-cart-link { position: relative; color: rgba(255,255,255,0.6); text-decoration: none; font-size: 1.2rem; padding: 4px 6px; transition: color 0.2s; display: inline-flex; align-items: center; }
+        .nav-cart-link:hover { color: var(--accent); }
+        .cart-badge { background: var(--accent); color: white; font-size: 0.6rem; font-weight: 700; min-width: 16px; height: 16px; border-radius: 8px; display: inline-flex; align-items: center; justify-content: center; padding: 0 3px; position: absolute; top: 0; right: -4px; line-height: 1; }
+        .theme-toggle { color: rgba(255,255,255,0.6); font-size: 1.1rem; padding: 4px 8px; transition: color 0.2s; }
+        .theme-toggle:hover { color: var(--accent); }
+
+        .page { max-width: 900px; margin: 0 auto; padding: calc(var(--nav-h) + 2rem) 1.5rem 3rem; }
+        .page-title { font-size: 1.8rem; font-weight: 800; color: var(--accent); margin-bottom: 0.2rem; }
+        .page-subtitle { font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 2rem; }
+
+        .cart-item { display: flex; align-items: center; gap: 1rem; background: var(--card-bg); backdrop-filter: blur(12px); border: 1px solid var(--card-border); border-radius: 16px; padding: 1rem 1.2rem; margin-bottom: 0.8rem; box-shadow: var(--card-shadow); transition: all 0.25s; }
+        .cart-item:hover { border-color: var(--accent-glow); }
+        .cart-item-img { width: 90px; height: 64px; object-fit: cover; border-radius: 10px; flex-shrink: 0; background: var(--bg-alt); }
+        .cart-item-info { flex: 1; min-width: 0; }
+        .cart-item-name { font-weight: 700; font-size: 0.95rem; color: var(--text); margin-bottom: 0.1rem; }
+        .cart-item-price { font-weight: 600; font-size: 0.85rem; color: var(--accent); }
+        .cart-item-qty { display: flex; align-items: center; gap: 0.5rem; flex-shrink: 0; }
+        .qty-btn { width: 32px; height: 32px; border-radius: 8px; border: 1px solid var(--card-border); background: var(--input-bg); color: var(--text); font-size: 1.1rem; font-weight: 600; display: flex; align-items: center; justify-content: center; transition: all 0.18s; }
+        .qty-btn:hover { border-color: var(--accent); color: var(--accent); }
+        .qty-num { font-weight: 700; font-size: 1rem; min-width: 24px; text-align: center; color: var(--text); }
+        .cart-item-subtotal { font-weight: 800; font-size: 1rem; color: var(--text); min-width: 80px; text-align: right; flex-shrink: 0; }
+        .cart-item-remove { background: none; border: none; color: var(--text-secondary); font-size: 1.2rem; cursor: pointer; padding: 4px 8px; transition: color 0.2s; flex-shrink: 0; }
+        .cart-item-remove:hover { color: #e74c3c; }
+
+        .cart-bottom { margin-top: 2rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; padding: 1.5rem; background: var(--card-bg); backdrop-filter: blur(12px); border: 1px solid var(--card-border); border-radius: 16px; }
+        .cart-total-label { font-size: 0.9rem; color: var(--text-secondary); }
+        .cart-total-sum { font-size: 1.6rem; font-weight: 900; color: var(--accent); }
+        .cart-bottom-actions { display: flex; gap: 0.8rem; flex-wrap: wrap; }
+        .btn-checkout { background: var(--cart-color); color: white; border: none; padding: 0.75rem 1.8rem; border-radius: 12px; font-weight: 700; font-size: 0.95rem; font-family: inherit; cursor: pointer; transition: all 0.25s; box-shadow: 0 4px 16px var(--cart-glow); text-decoration: none; display: inline-flex; align-items: center; }
+        .btn-checkout:hover { transform: translateY(-1px); }
+        .btn-continue { background: var(--card-bg); color: var(--text-secondary); border: 1px solid var(--card-border); padding: 0.75rem 1.8rem; border-radius: 12px; font-weight: 600; font-size: 0.9rem; font-family: inherit; cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; transition: all 0.25s; }
+        .btn-continue:hover { border-color: var(--accent); color: var(--accent); }
+
+        .empty-cart { text-align: center; padding: 4rem 1rem; }
+        .empty-cart-icon { font-size: 3.5rem; margin-bottom: 1rem; opacity: 0.3; }
+        .empty-cart h2 { font-size: 1.3rem; font-weight: 700; color: var(--text); margin-bottom: 0.5rem; }
+        .empty-cart p { font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1.5rem; }
+        .empty-cart a { display: inline-block; background: var(--accent); color: white; padding: 0.7rem 2rem; border-radius: 12px; font-weight: 600; transition: background 0.2s; }
+        .empty-cart a:hover { background: var(--accent-hover); }
+
+        @media (max-width: 768px) {
+            .page { padding: calc(var(--nav-h) + 1rem) 1rem 2rem; }
+            .page-title { font-size: 1.4rem; }
+            .cart-item { flex-wrap: wrap; gap: 0.6rem; padding: 0.8rem 1rem; }
+            .cart-item-img { width: 70px; height: 50px; }
+            .cart-item-info { flex: 1 1 100%; order: -1; }
+            .cart-item-subtotal { min-width: auto; font-size: 0.9rem; }
+            .cart-bottom { flex-direction: column; align-items: stretch; text-align: center; }
+            .cart-bottom-actions { justify-content: center; }
+            .btn-checkout, .btn-continue { flex: 1; justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+
+<header class="navbar" id="navbar">
+    <div class="nav-logo-wrap">
+        <div class="nav-logo">
+            <img src="/static/inmove_logo.png" alt="INMOVE">
+            IN<span style="color:var(--accent);">MOVE</span>
+        </div>
+        <div class="nav-sub">Заряжен на движение</div>
+    </div>
+    <nav class="nav-center">
+        <a href="/">Каталог</a>
+        <a href="/#why">Почему мы</a>
+        <a href="/#reviews">Отзывы</a>
+        <a href="/#contacts">Контакты</a>
+    </nav>
+    <div class="nav-right">
+        <a href="/cart" class="nav-cart-link" aria-label="Корзина">🛒<span class="cart-badge" id="cartCount">{{ cart_count|default(0) }}</span></a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Тема">☀️</button>
+    </div>
+</header>
+
+<div class="page">
+    <h1 class="page-title">Корзина</h1>
+    {% if cart_items and cart_items|length > 0 %}
+    <p class="page-subtitle">{{ cart_items|length }} {{ 'товар' if cart_items|length == 1 else 'товара' if cart_items|length < 5 else 'товаров' }}</p>
+
+    <div id="cartItems">
+        {% for item in cart_items %}
+        <div class="cart-item" data-id="{{ item.id }}" id="cartItem-{{ item.id }}">
+            <img class="cart-item-img" src="{{ item.photo|photo_url }}" alt="{{ item.name }}" loading="lazy">
+            <div class="cart-item-info">
+                <div class="cart-item-name">{{ item.name }}</div>
+                <div class="cart-item-price">{{ item.price }} ₽</div>
+            </div>
+            <div class="cart-item-qty">
+                <button class="qty-btn" onclick="updateCart({{ item.id }}, -1)">−</button>
+                <span class="qty-num" id="qty-{{ item.id }}">{{ item.quantity }}</span>
+                <button class="qty-btn" onclick="updateCart({{ item.id }}, 1)">+</button>
+            </div>
+            <div class="cart-item-subtotal" id="subtotal-{{ item.id }}">{{ item.price * item.quantity }} ₽</div>
+            <button class="cart-item-remove" onclick="removeFromCart({{ item.id }})" title="Удалить">✕</button>
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="cart-bottom">
+        <div>
+            <div class="cart-total-label">Итого</div>
+            <div class="cart-total-sum" id="cartTotal">{{ cart_total }} ₽</div>
+        </div>
+        <div class="cart-bottom-actions">
+            <a href="/" class="btn-continue">Продолжить покупки</a>
+            <a href="https://wa.me/79500216049?text={{ url_for_wa_order|default('Здравствуйте! Оформляю заказ:') }}%0A{% for item in cart_items %}— {{ item.name }} x{{ item.quantity }} = {{ item.price * item.quantity }} ₽%0A{% endfor %}%0AИтого: {{ cart_total }} ₽" target="_blank" class="btn-checkout">Оформить заказ</a>
+        </div>
+    </div>
+    {% else %}
+    <div class="empty-cart">
+        <div class="empty-cart-icon">🛒</div>
+        <h2>Корзина пуста</h2>
+        <p>Добавьте товары из каталога, чтобы оформить заказ.</p>
+        <a href="/">Перейти в каталог</a>
+    </div>
+    {% endif %}
+</div>
+
+<script>
+    const themeToggle = document.getElementById('themeToggle');
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') { document.body.classList.add('dark-theme'); themeToggle.textContent = '🌙'; }
+    themeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-theme');
+        localStorage.setItem('theme', document.body.classList.contains('dark-theme') ? 'dark' : 'light');
+        themeToggle.textContent = document.body.classList.contains('dark-theme') ? '🌙' : '☀️';
+    });
+
+    function updateBadge(count) {
+        const badge = document.getElementById('cartCount');
+        if (badge) badge.textContent = count;
+    }
+
+    function reloadPage() {
+        window.location.reload();
+    }
+
+    window.updateCart = function(id, delta) {
+        const formData = new FormData();
+        formData.append('id', id);
+        formData.append('delta', delta);
+        fetch('/api/cart/update', { method: 'POST', body: formData })
+            .then(r => r.json())
+            .then(data => {
+                if (data.cart_count !== undefined) updateBadge(data.cart_count);
+                if (data.items !== undefined) {
+                    data.items.forEach(item => {
+                        const qtyEl = document.getElementById('qty-' + item.id);
+                        const subEl = document.getElementById('subtotal-' + item.id);
+                        if (qtyEl) qtyEl.textContent = item.quantity;
+                        if (subEl) subEl.textContent = (item.price * item.quantity) + ' ₽';
+                    });
+                }
+                if (data.cart_total !== undefined) {
+                    const totalEl = document.getElementById('cartTotal');
+                    if (totalEl) totalEl.textContent = data.cart_total + ' ₽';
+                }
+                if (data.item_removed) {
+                    const el = document.getElementById('cartItem-' + id);
+                    if (el) el.remove();
+                    const itemsLeft = document.querySelectorAll('.cart-item').length;
+                    if (itemsLeft === 0) reloadPage();
+                }
+            })
+            .catch(() => reloadPage());
+    };
+
+    window.removeFromCart = function(id) {
+        const formData = new FormData();
+        formData.append('id', id);
+        fetch('/api/cart/remove', { method: 'POST', body: formData })
+            .then(r => r.json())
+            .then(data => {
+                if (data.cart_count !== undefined) updateBadge(data.cart_count);
+                const el = document.getElementById('cartItem-' + id);
+                if (el) el.remove();
+                const itemsLeft = document.querySelectorAll('.cart-item').length;
+                if (data.cart_total !== undefined) {
+                    const totalEl = document.getElementById('cartTotal');
+                    if (totalEl) totalEl.textContent = data.cart_total + ' ₽';
+                }
+                if (itemsLeft === 0 || data.cart_total === 0) reloadPage();
+            })
+            .catch(() => reloadPage());
+    };
+</script>
+</body>
+</html>

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="{{ moto.name }} — {{ moto.category }}. {{ (moto.short_description or moto.description)[:150] }}">
+    <meta property="og:title" content="{{ moto.name }} — INMOVE">
+    <meta property="og:description" content="{{ (moto.short_description or moto.description)[:200] }}">
+    <meta property="og:image" content="{{ (moto.photos[0] if moto.photos else 'inmove_logo.png')|photo_url }}">
+    <meta property="og:type" content="product">
+    <meta property="og:url" content="http://localhost:5000/moto/{{ moto.id }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="http://localhost:5000/moto/{{ moto.id }}">
+    <link rel="icon" type="image/png" href="/static/inmove_logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ moto.name }} — INMOVE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #f5f5f7; --bg-alt: #ffffff; --text: #1a1a1a;
+            --text-secondary: #6e6e73; --card-bg: rgba(255,255,255,0.7);
+            --card-border: rgba(0,0,0,0.06); --card-shadow: 0 8px 32px rgba(0,0,0,0.06);
+            --accent: #f87e00; --accent-hover: #e06e00; --accent-glow: rgba(248,126,0,0.12);
+            --modal-overlay: rgba(0,0,0,0.5); --input-border: #d2d2d7;
+            --input-bg: #ffffff; --scrollbar-bg: #e8e8ed; --scrollbar-thumb: #b0b0b8;
+            --cart-color: #25a34a; --cart-glow: rgba(37,163,74,0.25);
+        }
+        body.dark-theme {
+            --bg: #0a0a0a; --bg-alt: #141416; --text: #e8e8ea;
+            --text-secondary: #8e8e93; --card-bg: rgba(20,20,22,0.7);
+            --card-border: rgba(255,255,255,0.06); --card-shadow: 0 8px 32px rgba(0,0,0,0.3);
+            --modal-overlay: rgba(0,0,0,0.7); --input-border: #3a3a3c;
+            --input-bg: #1c1c1e; --scrollbar-bg: #1c1c1e; --scrollbar-thumb: #3a3a3c;
+            --cart-color: #2dbd57; --cart-glow: rgba(45,189,87,0.25);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: var(--scrollbar-bg); }
+        ::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb); border-radius: 3px; }
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background: var(--bg); color: var(--text); transition: background 0.4s ease, color 0.3s ease; line-height: 1.6;
+            min-height: 100vh;
+        }
+        .back-nav {
+            position: sticky; top: 0; background: #111; border-bottom: 1px solid rgba(255,255,255,0.06);
+            padding: 0.8rem 2rem; display: flex; align-items: center; gap: 1rem; z-index: 10;
+        }
+        .back-nav .logo-small { font-weight: 900; color: var(--accent); font-size: 1.1rem; display: flex; align-items: center; gap: 6px; }
+        .back-nav .logo-small img { height: 1.6rem; width: auto; }
+        .back-nav a { color: rgba(255,255,255,0.6); text-decoration: none; font-weight: 500; font-size: 0.9rem; transition: color 0.2s; }
+        .back-nav a:hover { color: var(--accent); }
+        .back-nav-right { margin-left: auto; display: flex; align-items: center; gap: 0.5rem; position: relative; }
+        .theme-toggle-btn { background: none; border: none; color: rgba(255,255,255,0.6); font-size: 1.1rem; cursor: pointer; padding: 4px 8px; transition: color 0.2s; }
+        .theme-toggle-btn:hover { color: var(--accent); }
+        .nav-cart-link { position: relative; color: rgba(255,255,255,0.6); text-decoration: none; font-size: 1.1rem; padding: 4px 6px; transition: color 0.2s; display: inline-flex; align-items: center; }
+        .nav-cart-link:hover { color: var(--accent); }
+        .cart-badge { background: var(--accent); color: white; font-size: 0.6rem; font-weight: 700; min-width: 16px; height: 16px; border-radius: 8px; display: inline-flex; align-items: center; justify-content: center; padding: 0 3px; position: absolute; top: 0; right: -4px; line-height: 1; }
+        .detail-container { max-width: 1100px; margin: 0 auto; padding: 2rem; }
+        .gallery { position: relative; width: 100%; padding-top: 56%; overflow: hidden; border-radius: 20px; background: var(--bg-alt); border: 1px solid var(--card-border); margin-bottom: 1.5rem; }
+        .gallery img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; display: none; background: #f0f0f0; }
+        .gallery img.active { display: block; }
+        .gallery-nav { display: flex; justify-content: center; gap: 0.5rem; margin-bottom: 1.5rem; }
+        .gallery-nav button { width: 8px; height: 8px; border-radius: 50%; border: none; background: var(--card-border); cursor: pointer; transition: all 0.25s; }
+        .gallery-nav button.active { background: var(--accent); width: 20px; border-radius: 4px; }
+        .gal-arrow { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.35); backdrop-filter: blur(4px); color: white; border: none; font-size: 1.3rem; width: 36px; height: 36px; border-radius: 50%; cursor: pointer; z-index: 5; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.25s; }
+        .gallery:hover .gal-arrow { opacity: 1; }
+        .gal-prev { left: 12px; } .gal-next { right: 12px; }
+        .title { font-size: 2.2rem; font-weight: 800; color: var(--accent); margin-bottom: 0.2rem; }
+        .moto-sku { font-size: 0.8rem; color: var(--text-secondary); opacity: 0.5; margin-bottom: 0.3rem; }
+        .moto-status { font-weight: 600; font-size: 0.9rem; color: var(--accent); margin-bottom: 0.3rem; }
+        .detail-price { font-size: 2rem; font-weight: 900; color: var(--accent); margin-bottom: 1.5rem; }
+        .detail-layout { display: flex; gap: 2rem; flex-wrap: wrap; }
+        .detail-main { flex: 2; min-width: 300px; }
+        .detail-sidebar { flex: 1; min-width: 250px; display: flex; flex-direction: column; gap: 1rem; }
+        .short-desc { font-size: 0.95rem; color: var(--text); line-height: 1.7; margin-bottom: 1rem; }
+        .specs-table { width: 100%; border-collapse: collapse; border-radius: 12px; overflow: hidden; border: 1px solid var(--card-border); margin-bottom: 1.5rem; }
+        .specs-table tr { border-bottom: 1px solid var(--card-border); }
+        .specs-table tr:last-child { border-bottom: none; }
+        .specs-table td { padding: 0.6rem 1rem; font-size: 0.85rem; }
+        .specs-table td:first-child { font-weight: 600; color: var(--text-secondary); background: var(--card-bg); width: 40%; }
+        .specs-table td:last-child { color: var(--text); }
+        .full-desc { background: var(--card-bg); backdrop-filter: blur(12px); border: 1px solid var(--card-border); border-radius: 16px; padding: 1.5rem; white-space: pre-wrap; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.7; }
+        .action-buttons { display: flex; gap: 0.5rem; }
+        .share-btn { flex: 1; background: var(--card-bg); backdrop-filter: blur(8px); border: 1px solid var(--card-border); padding: 0.6rem 1rem; border-radius: 12px; font-weight: 600; font-size: 0.85rem; font-family: inherit; cursor: pointer; text-align: center; color: var(--text-secondary); transition: all 0.25s; }
+        .share-btn:hover { border-color: var(--accent); color: var(--accent); }
+        .cart-btn { width: 100%; background: var(--cart-color); color: white; border: none; padding: 0.7rem; border-radius: 12px; font-weight: 700; font-size: 0.95rem; font-family: inherit; cursor: pointer; transition: all 0.25s; box-shadow: 0 4px 16px var(--cart-glow); }
+        .cart-btn:hover { transform: translateY(-1px); }
+        .related-block { background: var(--card-bg); backdrop-filter: blur(12px); border: 1px solid var(--card-border); border-radius: 16px; padding: 1.5rem; }
+        .related-block h3 { font-size: 1rem; font-weight: 700; color: var(--accent); margin-bottom: 1rem; }
+        .related-grid { display: flex; flex-direction: column; gap: 0.8rem; }
+        .related-item { display: flex; align-items: center; gap: 0.8rem; text-decoration: none; color: var(--text); padding: 0.5rem; border-radius: 12px; transition: background 0.2s; }
+        .related-item:hover { background: var(--card-bg); }
+        .related-item img { width: 80px; height: 56px; object-fit: cover; border-radius: 10px; flex-shrink: 0; }
+        .related-item span { font-weight: 600; color: var(--accent); font-size: 0.9rem; }
+        .contact-btn { width: 100%; background: var(--accent); color: white; border: none; padding: 0.8rem; border-radius: 12px; font-weight: 700; font-size: 1rem; font-family: inherit; cursor: pointer; transition: all 0.25s; box-shadow: 0 4px 16px var(--accent-glow); }
+        .contact-btn:hover { transform: translateY(-1px); }
+        .modal-link { display: block; background: var(--accent); color: white; padding: 0.75rem; border-radius: 12px; font-weight: 600; text-decoration: none; transition: background 0.2s; }
+        .modal-link:hover { background: var(--accent-hover); }
+        .color-selector { margin-bottom: 1rem; }
+        .color-selector h4 { font-size: 0.8rem; font-weight: 600; color: var(--text-secondary); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.5px; }
+        .color-list { display: flex; gap: 8px; flex-wrap: wrap; }
+        .color-swatch-detail { width: 36px; height: 36px; border-radius: 50%; border: 2px solid var(--card-border); cursor: pointer; transition: all 0.2s; display: flex; align-items: center; justify-content: center; font-size: 0.6rem; font-weight: 700; background: #e8e8ed; overflow: hidden; }
+        .color-swatch-detail img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
+        .color-swatch-detail:hover, .color-swatch-detail.active { border-color: var(--accent); transform: scale(1.15); box-shadow: 0 0 8px var(--accent-glow); }
+        .cart-toast { position: fixed; bottom: 28px; left: 50%; transform: translateX(-50%); background: var(--cart-color); color: white; padding: 0.65rem 1.8rem; border-radius: 100px; font-weight: 600; font-size: 0.9rem; z-index: 999; opacity: 0; transition: opacity 0.3s ease; pointer-events: none; box-shadow: 0 4px 20px rgba(0,0,0,0.15); }
+        .cart-toast.show { opacity: 1; }
+        .back-link { color: rgba(255,255,255,0.7); text-decoration: none; font-weight: 500; font-size: 0.85rem; padding: 4px 10px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); transition: all 0.2s; white-space: nowrap; }
+        .back-link:hover { border-color: var(--accent); color: var(--accent); }
+        .editions-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 0.8rem; }
+        .edition-option { width: 56px; border-radius: 10px; border: 2px solid var(--card-border); overflow: hidden; cursor: pointer; transition: border-color 0.2s; text-align: center; background: var(--card-bg); }
+        .edition-option:hover { border-color: var(--accent); }
+        .edition-option img { width: 100%; height: 40px; object-fit: cover; display: block; }
+        .edition-option .ed-label { display: block; font-size: 0.6rem; padding: 2px 0; color: var(--text-secondary); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .breadcrumbs { display: flex; align-items: center; gap: 0.4rem; font-size: 0.8rem; color: var(--text-secondary); flex-wrap: wrap; }
+        .breadcrumbs a { color: var(--text-secondary); text-decoration: none; transition: color 0.2s; }
+        .breadcrumbs a:hover { color: var(--accent); }
+        .breadcrumbs .sep { color: var(--text-secondary); opacity: 0.3; }
+        .breadcrumbs .current { font-weight: 600; color: var(--text); }
+        @media (max-width: 768px) {
+            .back-nav { padding: 0.6rem 1rem; }
+            .detail-container { padding: 1rem; }
+            .detail-layout { flex-direction: column; }
+            .title { font-size: 1.4rem; }
+            .detail-price { font-size: 1.4rem; }
+            .gallery { border-radius: 14px; }
+            .gal-arrow { width: 30px; height: 30px; font-size: 1rem; opacity: 1; }
+            .full-desc { font-size: 0.8rem; padding: 1rem; }
+            .specs-table td { font-size: 0.75rem; padding: 0.4rem 0.7rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="back-nav">
+        <div class="logo-small"><img src="/static/inmove_logo.png" alt="">INMOVE</div>
+        <a href="/" class="back-link">← Назад в каталог</a>
+        <div class="breadcrumbs">
+            <span class="sep">/</span>
+            {% set cat_names = {'scooter':'Электросамокаты','ebike':'Электровелосипеды','moped':'Электроскутеры','pitbike':'Питбайки','moto':'Мототехника','atv':'Квадроциклы'} %}
+            <a href="/#catalog">{{ cat_names.get(moto.category, moto.category) }}</a>
+            <span class="sep">/</span>
+            <span class="current">{{ moto.name }}</span>
+        </div>
+        <div class="back-nav-right">
+            <a href="/cart" class="nav-cart-link" aria-label="Корзина">🛒<span class="cart-badge" id="cartCount">{{ cart_count|default(0) }}</span></a>
+            <button class="theme-toggle-btn" id="themeToggle" aria-label="Тема">☀️</button>
+        </div>
+    </div>
+    <div class="detail-container">
+        <div class="gallery" id="gallery">
+            {% if moto.photos %}
+            {% for photo in moto.photos %}
+            <img src="{{ photo|photo_url }}" alt="{{ moto.name }}" class="{% if loop.first %}active{% endif %}">
+            {% endfor %}
+            {% else %}
+            <div class="no-photo-placeholder" style="position:absolute;inset:0;">🛵</div>
+            {% endif %}
+            <button class="gal-arrow gal-prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="gal-arrow gal-next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+        {% if moto.photos|length > 1 %}
+        <div class="gallery-nav" id="galleryDots">
+            {% for i in range(moto.photos|length) %}
+            <button class="{% if loop.first %}active{% endif %}" data-index="{{ i }}"></button>
+            {% endfor %}
+        </div>
+        {% endif %}
+        <h1 class="title">{{ moto.name }}</h1>
+        {% if moto.sku %}<div class="moto-sku">Артикул: {{ moto.sku }}</div>{% endif %}
+        <p class="moto-status">{{ 'В наличии' if moto.status == 'available' else 'Под заказ' }}</p>
+        {% if moto.price %}<div class="detail-price">{{ moto.price }} ₽</div>{% endif %}
+
+        {% if moto.editions and moto.editions|length > 1 %}
+        <div class="editions-picker">
+            <label style="font-size:0.8rem;font-weight:600;display:block;margin-bottom:0.4rem;">Варианты:</label>
+            <div class="editions-row">
+                {% for ed in moto.editions %}
+                <div class="edition-option" data-img="{{ ed.img|photo_url }}" data-price="{{ ed.price }}" data-sku="{{ ed.sku }}" onclick="selectEdition(this)" {% if loop.first %}style="border-color:var(--accent);"{% endif %}>
+                    <img src="{{ ed.img|photo_url }}" alt="" loading="lazy">
+                    {% if ed.sku %}<span class="ed-label">{{ ed.sku }}</span>{% endif %}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+
+        <div class="detail-layout">
+            <div class="detail-main">
+                {% if moto.short_description %}
+                <div class="short-desc">{{ moto.short_description }}</div>
+                {% endif %}
+
+                {% set full_text = moto.full_description or moto.description %}
+                {% if full_text %}
+                <div class="full-desc">{{ full_text }}</div>
+                {% endif %}
+            </div>
+            <div class="detail-sidebar">
+                <div class="action-buttons">
+                    <button class="share-btn" onclick="shareProduct()">Поделиться</button>
+                </div>
+                <button class="cart-btn" onclick="addToCart({{ moto.id }})">В корзину</button>
+                {% if related %}
+                <div class="related-block">
+                    <h3>С этим также смотрят</h3>
+                    <div class="related-grid">
+                        {% for r in related %}
+                        <a href="/moto/{{ r.id }}" class="related-item">
+                            <img src="{{ (r.photos[0]|photo_url) if r.photos else '/static/inmove_logo.png' }}" alt="{{ r.name }}">
+                            <span>{{ r.name }}</span>
+                        </a>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endif %}
+                <button class="contact-btn" onclick="openPriceModal()">Уточнить цену</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="priceModal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:var(--modal-overlay);backdrop-filter:blur(8px);z-index:860;align-items:center;justify-content:center;">
+        <div style="background:var(--bg-alt);border:1px solid var(--card-border);border-radius:24px;padding:2rem;max-width:400px;width:90%;text-align:center;position:relative;">
+            <button onclick="closePriceModal()" style="position:absolute;top:12px;right:16px;background:none;border:none;font-size:1.6rem;cursor:pointer;color:var(--text-secondary);">&times;</button>
+            <p style="font-weight:600;font-size:1.1rem;margin-bottom:0.5rem;">Уточнить цену</p>
+            <p style="font-size:0.9rem;color:var(--text-secondary);margin-bottom:1rem;">Свяжитесь с менеджером</p>
+            <div style="display:flex;flex-direction:column;gap:0.8rem;">
+                <a href="https://t.me/INMOVE812" target="_blank" class="modal-link">Telegram</a>
+                <a href="https://wa.me/79500216049" target="_blank" class="modal-link">WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart-toast" id="cartToast">Добавлено!</div>
+
+    <script>
+        const body = document.body;
+        const images = document.querySelectorAll('#gallery img');
+        const dots = document.querySelectorAll('#galleryDots button');
+        let current = 0;
+        function show(index) {
+            if (images.length === 0) return;
+            images[current].classList.remove('active');
+            images[index].classList.add('active');
+            if (dots.length > 0) { dots[current].classList.remove('active'); dots[index].classList.add('active'); }
+            current = index;
+        }
+        dots.forEach(dot => dot.addEventListener('click', () => show(parseInt(dot.dataset.index))));
+        window.changeSlide = function(dir) {
+            let i = current + dir;
+            if (i < 0) i = images.length - 1;
+            if (i >= images.length) i = 0;
+            show(i);
+        };
+
+        window.selectEdition = function(el) {
+            document.querySelectorAll('.edition-option').forEach(e => e.style.borderColor = 'var(--card-border)');
+            el.style.borderColor = 'var(--accent)';
+            const img = el.dataset.img;
+            const price = el.dataset.price;
+            const sku = el.dataset.sku;
+            const mainImg = document.querySelector('.gallery-main img');
+            if (mainImg && img) mainImg.src = img;
+            const priceEl = document.querySelector('.moto-price');
+            if (priceEl && price) priceEl.textContent = Number(price).toLocaleString('ru-RU') + ' ₽';
+            const skuEl = document.querySelector('.moto-sku');
+            if (skuEl && sku) skuEl.textContent = 'Артикул: ' + sku;
+        };
+
+        const modal = document.getElementById('priceModal');
+        window.openPriceModal = () => { modal.style.display = 'flex'; fetch('/api/lead', { method: 'POST' }).catch(() => {}); };
+        window.closePriceModal = () => modal.style.display = 'none';
+        modal.addEventListener('click', (e) => { if (e.target === modal) closePriceModal(); });
+
+        function shareProduct() {
+            const url = window.location.href;
+            const title = document.querySelector('.title')?.textContent || '';
+            if (navigator.share) { navigator.share({ title, url }); } else {
+                const menu = document.createElement('div');
+                menu.innerHTML = `<div style="position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);background:var(--bg-alt);padding:1.5rem;border-radius:16px;z-index:300;box-shadow:0 12px 40px rgba(0,0,0,0.3);text-align:center;border:1px solid var(--card-border);min-width:260px;">
+                    <p style="font-weight:600;margin-bottom:1rem;">Поделиться</p>
+                    <a href="https://t.me/share/url?url=${encodeURIComponent(url)}&text=${encodeURIComponent(title)}" target="_blank" class="modal-link" style="margin-bottom:0.5rem;">Telegram</a>
+                    <a href="https://api.whatsapp.com/send?text=${encodeURIComponent(title + ' ' + url)}" target="_blank" style="display:block;background:#25D366;color:white;padding:0.65rem;border-radius:12px;font-weight:600;text-decoration:none;margin-bottom:0.5rem;">WhatsApp</a>
+                    <button onclick="navigator.clipboard.writeText('${url}');this.textContent='Скопировано!'" style="background:var(--card-bg);border:1px solid var(--card-border);padding:0.5rem 1rem;border-radius:8px;cursor:pointer;font-family:inherit;color:var(--text);">Копировать ссылку</button>
+                    <button onclick="this.parentElement.remove()" style="display:block;margin:0.8rem auto 0;background:none;border:none;color:var(--text-secondary);cursor:pointer;font-family:inherit;">Закрыть</button>
+                </div>`;
+                document.body.appendChild(menu);
+            }
+        }
+
+        const gallery = document.getElementById('gallery');
+        let startX = 0;
+        gallery.addEventListener('touchstart', (e) => { startX = e.touches[0].clientX; }, {passive: true});
+        gallery.addEventListener('touchend', (e) => {
+            const diff = startX - e.changedTouches[0].clientX;
+            if (Math.abs(diff) > 50) changeSlide(diff > 0 ? 1 : -1);
+        }, {passive: true});
+
+        const themeToggle = document.getElementById('themeToggle');
+        if (themeToggle) {
+            const saved = localStorage.getItem('theme');
+            if (saved === 'dark') { body.classList.add('dark-theme'); themeToggle.textContent = '🌙'; }
+            themeToggle.addEventListener('click', () => {
+                body.classList.toggle('dark-theme');
+                localStorage.setItem('theme', body.classList.contains('dark-theme') ? 'dark' : 'light');
+                themeToggle.textContent = body.classList.contains('dark-theme') ? '🌙' : '☀️';
+            });
+        }
+
+        const cartToast = document.getElementById('cartToast');
+        let toastTimer = null;
+        window.addToCart = function(motoId) {
+            const f = new FormData();
+            f.append('id', motoId);
+            fetch('/api/cart/add', { method: 'POST', body: f })
+                .then(r => r.json())
+                .then(data => {
+                    const badge = document.getElementById('cartCount');
+                    if (data.cart_count !== undefined) badge.textContent = data.cart_count;
+                    cartToast.classList.add('show');
+                    clearTimeout(toastTimer);
+                    toastTimer = setTimeout(() => cartToast.classList.remove('show'), 2000);
+                })
+                .catch(() => {
+                    cartToast.textContent = 'Ошибка';
+                    cartToast.classList.add('show');
+                    clearTimeout(toastTimer);
+                    toastTimer = setTimeout(() => { cartToast.classList.remove('show'); cartToast.textContent = 'Добавлено!'; }, 2000);
+                });
+        };
+    </script>
+</body>
+</html>
