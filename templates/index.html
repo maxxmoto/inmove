@@ -250,7 +250,7 @@
                 {% if motos and motos|length > 0 %}
                 {% for moto in motos[:3] %}
                 {% if moto.photos and moto.photos|length > 0 %}
-                <img src="{{ moto.photos[0]|photo_url }}" alt="{{ moto.name }}" class="{% if loop.first %}active{% endif %}" data-index="{{ loop.index0 }}" {% if not loop.first %}loading="lazy"{% endif %}>
+                <img src="{{ moto.photos[0]|photo_url }}" alt="{{ moto.name }}" class="{% if loop.first %}active{% endif %}" data-index="{{ loop.index0 }}" loading="lazy">
                 {% endif %}
                 {% endfor %}
                 {% endif %}
@@ -485,7 +485,7 @@
             </div>
         </div>
         <div class="map-wrap">
-            <iframe src="https://yandex.ru/map-widget/v1/?ll=30.3457%2C59.9186&z=16&l=map&pt=30.3457%2C59.9186%2Cpm2rdl" allowfullscreen="true" title="INMOVE на карте"></iframe>
+            <iframe src="https://yandex.ru/map-widget/v1/?ll=30.3457%2C59.9186&z=16&l=map&pt=30.3457%2C59.9186%2Cpm2rdl" allowfullscreen="true" title="INMOVE на карте" loading="lazy"></iframe>
         </div>
     </div>
 </section>
