@@ -78,10 +78,9 @@
     .catalog-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 1.25rem; }
     .card { background: var(--card-bg); backdrop-filter: blur(16px); border: 1px solid var(--card-border); border-radius: 20px; overflow: hidden; transition: all 0.4s; display: flex; flex-direction: column; box-shadow: var(--card-shadow); }
     .card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.12); border-color: var(--accent-glow); }
-    .card-img-carousel { position: relative; width: 100%; padding-top: 72%; overflow: hidden; }
+    .card-img-carousel { position: relative; width: 100%; padding-top: 72%; overflow: hidden; background: var(--bg-alt); }
     .carousel-slides { position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; transition: transform 0.3s ease; }
-    .carousel-slides img { width: 100%; height: 100%; object-fit: contain; flex-shrink: 0; background: transparent; }
-    .carousel-slides img[src] { background: transparent; }
+    .carousel-slides img { width: 100%; height: 100%; object-fit: contain; flex-shrink: 0; background: #f0f0f0; }
     .no-photo-placeholder { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; opacity: 0.2; background: var(--card-bg); }
     .carousel-btn { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.4); color: white; border: none; font-size: 1rem; width: 28px; height: 28px; border-radius: 50%; cursor: pointer; z-index: 2; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.25s; }
     .card-img-carousel:hover .carousel-btn { opacity: 1; }
@@ -336,11 +335,11 @@
         {% for moto in motos %}
         {% set is_first_product = loop.first %}
         <div class="card" data-category="{{ moto.category }}" data-id="{{ moto.id }}" style="animation: modalUp 0.4s ease both; animation-delay: {{ loop.index0 * 0.04 }}s;">
-            <div class="card-img-carousel" data-id="{{ moto.id }}"{% if moto.photos %} style="background:url('{{ moto.photos[0]|photo_url }}') center/contain no-repeat var(--bg-alt);"{% endif %}>
+            <div class="card-img-carousel" data-id="{{ moto.id }}">
                 <div class="carousel-slides" id="slides-{{ moto.id }}">
                     {% if moto.photos %}
                     {% for photo in moto.photos %}
-                    <img {% if loop.first %}src="{{ photo|photo_url }}"{% else %}data-src="{{ photo|photo_url }}"{% endif %} alt="{{ moto.name }}" {% if loop.first and is_first_product %}fetchpriority="high"{% endif %} width="270" height="194" style="{% if not loop.first %}background:transparent{% endif %}">
+                    <img {% if loop.first %}src="{{ photo|photo_url }}"{% else %}data-src="{{ photo|photo_url }}"{% endif %} alt="{{ moto.name }}" {% if loop.first and is_first_product %}fetchpriority="high"{% endif %} width="270" height="194">
                     {% endfor %}
                     {% else %}
                     <div class="no-photo-placeholder"><img src="/static/inmove_logo.png" alt="INMOVE" style="width:48px;height:48px;opacity:0.3;"></div>
