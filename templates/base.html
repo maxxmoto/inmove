@@ -91,8 +91,11 @@
         #scrollToTop { position: fixed; bottom: 24px; right: 24px; width: 42px; height: 42px; border-radius: 50%; background: var(--accent); color: white; border: none; font-size: 1.3rem; cursor: pointer; display: none; align-items: center; justify-content: center; z-index: 200; box-shadow: 0 4px 16px rgba(248,126,0,0.3); transition: all 0.3s; }
         #scrollToTop.show { display: flex; }
         #scrollToTop:hover { transform: translateY(-2px); }
-        .cart-toast { position: fixed; bottom: 80px; left: 50%; transform: translateX(-50%); background: #25a34a; color: white; padding: 10px 24px; border-radius: 100px; font-weight: 600; z-index: 999; opacity: 0; transition: opacity 0.3s ease; pointer-events: none; }
+        .cart-toast { position: fixed; bottom: 80px; left: 50%; transform: translateX(-50%); background: #25a34a; color: white; padding: 10px 24px; border-radius: 100px; font-weight: 600; z-index: 999; opacity: 0; transition: opacity 0.3s ease; pointer-events: none; white-space: nowrap; }
         .cart-toast.show { opacity: 1; }
+        @media (max-width: 768px) {
+            .cart-toast { bottom: 24px; left: 16px; right: 16px; transform: none; width: auto; text-align: center; white-space: normal; font-size: 0.9rem; padding: 12px 20px; border-radius: 12px; }
+        }
         {% block base_styles %}{% endblock %}
     </style>
     {% block head_styles %}{% endblock %}
