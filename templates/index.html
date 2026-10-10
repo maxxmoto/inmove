@@ -5,13 +5,13 @@
 <meta property="og:title" content="INMOVE — заряжен на движение">
 <meta property="og:description" content="Магазин электротранспорта и мототехники. Официальный дилер Kugoo.">
 <meta name="keywords" content="электросамокаты, купить электросамокат, INMOVE, Kugoo, электротранспорт, Санкт-Петербург, электроскутер, электромотоцикл, питбайк">
-<meta property="og:image" content="/static/inmove_logo.png">
+<meta property="og:image" content="/static/inmove_logo.webp">
 <meta property="og:type" content="website">
 {% endblock %}
 {% block head_styles %}
 <style>
     .hero { padding-top: var(--nav-h); position: relative; overflow: hidden; background: #111; min-height: 100vh; display: flex; flex-direction: column; }
-    .hero-bg { position: absolute; inset: 0; background: linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 100%), url('/static/hero_bg.jpg') center/cover no-repeat; }
+    .hero-bg { position: absolute; inset: 0; background: linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 100%), url('/static/hero_bg.webp') center/cover no-repeat; }
     .hero-inner { flex: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; max-width: 1280px; margin: 0 auto; padding: 40px; position: relative; z-index: 1; align-items: center; width: 100%; }
     .hero-left { display: flex; flex-direction: column; justify-content: center; }
     .hero-tagline { font-size: clamp(0.75rem, 1.5vw, 0.95rem); font-weight: 500; color: var(--accent); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 0.2rem; }
@@ -161,7 +161,7 @@
     }
     @media (max-width: 768px) {
         .hero { min-height: 100vh; padding-top: var(--nav-h); justify-content: center; }
-        .hero-bg { background: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 100%), url('/static/hero_bg.jpg') center/cover no-repeat; }
+        .hero-bg { background: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 100%), url('/static/hero_bg.webp') center/cover no-repeat; }
         .hero-inner { flex-direction: column; text-align: center; padding: 2rem 1.5rem; gap: 0.5rem; flex: none; }
         .hero-left { padding-right: 0; align-items: center; }
         .hero-title { font-size: 2rem; margin-bottom: 0.3rem; }
@@ -338,7 +338,7 @@
                     <img {% if loop.first %}src="{{ photo|photo_url }}"{% else %}data-src="{{ photo|photo_url }}"{% endif %} alt="{{ moto.name }}" {% if loop.first and is_first_product %}fetchpriority="high"{% endif %} width="270" height="194">
                     {% endfor %}
                     {% else %}
-                    <div class="no-photo-placeholder"><img src="/static/inmove_logo.png" alt="INMOVE" style="width:48px;height:48px;opacity:0.3;"></div>
+                    <div class="no-photo-placeholder"><img src="/static/inmove_logo.webp" alt="INMOVE" style="width:48px;height:48px;opacity:0.3;"></div>
                     {% endif %}
                 </div>
                 {% if moto.photos|length > 1 %}

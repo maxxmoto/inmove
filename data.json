@@ -10,13 +10,13 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_1_0.png",
-        "prod_1_1.png",
-        "prod_1_2.png",
-        "prod_1_3.png",
-        "prod_1_4.png",
-        "prod_1_5.png",
-        "prod_1_6.png"
+        "prod_1_0.webp",
+        "prod_1_1.webp",
+        "prod_1_2.webp",
+        "prod_1_3.webp",
+        "prod_1_4.webp",
+        "prod_1_5.webp",
+        "prod_1_6.webp"
       ],
       "price": "22900",
       "short_description": "",
@@ -24,7 +24,7 @@
         {
           "sku": "1",
           "price": "22900",
-          "img": "https://static.tildacdn.com/stor3539-6566-4364-b865-343735613235/42310389.png"
+          "img": "remote_20a6c72696f3b268.webp"
         }
       ],
       "options": [],
@@ -42,20 +42,20 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_2_0.png",
-        "prod_2_1.png",
-        "prod_2_2.png",
-        "prod_2_3.png",
-        "prod_2_4.png",
-        "prod_2_5.png",
-        "prod_2_6.png",
-        "prod_2_7.png",
-        "prod_2_8.png",
-        "prod_2_9.png",
-        "prod_2_10.png",
-        "prod_2_11.png",
-        "prod_2_12.png",
-        "prod_2_13.png"
+        "prod_2_0.webp",
+        "prod_2_1.webp",
+        "prod_2_2.webp",
+        "prod_2_3.webp",
+        "prod_2_4.webp",
+        "prod_2_5.webp",
+        "prod_2_6.webp",
+        "prod_2_7.webp",
+        "prod_2_8.webp",
+        "prod_2_9.webp",
+        "prod_2_10.webp",
+        "prod_2_11.webp",
+        "prod_2_12.webp",
+        "prod_2_13.webp"
       ],
       "price": "29900",
       "short_description": "",
@@ -63,7 +63,7 @@
         {
           "sku": "2",
           "price": "29900",
-          "img": "https://static.tildacdn.com/stor6235-6230-4835-a335-366638306339/14760100.png"
+          "img": "remote_e3b0363bedd3238a.webp"
         }
       ],
       "options": [],
@@ -81,23 +81,23 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_3_0.png",
-        "prod_3_1.png",
-        "https://static.tildacdn.com/stor6365-3331-4165-a461-646465363233/58177893.png",
-        "prod_3_3.png",
-        "prod_3_4.png",
-        "prod_3_5.png",
-        "prod_3_6.png",
-        "prod_3_7.png",
-        "prod_3_8.png",
-        "prod_3_9.png",
-        "prod_3_10.png",
-        "prod_3_11.png",
-        "prod_3_12.png",
-        "prod_3_13.png",
-        "https://static.tildacdn.com/stor3232-3438-4864-b639-326361366532/42477877.png",
-        "prod_3_15.png",
-        "prod_3_16.png"
+        "prod_3_0.webp",
+        "prod_3_1.webp",
+        "remote_219a9b4d14fe0abc.webp",
+        "prod_3_3.webp",
+        "prod_3_4.webp",
+        "prod_3_5.webp",
+        "prod_3_6.webp",
+        "prod_3_7.webp",
+        "prod_3_8.webp",
+        "prod_3_9.webp",
+        "prod_3_10.webp",
+        "prod_3_11.webp",
+        "prod_3_12.webp",
+        "prod_3_13.webp",
+        "remote_bb5c8c44381d3f5b.webp",
+        "prod_3_15.webp",
+        "prod_3_16.webp"
       ],
       "price": "34900",
       "short_description": "",
@@ -105,7 +105,7 @@
         {
           "sku": "61",
           "price": "34900",
-          "img": "https://static.tildacdn.com/stor3834-6631-4636-a265-323730636130/75462364.png"
+          "img": "remote_c58c2b5a165cb8c8.webp"
         }
       ],
       "options": [],
@@ -123,13 +123,13 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_4_0.png",
-        "prod_4_1.png",
-        "https://static.tildacdn.com/stor6236-6236-4339-b437-386331616163/88533306.png",
-        "prod_4_3.png",
-        "prod_4_4.png",
-        "prod_4_5.png",
-        "prod_4_6.png"
+        "prod_4_0.webp",
+        "prod_4_1.webp",
+        "remote_be4deeb6aaac3fb8.webp",
+        "prod_4_3.webp",
+        "prod_4_4.webp",
+        "prod_4_5.webp",
+        "prod_4_6.webp"
       ],
       "price": "45900",
       "short_description": "",
@@ -137,7 +137,7 @@
         {
           "sku": "4",
           "price": "45900",
-          "img": "https://static.tildacdn.com/stor3064-3063-4835-a232-653866373535/82449984.png"
+          "img": "remote_f47159a868e632a1.webp"
         }
       ],
       "options": [],
@@ -155,17 +155,17 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_5_0.png",
-        "prod_5_1.png",
-        "prod_5_2.png",
-        "prod_5_3.png",
-        "prod_5_4.png",
-        "https://static.tildacdn.com/stor3232-6362-4361-b965-643430343262/35245962.png",
-        "prod_5_6.png",
-        "prod_5_7.png",
-        "prod_5_8.png",
-        "https://static.tildacdn.com/stor6438-3766-4935-a263-623634376338/48040912.png",
-        "prod_5_10.png"
+        "prod_5_0.webp",
+        "prod_5_1.webp",
+        "prod_5_2.webp",
+        "prod_5_3.webp",
+        "prod_5_4.webp",
+        "remote_5b347697227ed06a.webp",
+        "prod_5_6.webp",
+        "prod_5_7.webp",
+        "prod_5_8.webp",
+        "remote_5e468faf6f034db5.webp",
+        "prod_5_10.webp"
       ],
       "price": "51900",
       "short_description": "",
@@ -173,7 +173,7 @@
         {
           "sku": "6",
           "price": "51900",
-          "img": "https://static.tildacdn.com/stor6633-3462-4464-a235-353864353937/91804526.png"
+          "img": "remote_29344522bee97537.webp"
         }
       ],
       "options": [],
@@ -191,18 +191,18 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_6_0.png",
-        "prod_6_1.png",
-        "prod_6_2.png",
-        "prod_6_3.png",
-        "prod_6_4.png",
-        "https://static.tildacdn.com/stor3635-3762-4062-a530-383061323366/29138220.png",
-        "https://static.tildacdn.com/stor3564-3965-4166-b461-346433653931/73093084.png",
-        "https://static.tildacdn.com/stor3433-6333-4536-a236-643737323833/88685374.png",
-        "https://static.tildacdn.com/stor3462-6462-4964-b837-373265623263/41600465.png",
-        "https://static.tildacdn.com/stor6364-6235-4563-a538-366333613337/30768952.png",
-        "https://static.tildacdn.com/stor3634-6362-4561-b731-373635626636/22999316.png",
-        "https://static.tildacdn.com/stor3730-3033-4336-a237-363565353466/45208564.png"
+        "prod_6_0.webp",
+        "prod_6_1.webp",
+        "prod_6_2.webp",
+        "prod_6_3.webp",
+        "prod_6_4.webp",
+        "remote_0db480149bf51eda.webp",
+        "remote_89cd3ea1c67e67ab.webp",
+        "remote_2fab1241aafe7241.webp",
+        "remote_35bca72703547617.webp",
+        "remote_5b17a392781626e4.webp",
+        "remote_f6c10396ac8ed178.webp",
+        "remote_1708084a3a334917.webp"
       ],
       "price": "40900",
       "short_description": "",
@@ -210,7 +210,7 @@
         {
           "sku": "7",
           "price": "40900",
-          "img": "https://static.tildacdn.com/stor3564-3636-4337-b564-373636316361/56151240.png"
+          "img": "remote_8eb47e1206e2ba25.webp"
         }
       ],
       "options": [],
@@ -228,21 +228,21 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_7_0.png",
-        "prod_7_1.png",
-        "https://static.tildacdn.com/stor6434-3736-4533-b165-613966636663/21728158.png",
-        "https://static.tildacdn.com/stor3064-6264-4332-a230-346262323330/55845433.png",
-        "https://static.tildacdn.com/stor6562-6433-4430-b862-383937613734/80653771.png",
-        "https://static.tildacdn.com/stor3936-3161-4039-b533-393936383932/62579052.png",
-        "https://static.tildacdn.com/stor3133-6262-4861-b935-666634666466/14582825.png",
-        "https://static.tildacdn.com/stor3463-6636-4832-b865-316335666439/85828953.png",
-        "https://static.tildacdn.com/stor6632-6563-4138-b130-386661343261/64043626.png",
-        "https://static.tildacdn.com/stor3232-3864-4531-b239-636537393533/46358307.png",
-        "https://static.tildacdn.com/stor6438-6263-4139-b938-646662303437/59490471.png",
-        "https://static.tildacdn.com/stor3365-3639-4637-a630-613234306438/90588990.png",
-        "https://static.tildacdn.com/stor3365-3965-4163-b933-396335626535/73833171.png",
-        "https://static.tildacdn.com/stor6464-6231-4563-b762-613838323536/97333042.png",
-        "https://static.tildacdn.com/stor6131-3634-4230-b062-393765643262/23523071.png"
+        "prod_7_0.webp",
+        "prod_7_1.webp",
+        "remote_362ad5642f375c5a.webp",
+        "remote_e906dd83f4324e44.webp",
+        "remote_f92175aa0dd7b3ad.webp",
+        "remote_97666aa9a978438a.webp",
+        "remote_591aa7e1ddb95906.webp",
+        "remote_ac3be356fbb22a7f.webp",
+        "remote_41b4074f776d5a3b.webp",
+        "remote_b6fd309c0b85c569.webp",
+        "remote_9e7f00909fb88a2f.webp",
+        "remote_9646a3027b0f8bac.webp",
+        "remote_5ef7fb55ebbe2f14.webp",
+        "remote_603d56246e429683.webp",
+        "remote_570c30ec4b4da61a.webp"
       ],
       "price": "69900",
       "short_description": "",
@@ -250,7 +250,7 @@
         {
           "sku": "8",
           "price": "69900",
-          "img": "https://static.tildacdn.com/stor3964-3536-4233-a632-306161383139/76222364.png"
+          "img": "remote_2891bc3921ba82c1.webp"
         }
       ],
       "options": [],
@@ -268,15 +268,15 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_8_0.png",
-        "prod_8_1.png",
-        "https://static.tildacdn.com/stor6266-3532-4234-b832-383930346432/15901470.png",
-        "https://static.tildacdn.com/stor6636-3438-4639-b333-656137633935/58776234.png",
-        "https://static.tildacdn.com/stor3838-3831-4363-a631-383763303030/60563826.png",
-        "https://static.tildacdn.com/stor3434-6137-4937-a331-343533356665/32681412.png",
-        "https://static.tildacdn.com/stor3230-6463-4130-b430-313330356132/33813361.png",
-        "https://static.tildacdn.com/stor6162-3662-4538-b464-323637396133/93697710.png",
-        "https://static.tildacdn.com/stor6533-6261-4435-a536-306664613136/41290229.png"
+        "prod_8_0.webp",
+        "prod_8_1.webp",
+        "remote_225ec9f55b127df8.webp",
+        "remote_cb9b1c740f6fe061.webp",
+        "remote_57cc98b0d51f0077.webp",
+        "remote_72054d423857cc32.webp",
+        "remote_84a0dc3b5b4ea15c.webp",
+        "remote_d04776599450351e.webp",
+        "remote_9fea15345b929981.webp"
       ],
       "price": "73900",
       "short_description": "",
@@ -284,7 +284,7 @@
         {
           "sku": "9",
           "price": "73900",
-          "img": "https://static.tildacdn.com/stor6166-3935-4334-b231-333166643763/80135512.png"
+          "img": "remote_50b2922281e7f57a.webp"
         }
       ],
       "options": [],
@@ -302,18 +302,18 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_9_0.png",
-        "prod_9_1.png",
-        "https://static.tildacdn.com/stor6531-3730-4062-b334-313734386439/65472754.png",
-        "https://static.tildacdn.com/stor3737-6138-4265-b161-323630656464/55781131.png",
-        "https://static.tildacdn.com/stor3933-3939-4763-a137-636234363864/99852519.png",
-        "https://static.tildacdn.com/stor6166-3736-4137-b164-336239386162/74722307.png",
-        "https://static.tildacdn.com/stor6366-3030-4931-a332-333435666465/78100985.png",
-        "https://static.tildacdn.com/stor3466-3439-4534-a635-396563636538/14555202.png",
-        "https://static.tildacdn.com/stor6566-3164-4263-b461-313464656636/92144102.png",
-        "https://static.tildacdn.com/stor6337-6236-4133-a264-633939643566/91909039.png",
-        "https://static.tildacdn.com/stor3139-3635-4662-a334-663534323062/14894223.png",
-        "https://static.tildacdn.com/stor3331-3835-4531-b965-346439333963/19581536.png"
+        "prod_9_0.webp",
+        "prod_9_1.webp",
+        "remote_e2fad632dcc01a52.webp",
+        "remote_8483568505d5088b.webp",
+        "remote_0cbe855168998951.webp",
+        "remote_1429582a8587a5fa.webp",
+        "remote_982ce3328d137b05.webp",
+        "remote_3a7bc5b43ca23c7b.webp",
+        "remote_fe6bf11e4d89bc0b.webp",
+        "remote_6dd5aa3b13b83abe.webp",
+        "remote_687f8342482a174c.webp",
+        "remote_8aa03b2bc0840df8.webp"
       ],
       "price": "34900",
       "short_description": "",
@@ -321,7 +321,7 @@
         {
           "sku": "10",
           "price": "34900",
-          "img": "https://static.tildacdn.com/stor6434-6333-4436-a261-666562363132/87056429.png"
+          "img": "remote_e13e913fb7426de0.webp"
         }
       ],
       "options": [],
@@ -339,16 +339,16 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_10_0.png",
-        "prod_10_1.png",
-        "https://static.tildacdn.com/stor3530-3039-4462-a634-623865623864/54638877.png",
-        "https://static.tildacdn.com/stor3062-6436-4737-a633-313333363166/64570948.png",
-        "https://static.tildacdn.com/stor6236-3965-4037-b133-386434653438/61336127.png",
-        "https://static.tildacdn.com/stor6137-3533-4166-b637-333339323962/30308266.png",
-        "https://static.tildacdn.com/stor3465-3431-4736-b536-303264613661/98149423.png",
-        "https://static.tildacdn.com/stor6138-3331-4062-b235-616236363133/59688142.png",
-        "https://static.tildacdn.com/stor3438-3464-4238-b238-343030626632/63582825.png",
-        "https://static.tildacdn.com/stor3230-6165-4765-b664-333863363834/31086810.png"
+        "prod_10_0.webp",
+        "prod_10_1.webp",
+        "remote_ac794555c9715ae4.webp",
+        "remote_468d8636032c93e3.webp",
+        "remote_206427d94bd0b4fe.webp",
+        "remote_07f4845b742a159b.webp",
+        "remote_d514d7ecc8f64a9f.webp",
+        "remote_813d678f0d0f9fd9.webp",
+        "remote_133c428b19527ab5.webp",
+        "remote_aaf2c9b7ecc403fd.webp"
       ],
       "price": "54900",
       "short_description": "",
@@ -356,7 +356,7 @@
         {
           "sku": "11",
           "price": "54900",
-          "img": "https://static.tildacdn.com/stor3839-6434-4839-b663-363832316663/92999648.png"
+          "img": "remote_4c0a4a79a510e00f.webp"
         }
       ],
       "options": [],
@@ -374,13 +374,13 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_11_0.png",
-        "prod_11_1.png",
-        "https://static.tildacdn.com/stor6663-3735-4438-b531-643765353966/35991227.png",
-        "https://static.tildacdn.com/stor3931-6238-4833-b264-363366353961/41068767.png",
-        "https://static.tildacdn.com/stor6636-3961-4265-b738-356662306466/69143040.png",
-        "https://static.tildacdn.com/stor3330-3062-4664-b430-323733343837/22838914.png",
-        "https://static.tildacdn.com/stor6434-6162-4230-a165-613963333963/58044592.png"
+        "prod_11_0.webp",
+        "prod_11_1.webp",
+        "remote_f61389acc7fd1180.webp",
+        "remote_be9b5d0ba820da20.webp",
+        "remote_d3668379f0b5dafa.webp",
+        "remote_38c1548b2f269a30.webp",
+        "remote_045107f8e148b7e9.webp"
       ],
       "price": "79900",
       "short_description": "",
@@ -388,7 +388,7 @@
         {
           "sku": "12",
           "price": "79900",
-          "img": "https://static.tildacdn.com/stor3538-3232-4261-a131-373662636336/72151144.png"
+          "img": "remote_13d8a7013456eb86.webp"
         }
       ],
       "options": [],
@@ -406,19 +406,19 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_12_0.png",
-        "prod_12_1.png",
-        "https://static.tildacdn.com/stor3862-3030-4565-a464-666239306661/89018877.png",
-        "https://static.tildacdn.com/stor3161-3939-4061-b262-383864633237/19126103.png",
-        "https://static.tildacdn.com/stor3836-6333-4638-b263-663663623164/12505867.png",
-        "https://static.tildacdn.com/stor3964-3236-4433-b736-376566653837/25148945.png",
-        "https://static.tildacdn.com/stor3361-3735-4137-b462-373832363532/30034542.png",
-        "https://static.tildacdn.com/stor6662-6266-4565-b634-306364343139/35880513.png",
-        "https://static.tildacdn.com/stor3934-6465-4164-b165-373162353235/64677370.png",
-        "https://static.tildacdn.com/stor3232-3532-4336-b635-363934616238/81957055.png",
-        "https://static.tildacdn.com/stor3265-3632-4635-b663-353763303734/86931858.png",
-        "https://static.tildacdn.com/stor6538-6563-4631-a238-366331656639/52595212.png",
-        "https://static.tildacdn.com/stor3565-3030-4165-a338-316132383037/91794922.png"
+        "prod_12_0.webp",
+        "prod_12_1.webp",
+        "remote_0401a039d52d2578.webp",
+        "remote_f298533c7de60fa9.webp",
+        "remote_653b7230b59d2129.webp",
+        "remote_f906f11fe62707ce.webp",
+        "remote_21a2681cf75fac53.webp",
+        "remote_1d75f508e8758756.webp",
+        "remote_9f1d60fd5e44d4be.webp",
+        "remote_01956e6f04fe9f2f.webp",
+        "remote_3b2130a0e3d13fe9.webp",
+        "remote_77bd5c8417a558ed.webp",
+        "remote_79aafc2ceff8dad5.webp"
       ],
       "price": "43900",
       "short_description": "",
@@ -426,7 +426,7 @@
         {
           "sku": "13",
           "price": "43900",
-          "img": "https://static.tildacdn.com/stor6239-3362-4838-b436-383434303732/92963598.png"
+          "img": "remote_c01194ba90c08300.webp"
         }
       ],
       "options": [],
@@ -444,23 +444,23 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_13_0.png",
-        "prod_13_1.png",
-        "https://static.tildacdn.com/stor6631-3962-4463-b138-643561346331/87918896.png",
-        "https://static.tildacdn.com/stor3333-3063-4231-b430-633362326165/28693023.png",
-        "https://static.tildacdn.com/stor3136-3136-4630-b862-393262343436/13856399.png",
-        "https://static.tildacdn.com/stor6165-6134-4131-b838-353766386338/69785518.png",
-        "https://static.tildacdn.com/stor6331-3935-4465-b335-626463663136/19781921.png",
-        "https://static.tildacdn.com/stor3433-3065-4331-b832-323236393334/44373272.png",
-        "https://static.tildacdn.com/stor3534-6663-4635-b034-636639336166/66080929.png",
-        "https://static.tildacdn.com/stor6466-3839-4130-b634-343837313531/69904390.png",
-        "https://static.tildacdn.com/stor6232-3339-4939-b363-316461613139/57166875.png",
-        "https://static.tildacdn.com/stor6264-6634-4839-b536-616536616430/28042120.png",
-        "https://static.tildacdn.com/stor6336-6335-4766-b730-353138633731/37571712.png",
-        "https://static.tildacdn.com/stor3166-6161-4434-b934-373234323066/12024865.png",
-        "https://static.tildacdn.com/stor6237-3131-4638-a531-373961623134/30606747.png",
-        "https://static.tildacdn.com/stor6635-6564-4165-a638-323563356233/12117495.png",
-        "https://static.tildacdn.com/stor3232-6565-4430-b038-393937616136/75020024.png"
+        "prod_13_0.webp",
+        "prod_13_1.webp",
+        "remote_ffc4de7b4428cbc2.webp",
+        "remote_ff4338dbb1a6554d.webp",
+        "remote_af78bbde22f493ed.webp",
+        "remote_63188fe824ff38c2.webp",
+        "remote_260fb3b770f57de0.webp",
+        "remote_330db465fada94da.webp",
+        "remote_5119e35da4575c61.webp",
+        "remote_12db990767badd27.webp",
+        "remote_537d180ac1422f43.webp",
+        "remote_7f12332b7a8ec382.webp",
+        "remote_14a4b6f7a4b6847b.webp",
+        "remote_7e0ff8b29c523b23.webp",
+        "remote_bbc5a96f4eead05f.webp",
+        "remote_6e44dab194a745b9.webp",
+        "remote_4fd3f6b95dc73c41.webp"
       ],
       "price": "24900",
       "short_description": "",
@@ -468,7 +468,7 @@
         {
           "sku": "14",
           "price": "24900",
-          "img": "https://static.tildacdn.com/stor3266-6331-4765-b038-623765653966/69462200.png"
+          "img": "remote_7a5f79a84ad4e623.webp"
         }
       ],
       "options": [],
@@ -486,21 +486,21 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_14_0.png",
-        "prod_14_1.png",
-        "https://static.tildacdn.com/stor6463-6636-4231-a465-396237373537/65291205.png",
-        "https://static.tildacdn.com/stor3263-3065-4537-b963-363963353833/31094261.png",
-        "https://static.tildacdn.com/stor3062-3064-4634-b761-393431663763/48643812.png",
-        "https://static.tildacdn.com/stor3631-3231-4439-a462-303438343434/11959724.png",
-        "https://static.tildacdn.com/stor6136-6636-4933-b339-316438373262/92079921.png",
-        "https://static.tildacdn.com/stor3339-6466-4435-a266-303562666665/45044774.png",
-        "https://static.tildacdn.com/stor3238-3430-4631-b437-663062633933/77962144.png",
-        "https://static.tildacdn.com/stor6462-3135-4437-a330-353736373461/23819687.png",
-        "https://static.tildacdn.com/stor6539-3163-4435-a636-383166376430/60136069.png",
-        "https://static.tildacdn.com/stor6163-3232-4339-b233-366533666438/43142929.png",
-        "https://static.tildacdn.com/stor3066-6339-4231-a262-613637393535/10828984.png",
-        "https://static.tildacdn.com/stor3363-3137-4433-b630-323165323435/42333507.png",
-        "https://static.tildacdn.com/stor3030-3361-4131-a536-326137663266/22238130.png"
+        "prod_14_0.webp",
+        "prod_14_1.webp",
+        "remote_5bc5fc3a4dd562fb.webp",
+        "remote_7abc5f4b73e614bd.webp",
+        "remote_33ced2f68c86a97b.webp",
+        "remote_1321fd57e25f3da5.webp",
+        "remote_7e27ddb336f6c16d.webp",
+        "remote_63d1936a3b05a780.webp",
+        "remote_4d059323319a6a26.webp",
+        "remote_d765b9480aa9a42b.webp",
+        "remote_570981a272ca6c69.webp",
+        "remote_7777f5e1b1eece85.webp",
+        "remote_67c94530330852ff.webp",
+        "remote_7b303862b106409e.webp",
+        "remote_58545b1bb3c0e2a0.webp"
       ],
       "price": "74900",
       "short_description": "",
@@ -508,7 +508,7 @@
         {
           "sku": "15",
           "price": "74900",
-          "img": "https://static.tildacdn.com/stor6638-3335-4735-a535-646534303465/13061207.png"
+          "img": "remote_2071e9f4fd933791.webp"
         }
       ],
       "options": [],
@@ -526,19 +526,19 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_15_0.png",
-        "prod_15_1.png",
-        "https://static.tildacdn.com/stor3730-6437-4538-b439-343435386436/30256813.png",
-        "https://static.tildacdn.com/stor3137-6533-4232-b466-353037626630/18159125.png",
-        "https://static.tildacdn.com/stor3331-3631-4134-b638-316538346235/40290179.png",
-        "https://static.tildacdn.com/stor6561-6663-4332-a238-666235346530/11070634.png",
-        "https://static.tildacdn.com/stor6564-6231-4635-a364-386263303930/43583214.png",
-        "https://static.tildacdn.com/stor3334-6230-4132-b866-386565653364/46336966.png",
-        "https://static.tildacdn.com/stor3165-3232-4161-b165-396137616361/66129954.png",
-        "https://static.tildacdn.com/stor3564-3266-4362-b635-363731396665/87642820.png",
-        "https://static.tildacdn.com/stor3935-3936-4136-a236-303132356638/65323474.png",
-        "https://static.tildacdn.com/stor6431-3338-4532-b330-346664616331/92304389.png",
-        "https://static.tildacdn.com/stor3036-3832-4630-b031-323438343864/63845654.png"
+        "prod_15_0.webp",
+        "prod_15_1.webp",
+        "remote_917642f4dd28dd21.webp",
+        "remote_b8095e8c89517156.webp",
+        "remote_3d6dfe90fb7cae43.webp",
+        "remote_352ec5b02c705f03.webp",
+        "remote_8395d08b0e88e074.webp",
+        "remote_9de23e4711998379.webp",
+        "remote_94d21750bfba232c.webp",
+        "remote_3a5e50815bcc6570.webp",
+        "remote_d49d63dce9eb4f5e.webp",
+        "remote_c838df24d927d213.webp",
+        "remote_6cb70d22adfc88df.webp"
       ],
       "price": "29900",
       "short_description": "",
@@ -546,7 +546,7 @@
         {
           "sku": "16",
           "price": "29900",
-          "img": "https://static.tildacdn.com/stor3163-3231-4461-b962-363064393137/12302318.png"
+          "img": "remote_a4996e8f2775daad.webp"
         }
       ],
       "options": [],
@@ -564,19 +564,19 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_16_0.png",
-        "prod_16_1.png",
-        "https://static.tildacdn.com/stor3930-3962-4763-a331-636634633539/96207747.png",
-        "https://static.tildacdn.com/stor3836-3065-4238-b232-393462346638/10799792.png",
-        "https://static.tildacdn.com/stor6666-3939-4564-b038-386361363736/91994502.png",
-        "https://static.tildacdn.com/stor3763-6131-4664-a432-363162666635/44410604.png",
-        "https://static.tildacdn.com/stor3533-6532-4537-a638-343832383638/51759322.png",
-        "https://static.tildacdn.com/stor3137-3564-4336-a362-623963623963/69789301.png",
-        "https://static.tildacdn.com/stor6561-6164-4565-b436-383065303734/46155690.png",
-        "https://static.tildacdn.com/stor3264-6532-4264-b733-393564626331/45965645.png",
-        "https://static.tildacdn.com/stor3131-6361-4466-b463-353332663130/48738501.png",
-        "https://static.tildacdn.com/stor6137-6562-4062-b532-393735353366/93961614.png",
-        "https://static.tildacdn.com/stor6632-3838-4266-b363-363235306532/17009661.png"
+        "prod_16_0.webp",
+        "prod_16_1.webp",
+        "remote_15926d54d37bdf3c.webp",
+        "remote_32cc65b739327f2c.webp",
+        "remote_68a1b0abcda1aad2.webp",
+        "remote_e90335072b33e189.webp",
+        "remote_b8b28237de3c2e1c.webp",
+        "remote_f115bb0721b1910f.webp",
+        "remote_1b7e01123f34b0ee.webp",
+        "remote_96b6ee47b04fdc24.webp",
+        "remote_0f7bd26670d43a72.webp",
+        "remote_a559a48dcdaf3a3a.webp",
+        "remote_73d8f83aa0f5013d.webp"
       ],
       "price": "45900",
       "short_description": "",
@@ -584,7 +584,7 @@
         {
           "sku": "17",
           "price": "45900",
-          "img": "https://static.tildacdn.com/stor6662-6235-4434-b835-353836313731/19251444.png"
+          "img": "remote_6815d7119c979c7a.webp"
         }
       ],
       "options": [],
@@ -602,10 +602,10 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_17_0.png",
-        "prod_17_1.png",
-        "https://static.tildacdn.com/stor6661-6235-4230-a235-363734353134/76702507.png",
-        "https://static.tildacdn.com/stor6638-6131-4663-b033-623437643637/31631374.png"
+        "prod_17_0.webp",
+        "prod_17_1.webp",
+        "remote_94b7d944769f8b62.webp",
+        "remote_95858497b327d12b.webp"
       ],
       "price": "18500",
       "short_description": "",
@@ -613,7 +613,7 @@
         {
           "sku": "18",
           "price": "18500",
-          "img": "https://static.tildacdn.com/stor6664-3562-4338-a432-653735646238/19315226.png"
+          "img": "remote_9b19f48c7a2c554d.webp"
         }
       ],
       "options": [],
@@ -631,20 +631,20 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_18_0.png",
-        "prod_18_1.png",
-        "https://static.tildacdn.com/stor3434-3137-4331-b532-393837623637/80835931.png",
-        "https://static.tildacdn.com/stor3235-6135-4434-b137-613336653166/52081293.png",
-        "https://static.tildacdn.com/stor3062-3338-4362-b261-306139323139/76859538.png",
-        "https://static.tildacdn.com/stor3237-6639-4065-a162-346666663831/35835747.png",
-        "https://static.tildacdn.com/stor6138-6437-4164-a333-643732326266/42733035.png",
-        "https://static.tildacdn.com/stor3134-3331-4363-a237-616233633163/60265740.png",
-        "https://static.tildacdn.com/stor6463-3637-4239-a365-336332383364/97636450.png",
-        "https://static.tildacdn.com/stor3836-3833-4366-b661-326235396333/86446480.png",
-        "https://static.tildacdn.com/stor3031-3166-4538-a539-643434366633/79808322.png",
-        "https://static.tildacdn.com/stor3130-3666-4339-a635-346137323332/66507711.png",
-        "https://static.tildacdn.com/stor3462-3938-4866-b666-356362613438/20465637.png",
-        "https://static.tildacdn.com/stor6538-3837-4630-b532-636136366564/57714390.png"
+        "prod_18_0.webp",
+        "prod_18_1.webp",
+        "remote_a4cb5e56d1a04f9b.webp",
+        "remote_f30a8c7a98df1552.webp",
+        "remote_90d535a4a9fe8da4.webp",
+        "remote_ecc5d05cfca5cd77.webp",
+        "remote_4d4692d1e619c39f.webp",
+        "remote_72a1bef76eebab9a.webp",
+        "remote_10906d2a90356149.webp",
+        "remote_bc10fba64cb5b4a8.webp",
+        "remote_c0e485473d81ab30.webp",
+        "remote_fef8754cd250562d.webp",
+        "remote_96c5ee02020f053f.webp",
+        "remote_c4372851ffb69e4c.webp"
       ],
       "price": "41900",
       "short_description": "",
@@ -652,7 +652,7 @@
         {
           "sku": "19",
           "price": "41900",
-          "img": "https://static.tildacdn.com/stor3462-3937-4330-a138-306336336632/51987050.png"
+          "img": "remote_dd522f5e29b79230.webp"
         }
       ],
       "options": [],
@@ -670,33 +670,33 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_19_0.png",
-        "prod_19_1.png",
-        "https://static.tildacdn.com/stor3230-3934-4736-b132-326463666462/28327473.png",
-        "https://static.tildacdn.com/stor6337-6133-4539-b765-316538323132/30401068.png",
-        "https://static.tildacdn.com/stor3231-3833-4637-b131-316664633130/68883092.png",
-        "https://static.tildacdn.com/stor3533-3637-4535-b962-653866303263/39013976.png",
-        "https://static.tildacdn.com/stor6464-3334-4664-b164-373638633736/52019196.png",
-        "https://static.tildacdn.com/stor3637-3566-4562-a336-363166353833/79110442.png",
-        "https://static.tildacdn.com/stor3638-3663-4233-b838-633636633264/62087758.png",
-        "https://static.tildacdn.com/stor6163-6630-4033-b261-636134333038/49048672.png",
-        "https://static.tildacdn.com/stor3562-6531-4161-a464-643737613739/31030079.png",
-        "https://static.tildacdn.com/stor3430-3134-4431-b736-626434366231/63913005.png",
-        "https://static.tildacdn.com/stor6239-6662-4833-b633-323864326165/36776221.png",
-        "https://static.tildacdn.com/stor6130-3137-4036-a531-323234356637/84475309.png",
-        "https://static.tildacdn.com/stor3337-6161-4338-a239-656264336630/48812177.png",
-        "https://static.tildacdn.com/stor3634-6562-4837-a266-393037326566/87819227.png",
-        "https://static.tildacdn.com/stor3134-6630-4335-b366-393639343831/38032575.png",
-        "https://static.tildacdn.com/stor6436-3334-4635-b861-393433633133/13565253.png",
-        "https://static.tildacdn.com/stor6531-3732-4431-b561-303330633135/37434389.png",
-        "https://static.tildacdn.com/stor3563-3438-4738-b065-613638306239/52290859.png",
-        "https://static.tildacdn.com/stor3963-3034-4538-b238-623930326435/47610835.png",
-        "https://static.tildacdn.com/stor3263-6438-4966-a631-623664376133/12177746.png",
-        "https://static.tildacdn.com/stor3238-6566-4664-a436-376466336236/96853829.png",
-        "https://static.tildacdn.com/stor6631-3736-4439-b832-323962313838/67663527.png",
-        "https://static.tildacdn.com/stor6261-3862-4638-a661-626231616530/95763773.png",
-        "https://static.tildacdn.com/stor6430-6661-4434-b039-646532373633/62532596.png",
-        "https://static.tildacdn.com/stor3732-3765-4537-b530-373636346366/29278213.png"
+        "prod_19_0.webp",
+        "prod_19_1.webp",
+        "remote_22b4724d6b6429d1.webp",
+        "remote_c6f4d2f895dc45e0.webp",
+        "remote_d1471615d6152f81.webp",
+        "remote_5c6ab1f12b920918.webp",
+        "remote_3af8236c80331b86.webp",
+        "remote_19447ae0ee7b43d4.webp",
+        "remote_21853f8f29df47ea.webp",
+        "remote_53e9ad20e61635a7.webp",
+        "remote_345b954b717e4e62.webp",
+        "remote_9bdc978ee4834f06.webp",
+        "remote_8fadd77f25ef7aba.webp",
+        "remote_c3eceac6365836eb.webp",
+        "remote_6c5d8a49bd8506d1.webp",
+        "remote_19ed126182c0651c.webp",
+        "remote_c39ac3100c8865fe.webp",
+        "remote_8539b2bdb815875f.webp",
+        "remote_0dd3ab1074518b79.webp",
+        "remote_c7e8dc28d5ae0094.webp",
+        "remote_3ca1367d52a6db5e.webp",
+        "remote_aa3bc9bce0efd82c.webp",
+        "remote_87c4ba0c116b6304.webp",
+        "remote_5f456867d70d6232.webp",
+        "remote_92bd6469714e0ff2.webp",
+        "remote_36d215c54fdc79ee.webp",
+        "remote_90c6617be1ed6471.webp"
       ],
       "price": "119000",
       "short_description": "",
@@ -704,7 +704,7 @@
         {
           "sku": "20",
           "price": "119000",
-          "img": "https://static.tildacdn.com/stor3435-6631-4164-b564-323032666536/72206699.png"
+          "img": "remote_c621c9d0950c78a2.webp"
         }
       ],
       "options": [],
@@ -722,16 +722,16 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_20_0.png",
-        "prod_20_1.png",
-        "https://static.tildacdn.com/stor3365-3336-4333-b530-306466653262/21823985.png",
-        "https://static.tildacdn.com/stor3563-3639-4839-a533-303262313565/25179834.png",
-        "https://static.tildacdn.com/stor3830-3937-4130-b838-653937626161/46403985.png",
-        "https://static.tildacdn.com/stor6162-3366-4339-b539-366633653231/82784706.png",
-        "https://static.tildacdn.com/stor3365-3562-4439-a238-616535313133/48983715.png",
-        "https://static.tildacdn.com/stor3330-6539-4663-b637-316530336462/81659355.png",
-        "https://static.tildacdn.com/stor3737-3135-4631-b837-653665326465/30757512.png",
-        "https://static.tildacdn.com/stor3539-3932-4633-b739-393836653630/11979550.png"
+        "prod_20_0.webp",
+        "prod_20_1.webp",
+        "remote_16bd08fbd1446464.webp",
+        "remote_1d0a56d4acbf6bfc.webp",
+        "remote_2f95c25f4ca91523.webp",
+        "remote_8ec447bae5770be8.webp",
+        "remote_ccb8be2ddbab7932.webp",
+        "remote_1ba3736156546258.webp",
+        "remote_bf1bcc9833b41574.webp",
+        "remote_c11ac1f5ad5a0696.webp"
       ],
       "price": "89900",
       "short_description": "",
@@ -739,7 +739,7 @@
         {
           "sku": "21",
           "price": "89900",
-          "img": "https://static.tildacdn.com/stor3461-6635-4266-b532-303164373032/81311051.png"
+          "img": "remote_e37a24f70a7bc3e3.webp"
         }
       ],
       "options": [],
@@ -757,18 +757,18 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_21_0.png",
-        "prod_21_1.png",
-        "https://static.tildacdn.com/stor3331-3965-4264-b438-366634316464/24412955.png",
-        "https://static.tildacdn.com/stor6439-3034-4866-a237-663836303930/93587805.png",
-        "https://static.tildacdn.com/stor3235-6136-4238-a462-313234316264/86220363.png",
-        "https://static.tildacdn.com/stor3764-3837-4261-b434-306261633863/55826151.png",
-        "https://static.tildacdn.com/stor6332-6462-4961-b535-613731613837/41033707.png",
-        "https://static.tildacdn.com/stor3466-6437-4333-a337-373361333164/73900928.png",
-        "https://static.tildacdn.com/stor3263-3466-4736-b836-326535636633/41704594.png",
-        "https://static.tildacdn.com/stor6430-3730-4331-b765-313937383833/74234877.png",
-        "https://static.tildacdn.com/stor3937-3762-4530-b934-363332323738/86387114.png",
-        "https://static.tildacdn.com/stor6131-6661-4532-b432-373063626436/65479802.png"
+        "prod_21_0.webp",
+        "prod_21_1.webp",
+        "remote_c5ab44b06bf35b55.webp",
+        "remote_2ead478e478d14e2.webp",
+        "remote_fe69c6f862b746fd.webp",
+        "remote_d1b57f2a6f14b9a9.webp",
+        "remote_4a53308b1d706fb7.webp",
+        "remote_e5c892e35c3a3bba.webp",
+        "remote_803d4fc9eefde149.webp",
+        "remote_a6d3632f68235aee.webp",
+        "remote_43c5d76adca2ddd7.webp",
+        "remote_fb152daa5699d2d9.webp"
       ],
       "price": "79900",
       "short_description": "",
@@ -776,7 +776,7 @@
         {
           "sku": "22",
           "price": "79900",
-          "img": "https://static.tildacdn.com/stor6331-6462-4233-a632-386335356537/61197125.png"
+          "img": "remote_d7e09e5d22057d07.webp"
         }
       ],
       "options": [],
@@ -794,16 +794,16 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_22_0.png",
-        "prod_22_1.png",
-        "https://static.tildacdn.com/stor3961-3766-4634-a565-613033646634/65287359.png",
-        "https://static.tildacdn.com/stor3235-3163-4366-b365-363066386365/36142477.png",
-        "https://static.tildacdn.com/stor3465-6462-4731-b634-373366613565/88003912.png",
-        "https://static.tildacdn.com/stor3439-3332-4665-a433-313131303966/16892164.png",
-        "https://static.tildacdn.com/stor3332-3166-4934-b862-386433633635/44727565.png",
-        "https://static.tildacdn.com/stor6230-6431-4537-b031-366165613533/73596303.png",
-        "https://static.tildacdn.com/stor6632-6438-4062-b637-303733353336/95443998.png",
-        "https://static.tildacdn.com/stor6235-3130-4164-b064-353832363331/83296879.png"
+        "prod_22_0.webp",
+        "prod_22_1.webp",
+        "remote_7f3cd21b22f157b3.webp",
+        "remote_ddb9e0b2cabf4273.webp",
+        "remote_f98ec76685630373.webp",
+        "remote_fac008be1da72537.webp",
+        "remote_f284862aba768790.webp",
+        "remote_e5486aefd3deab36.webp",
+        "remote_c851c06eeb0881e8.webp",
+        "remote_aa62d757fd703fe3.webp"
       ],
       "price": "75900",
       "short_description": "",
@@ -811,7 +811,7 @@
         {
           "sku": "23",
           "price": "75900",
-          "img": "https://static.tildacdn.com/stor3836-6637-4532-a336-383038363734/31520803.png"
+          "img": "remote_0e244dc024c37853.webp"
         }
       ],
       "options": [],
@@ -829,22 +829,22 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_23_0.png",
-        "prod_23_1.png",
-        "https://static.tildacdn.com/stor6434-6430-4438-a636-303662633235/18002885.png",
-        "https://static.tildacdn.com/stor3161-3636-4639-b064-383163663231/65491558.png",
-        "https://static.tildacdn.com/stor3763-3533-4362-b166-626534666536/13156026.png",
-        "https://static.tildacdn.com/stor6435-6635-4232-a464-633137326561/41693654.png",
-        "https://static.tildacdn.com/stor6331-6331-4361-b439-393135353734/43639050.png",
-        "https://static.tildacdn.com/stor3933-6465-4066-a364-316231366639/59455788.png",
-        "https://static.tildacdn.com/stor6166-6238-4966-b364-396636356263/40260176.png",
-        "https://static.tildacdn.com/stor6538-3138-4632-b137-656631386337/48833524.png",
-        "https://static.tildacdn.com/stor3436-3661-4766-b036-636438663836/59841156.png",
-        "https://static.tildacdn.com/stor3161-6562-4034-b932-613766643666/62172533.png",
-        "https://static.tildacdn.com/stor3365-6332-4463-a532-383766666138/49392552.png",
-        "https://static.tildacdn.com/stor3462-3763-4239-b730-383563313230/68454615.png",
-        "https://static.tildacdn.com/stor6631-3238-4734-b030-346638346434/55403307.png",
-        "https://static.tildacdn.com/stor6234-3464-4137-a463-353066396263/92863364.png"
+        "prod_23_0.webp",
+        "prod_23_1.webp",
+        "remote_96d651802cea4c86.webp",
+        "remote_a86c630361b65c44.webp",
+        "remote_c929f706b7dba9e7.webp",
+        "remote_4a8d7b57e4be8d31.webp",
+        "remote_46cfdb88a963c41b.webp",
+        "remote_f408cafe1a9ff2c9.webp",
+        "remote_ac5bd6631258a7fc.webp",
+        "remote_17c9512f0c2cbb62.webp",
+        "remote_27f1b305c57e4ec5.webp",
+        "remote_1ca250cd3f186c6b.webp",
+        "remote_aa6d734973a54fdd.webp",
+        "remote_0053ce9ab3a56521.webp",
+        "remote_f7f8003a006a6cc1.webp",
+        "remote_03f9bf00296bbf15.webp"
       ],
       "price": "63900",
       "short_description": "",
@@ -852,7 +852,7 @@
         {
           "sku": "24",
           "price": "63900",
-          "img": "https://static.tildacdn.com/stor3634-3062-4465-b562-626362633234/15401442.png"
+          "img": "remote_6d8e3b6f5f715df9.webp"
         }
       ],
       "options": [],
@@ -870,18 +870,18 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_24_0.png",
-        "prod_24_1.png",
-        "https://static.tildacdn.com/stor3531-3730-4963-b565-396533626463/19083176.png",
-        "https://static.tildacdn.com/stor3132-6164-4133-b732-346237336464/66958497.png",
-        "https://static.tildacdn.com/stor3739-6463-4362-a539-396131343334/56281659.png",
-        "https://static.tildacdn.com/stor6436-3835-4539-a231-363732373661/91027757.png",
-        "https://static.tildacdn.com/stor3134-3263-4864-b461-326534616231/43983861.png",
-        "https://static.tildacdn.com/stor6333-3265-4337-b637-313230633236/52398907.png",
-        "https://static.tildacdn.com/stor3434-3438-4037-a164-393065363962/46610112.png",
-        "https://static.tildacdn.com/stor3165-3934-4762-b438-396564313863/61410568.png",
-        "https://static.tildacdn.com/stor6661-6331-4634-a335-376537306532/42933063.png",
-        "https://static.tildacdn.com/stor6337-6633-4431-a635-373437646137/64518611.png"
+        "prod_24_0.webp",
+        "prod_24_1.webp",
+        "remote_539410a6d809e6fb.webp",
+        "remote_07045e4fb8ddb1fc.webp",
+        "remote_ed39a9cfc8e9c37f.webp",
+        "remote_3d96f1ab808b4513.webp",
+        "remote_ee222990d9318d76.webp",
+        "remote_38693e4053572091.webp",
+        "remote_3913c296464f0d12.webp",
+        "remote_24b2abf528aec7e8.webp",
+        "remote_7add192069821506.webp",
+        "remote_8f88a4cabe37e8cb.webp"
       ],
       "price": "59900",
       "short_description": "",
@@ -889,7 +889,7 @@
         {
           "sku": "25",
           "price": "59900",
-          "img": "https://static.tildacdn.com/stor3362-3434-4230-b638-643939393833/30697281.png"
+          "img": "remote_1a636916b9ef79c5.webp"
         }
       ],
       "options": [],
@@ -907,19 +907,19 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_25_0.png",
-        "prod_25_1.png",
-        "https://static.tildacdn.com/stor3434-3731-4161-a231-656135393364/36428664.png",
-        "https://static.tildacdn.com/stor6163-3230-4063-b234-383836353439/25478986.png",
-        "https://static.tildacdn.com/stor3765-3532-4538-b861-313532616336/27443082.png",
-        "https://static.tildacdn.com/stor6430-6235-4437-b965-323935323637/53934130.png",
-        "https://static.tildacdn.com/stor3366-3261-4464-b066-363934373730/48173154.png",
-        "https://static.tildacdn.com/stor3961-3064-4438-a434-316562363463/77376103.png",
-        "https://static.tildacdn.com/stor6363-6461-4138-b433-656264336231/51063457.png",
-        "https://static.tildacdn.com/stor6661-3738-4239-b762-363266373933/66582096.png",
-        "https://static.tildacdn.com/stor6531-3036-4063-b633-316431653063/81534418.png",
-        "https://static.tildacdn.com/stor3561-3764-4133-b963-363234366237/40530700.png",
-        "https://static.tildacdn.com/stor3366-3261-4464-b066-363934373730/48173154.png"
+        "prod_25_0.webp",
+        "prod_25_1.webp",
+        "remote_61a1321ad44846da.webp",
+        "remote_15aab05fd4038f18.webp",
+        "remote_1d22ed3962b1f77b.webp",
+        "remote_52198dc99a66015c.webp",
+        "remote_5d356fc2b8050614.webp",
+        "remote_9931dc406bc3f2f2.webp",
+        "remote_d6107e63cd025f90.webp",
+        "remote_c6f5ed8c933e92ea.webp",
+        "remote_bdf53237f16a77b9.webp",
+        "remote_76f201ee6beebd53.webp",
+        "remote_5d356fc2b8050614.webp"
       ],
       "price": "77900",
       "short_description": "",
@@ -927,12 +927,12 @@
         {
           "sku": "26",
           "price": "77900",
-          "img": "https://static.tildacdn.com/stor3665-6562-4833-a662-313866323933/39532550.png"
+          "img": "remote_87257b69e7d4f4ff.webp"
         },
         {
           "sku": "27",
           "price": "77900",
-          "img": "https://static.tildacdn.com/stor6430-6235-4437-b965-323935323637/53934130.png"
+          "img": "remote_52198dc99a66015c.webp"
         }
       ],
       "options": [],
@@ -950,33 +950,33 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_26_0.png",
-        "prod_26_1.png",
-        "https://static.tildacdn.com/stor3831-3066-4536-b930-393363663237/25827842.png",
-        "https://static.tildacdn.com/stor6665-6133-4164-a139-396230356638/54752982.png",
-        "https://static.tildacdn.com/stor3430-3234-4337-b636-393837353163/44728000.png",
-        "https://static.tildacdn.com/stor6263-6335-4161-b139-323439353662/56346842.png",
-        "https://static.tildacdn.com/stor6239-6663-4462-a230-383439393331/89958756.png",
-        "https://static.tildacdn.com/stor3532-3231-4665-a637-626466376539/27590608.png",
-        "https://static.tildacdn.com/stor6666-3363-4931-b861-626132383939/17965098.png",
-        "https://static.tildacdn.com/stor6439-3931-4164-b836-636564306239/28456646.png",
-        "https://static.tildacdn.com/stor6561-3639-4233-b534-663863616262/82785892.png",
-        "https://static.tildacdn.com/stor3862-3335-4365-a438-363230643364/71421734.png",
-        "https://static.tildacdn.com/stor6334-3461-4062-b635-393531633030/43960023.png",
-        "https://static.tildacdn.com/stor6663-6531-4366-b562-656235306632/35635435.png",
-        "https://static.tildacdn.com/stor3365-3432-4538-b965-303038616135/79780512.png",
-        "https://static.tildacdn.com/stor3865-3631-4331-a538-373334393565/84905296.png",
-        "https://static.tildacdn.com/stor3334-3061-4561-b230-633434316464/89934552.png",
-        "https://static.tildacdn.com/stor6237-3762-4066-a535-313835323538/52012540.png",
-        "https://static.tildacdn.com/stor3736-3835-4239-b336-333530356561/47011695.png",
-        "https://static.tildacdn.com/stor3334-3061-4561-b230-633434316464/89934552.png",
-        "https://static.tildacdn.com/stor3138-6163-4231-b333-616561333461/15229333.png",
-        "https://static.tildacdn.com/stor3630-6166-4431-b237-393835663236/48023334.png",
-        "https://static.tildacdn.com/stor3139-3766-4234-b931-643235636666/90617258.png",
-        "https://static.tildacdn.com/stor6237-3761-4339-b031-313538663739/69393346.png",
-        "https://static.tildacdn.com/stor6166-3537-4161-a539-663536376331/57950236.png",
-        "https://static.tildacdn.com/stor3333-3234-4663-b161-383965616561/41900393.png",
-        "https://static.tildacdn.com/stor3865-3633-4237-b532-323439323261/35264124.png"
+        "prod_26_0.webp",
+        "prod_26_1.webp",
+        "remote_d30ec03545dad785.webp",
+        "remote_c62cac422e5eaec5.webp",
+        "remote_fc5e65f787a2471b.webp",
+        "remote_1ab33404624071db.webp",
+        "remote_273d927edbc6cd40.webp",
+        "remote_f924c5a96db5f0f6.webp",
+        "remote_616291bfac923345.webp",
+        "remote_f9c3d8349c80c2d5.webp",
+        "remote_e5c4e5fb57754a75.webp",
+        "remote_7fcc9de5a77d171d.webp",
+        "remote_3f387f332f0ace5e.webp",
+        "remote_dd5fef60ff04d597.webp",
+        "remote_9760998279ae6e54.webp",
+        "remote_7418d967c91230fd.webp",
+        "remote_ed82c622d680eb6a.webp",
+        "remote_ded70f4b347e9e5f.webp",
+        "remote_132cfb7eee9ba069.webp",
+        "remote_ed82c622d680eb6a.webp",
+        "remote_fa9be0dd38853a7a.webp",
+        "remote_38694d1e8db7a7bf.webp",
+        "remote_5c793576ccc82006.webp",
+        "remote_73e04627ddf81dad.webp",
+        "remote_7cd6dc1d3084678f.webp",
+        "remote_22d1ad6f12c61381.webp",
+        "remote_137d0adecf94c4bb.webp"
       ],
       "price": "94900",
       "short_description": "",
@@ -984,27 +984,27 @@
         {
           "sku": "28",
           "price": "94900",
-          "img": "https://static.tildacdn.com/stor3063-3562-4139-a365-643064323037/30775815.png"
+          "img": "remote_d47fa079da111e16.webp"
         },
         {
           "sku": "29",
           "price": "94900",
-          "img": "https://static.tildacdn.com/stor3532-3231-4665-a637-626466376539/27590608.png"
+          "img": "remote_f924c5a96db5f0f6.webp"
         },
         {
           "sku": "30",
           "price": "94900",
-          "img": "https://static.tildacdn.com/stor3862-3335-4365-a438-363230643364/71421734.png"
+          "img": "remote_7fcc9de5a77d171d.webp"
         },
         {
           "sku": "31",
           "price": "94900",
-          "img": "https://static.tildacdn.com/stor3865-3631-4331-a538-373334393565/84905296.png"
+          "img": "remote_7418d967c91230fd.webp"
         },
         {
           "sku": "32",
           "price": "94900",
-          "img": "https://static.tildacdn.com/stor3138-6163-4231-b333-616561333461/15229333.png"
+          "img": "remote_fa9be0dd38853a7a.webp"
         }
       ],
       "options": [],
@@ -1022,14 +1022,14 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_27_0.png",
-        "prod_27_1.png",
-        "https://static.tildacdn.com/stor6530-6363-4162-b964-316630643532/73882896.png",
-        "https://static.tildacdn.com/stor3164-3335-4466-a263-326232396238/93179110.png",
-        "https://static.tildacdn.com/stor3938-3533-4536-b437-653264343739/97507865.png",
-        "https://static.tildacdn.com/stor3761-3137-4161-b465-666237333763/95726424.png",
-        "https://static.tildacdn.com/stor6463-3032-4539-b864-363538313135/36256545.png",
-        "https://static.tildacdn.com/stor3838-6261-4732-b436-653834343562/24629879.png"
+        "prod_27_0.webp",
+        "prod_27_1.webp",
+        "remote_b1aa7f13283907a2.webp",
+        "remote_61b302575212e56b.webp",
+        "remote_ec3b2e705545332e.webp",
+        "remote_a02c8d0a044c0a9d.webp",
+        "remote_ae1c28785f911ce0.webp",
+        "remote_4de6be6136a7a7bf.webp"
       ],
       "price": "71900",
       "short_description": "",
@@ -1037,7 +1037,7 @@
         {
           "sku": "33",
           "price": "71900",
-          "img": "https://static.tildacdn.com/stor6365-3038-4365-a663-643266383030/57618801.png"
+          "img": "remote_8949f0471cecb8d2.webp"
         }
       ],
       "options": [],
@@ -1055,21 +1055,21 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_28_0.png",
-        "prod_28_1.png",
-        "https://static.tildacdn.com/stor3966-3461-4335-b961-353763326161/46862574.png",
-        "https://static.tildacdn.com/stor6436-3339-4832-a638-356638626532/22737264.png",
-        "https://static.tildacdn.com/stor3932-3233-4337-b661-323739353963/51298859.png",
-        "https://static.tildacdn.com/stor6536-3336-4338-a566-313539383464/87714104.png",
-        "https://static.tildacdn.com/stor3062-6530-4030-b665-613335613330/13397824.png",
-        "https://static.tildacdn.com/stor3730-3437-4330-b536-336565346437/50193791.png",
-        "https://static.tildacdn.com/stor3030-3936-4762-a665-343937333331/47508764.png",
-        "https://static.tildacdn.com/stor6137-6532-4337-b332-646466646436/24260559.png",
-        "https://static.tildacdn.com/stor6636-6531-4435-b161-666232626366/23884156.png",
-        "https://static.tildacdn.com/stor3337-6535-4937-a465-323465623131/21799344.png",
-        "https://static.tildacdn.com/stor6262-6366-4336-a365-373561633566/14078555.png",
-        "https://static.tildacdn.com/stor6531-3432-4530-b030-666238323363/18389637.png",
-        "https://static.tildacdn.com/stor6636-6666-4965-a463-306233613031/22605299.png"
+        "prod_28_0.webp",
+        "prod_28_1.webp",
+        "remote_04c65696d019e309.webp",
+        "remote_eb4b41363652747a.webp",
+        "remote_67aeb72c0aee7b1c.webp",
+        "remote_89ea078b7bf74cca.webp",
+        "remote_60f9e106cb51f9ac.webp",
+        "remote_9d6e563362c399e9.webp",
+        "remote_a1d9b49fc3dc731b.webp",
+        "remote_dc9ffc7b61617acc.webp",
+        "remote_b0aca2879ee8d850.webp",
+        "remote_5d10ed8ecd015f3d.webp",
+        "remote_45a36044bfd1b592.webp",
+        "remote_b8f355298f62556c.webp",
+        "remote_3be179f1cb4b3f1b.webp"
       ],
       "price": "54900",
       "short_description": "",
@@ -1077,7 +1077,7 @@
         {
           "sku": "34",
           "price": "54900",
-          "img": "https://static.tildacdn.com/stor3636-3263-4431-a235-623661303935/16813285.png"
+          "img": "remote_04603955f3e26b56.webp"
         }
       ],
       "options": [],
@@ -1095,13 +1095,13 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_29_0.png",
-        "prod_29_1.png",
-        "https://static.tildacdn.com/stor3931-3464-4038-a565-643366656433/95335247.png",
-        "https://static.tildacdn.com/stor3039-3361-4839-b732-366562336663/59580554.png",
-        "https://static.tildacdn.com/stor3936-3064-4138-b533-653134383362/10065419.png",
-        "https://static.tildacdn.com/stor3065-6337-4162-a166-373233323534/19285544.png",
-        "https://static.tildacdn.com/stor3166-6438-4135-b235-323133656661/86285823.png"
+        "prod_29_0.webp",
+        "prod_29_1.webp",
+        "remote_2e99e2308fc0fa2c.webp",
+        "remote_754c0a6707b2a298.webp",
+        "remote_2ca5acf95e3c55b7.webp",
+        "remote_98b279ef8fb1d4be.webp",
+        "remote_b3018e877b21e6ce.webp"
       ],
       "price": "59900",
       "short_description": "",
@@ -1132,11 +1132,11 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_30_0.png",
-        "prod_30_1.png",
-        "https://static.tildacdn.com/stor3964-3338-4336-b561-663466636534/10175903.png",
-        "https://static.tildacdn.com/stor3038-3736-4163-a461-353131386264/31694228.png",
-        "https://static.tildacdn.com/stor6531-3931-4965-b966-366537613533/46283675.png"
+        "prod_30_0.webp",
+        "prod_30_1.webp",
+        "remote_e13b3dc0cded6d41.webp",
+        "remote_dc9836cc40b32bfd.webp",
+        "remote_a29dc6b0d2f04964.webp"
       ],
       "price": "350000",
       "short_description": "",
@@ -1144,7 +1144,7 @@
         {
           "sku": "37",
           "price": "350000",
-          "img": "https://static.tildacdn.com/stor6432-3335-4936-a138-303832343332/11741245.png"
+          "img": "remote_18a3d3aaa27259cc.webp"
         }
       ],
       "options": [],
@@ -1162,12 +1162,12 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_31_0.png",
-        "prod_31_1.png",
-        "https://static.tildacdn.com/stor3664-3732-4236-b933-363636376437/72909054.png",
-        "https://static.tildacdn.com/stor3037-6637-4238-a236-363665316564/81466846.png",
-        "https://static.tildacdn.com/stor3735-6534-4739-a237-613462336162/85045100.png",
-        "https://static.tildacdn.com/stor3037-6637-4238-a236-363665316564/81466846.png"
+        "prod_31_0.webp",
+        "prod_31_1.webp",
+        "remote_f8d6d8b6d489bbb8.webp",
+        "remote_9192c8dab3a3d15e.webp",
+        "remote_05741f01d4976af1.webp",
+        "remote_9192c8dab3a3d15e.webp"
       ],
       "price": "350000",
       "short_description": "",
@@ -1175,7 +1175,7 @@
         {
           "sku": "38",
           "price": "350000",
-          "img": "https://static.tildacdn.com/stor3764-6266-4634-b233-333233353462/30678269.png"
+          "img": "remote_4a2c95552d9a78d1.webp"
         }
       ],
       "options": [],
@@ -1193,10 +1193,10 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_32_0.png",
-        "prod_32_1.png",
-        "https://static.tildacdn.com/stor3131-3536-4235-a534-623630393135/13866836.png",
-        "https://static.tildacdn.com/stor3761-3466-4139-b766-343034613235/62461878.png"
+        "prod_32_0.webp",
+        "prod_32_1.webp",
+        "remote_6e4172c9fa298cd1.webp",
+        "remote_35dda01e1de799ff.webp"
       ],
       "price": "410000",
       "short_description": "",
@@ -1204,7 +1204,7 @@
         {
           "sku": "39",
           "price": "410000",
-          "img": "https://static.tildacdn.com/stor3561-6461-4137-b665-383034316332/67401104.png"
+          "img": "remote_f917005f41e11c61.webp"
         }
       ],
       "options": [],
@@ -1222,14 +1222,14 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_33_0.png",
-        "prod_33_1.png",
-        "https://static.tildacdn.com/stor3464-3837-4636-b536-313261623835/67832012.png",
-        "https://static.tildacdn.com/stor3934-3665-4534-b661-343237343333/39147947.png",
-        "https://static.tildacdn.com/stor6232-3366-4634-b137-306530383861/93305287.png",
-        "https://static.tildacdn.com/stor6661-3131-4631-b233-313862366162/13795076.png",
-        "https://static.tildacdn.com/stor3238-3630-4035-a535-316236323237/91767029.png",
-        "https://static.tildacdn.com/stor3033-6566-4931-a461-633964363035/28564699.png"
+        "prod_33_0.webp",
+        "prod_33_1.webp",
+        "remote_7ec86edc016bc8d5.webp",
+        "remote_3647eeb9b0b5645e.webp",
+        "remote_0242909aa91ad183.webp",
+        "remote_4bcb195b062766b4.webp",
+        "remote_d74a5df39cf33b2a.webp",
+        "remote_4755097ee94eacb5.webp"
       ],
       "price": "350000",
       "short_description": "",
@@ -1237,7 +1237,7 @@
         {
           "sku": "40",
           "price": "350000",
-          "img": "https://static.tildacdn.com/stor3839-6661-4331-b036-636231336539/71532854.png"
+          "img": "remote_5e9004a46df2a007.webp"
         }
       ],
       "options": [],
@@ -1255,15 +1255,15 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_34_0.png",
-        "prod_34_1.png",
-        "https://static.tildacdn.com/stor3330-6136-4462-a637-333762323461/24756948.png",
-        "https://static.tildacdn.com/stor6235-6166-4365-b765-613538363739/30005486.png",
-        "https://static.tildacdn.com/stor3561-6239-4530-b535-623862393934/69160772.png",
-        "https://static.tildacdn.com/stor3330-6133-4631-b332-646636626332/72146414.png",
-        "https://static.tildacdn.com/stor3561-3534-4736-b761-383030383166/84524412.png",
-        "https://static.tildacdn.com/stor6438-3430-4266-a236-646563386331/69606428.png",
-        "https://static.tildacdn.com/stor3534-6533-4233-a432-643265376362/92385824.png"
+        "prod_34_0.webp",
+        "prod_34_1.webp",
+        "remote_3fe4ddfaaf1c5d98.webp",
+        "remote_a00f2c8aae8d86e1.webp",
+        "remote_23389107752d0d3c.webp",
+        "remote_c47b23ed63046e0a.webp",
+        "remote_9e30fad1764e100d.webp",
+        "remote_a139a75f76fd406d.webp",
+        "remote_af9a9531608061b7.webp"
       ],
       "price": "370000",
       "short_description": "",
@@ -1271,7 +1271,7 @@
         {
           "sku": "41",
           "price": "370000",
-          "img": "https://static.tildacdn.com/stor3137-6261-4566-a533-633133663630/68079508.png"
+          "img": "remote_4746beb8c01b949b.webp"
         }
       ],
       "options": [],
@@ -1289,20 +1289,20 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_35_0.png",
-        "prod_35_1.png",
-        "https://static.tildacdn.com/stor3038-3930-4132-b033-316234633834/11907588.png",
-        "https://static.tildacdn.com/stor6631-6561-4131-b639-333637336633/46197729.png",
-        "https://static.tildacdn.com/stor3132-3935-4565-a633-323634626435/95628868.png",
-        "https://static.tildacdn.com/stor3566-3737-4333-b833-376537626363/60406589.png",
-        "https://static.tildacdn.com/stor6366-3637-4235-a236-376532336636/11501707.png",
-        "https://static.tildacdn.com/stor3939-6661-4431-a538-346133623937/91970789.png",
-        "https://static.tildacdn.com/stor3965-3837-4466-a434-363234323336/34059371.png",
-        "https://static.tildacdn.com/stor3537-3931-4864-b665-633865323732/45953183.png",
-        "https://static.tildacdn.com/stor6235-3565-4836-b231-356239643735/28219437.png",
-        "https://static.tildacdn.com/stor3936-6163-4133-b666-386366306139/10147878.png",
-        "https://static.tildacdn.com/stor3031-6266-4664-b364-653631633434/71246494.png",
-        "https://static.tildacdn.com/stor3166-6132-4262-b133-336635343266/40171261.png"
+        "prod_35_0.webp",
+        "prod_35_1.webp",
+        "remote_f1a8eab1b8901a76.webp",
+        "remote_e2099084c5a03764.webp",
+        "remote_1dbc99fca44eacd4.webp",
+        "remote_4be98272466c5ec5.webp",
+        "remote_b4461a48ded04191.webp",
+        "remote_9373136837efc20e.webp",
+        "remote_43e2b2f793336e7a.webp",
+        "remote_1203be305b751418.webp",
+        "remote_77d0ff21fc7a2f88.webp",
+        "remote_c56b43b5ea6f47b4.webp",
+        "remote_3f73d36dae863d61.webp",
+        "remote_9de2a975deac9a2b.webp"
       ],
       "price": "136900",
       "short_description": "",
@@ -1310,7 +1310,7 @@
         {
           "sku": "42",
           "price": "136900",
-          "img": "https://static.tildacdn.com/stor3861-3338-4330-b965-343931616562/10384021.png"
+          "img": "remote_16b6726cb45e9808.webp"
         }
       ],
       "options": [],
@@ -1328,15 +1328,15 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_36_0.png",
-        "prod_36_1.png",
-        "https://static.tildacdn.com/stor6632-6130-4232-a531-356339366561/71864670.png",
-        "https://static.tildacdn.com/stor3362-3961-4436-b561-643732363564/73925212.png",
-        "https://static.tildacdn.com/stor3431-3762-4332-b065-363161636431/37674306.png",
-        "https://static.tildacdn.com/stor3362-6138-4434-a266-646363306433/69767261.png",
-        "https://static.tildacdn.com/stor3262-3636-4861-b663-363030326261/92590008.png",
-        "https://static.tildacdn.com/stor3931-3935-4233-b736-316534326564/41771253.png",
-        "https://static.tildacdn.com/stor6335-3936-4838-a162-333230623738/71479441.png"
+        "prod_36_0.webp",
+        "prod_36_1.webp",
+        "remote_82fbaa7a5b8a4a16.webp",
+        "remote_b3d579a1e01fc021.webp",
+        "remote_1eb6bf60500f7421.webp",
+        "remote_1e3dcc577ebff81c.webp",
+        "remote_720a665941ba1ce6.webp",
+        "remote_94a168924dd3d9ae.webp",
+        "remote_cb4274d87db5aa5b.webp"
       ],
       "price": "57900",
       "short_description": "",
@@ -1344,7 +1344,7 @@
         {
           "sku": "43",
           "price": "57900",
-          "img": "https://static.tildacdn.com/stor3337-6366-4735-a238-636164386639/58697958.png"
+          "img": "remote_9107b135d41bbf06.webp"
         }
       ],
       "options": [],
@@ -1362,14 +1362,14 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_37_0.png",
-        "prod_37_1.png",
-        "https://static.tildacdn.com/stor6538-3338-4864-a533-326336323364/56006727.png",
-        "https://static.tildacdn.com/stor3933-3066-4466-b763-623135336361/23097987.png",
-        "https://static.tildacdn.com/stor3931-3635-4864-a264-313833643666/61072724.png",
-        "https://static.tildacdn.com/stor6465-6466-4031-a466-663163633933/49112012.png",
-        "https://static.tildacdn.com/stor6563-3561-4263-a635-666665386462/80907634.png",
-        "https://static.tildacdn.com/stor3833-3266-4136-b764-653164623538/14608626.png"
+        "prod_37_0.webp",
+        "prod_37_1.webp",
+        "remote_3b5cd4ed17a78a15.webp",
+        "remote_2547583fb06c317a.webp",
+        "remote_85d69a3a9e33232b.webp",
+        "remote_71a2eaff4491c9fb.webp",
+        "remote_a72c69cea8bb9c5a.webp",
+        "remote_ce78a8b6f148a94e.webp"
       ],
       "price": "79900",
       "short_description": "",
@@ -1377,7 +1377,7 @@
         {
           "sku": "45",
           "price": "79900",
-          "img": "https://static.tildacdn.com/stor6636-6631-4662-b862-613936643736/35582266.png"
+          "img": "remote_7b14461d5f9f2973.webp"
         }
       ],
       "options": [],
@@ -1395,20 +1395,20 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_38_0.png",
-        "prod_38_1.png",
-        "https://static.tildacdn.com/stor6233-6537-4664-a433-643334643334/77549781.png",
-        "https://static.tildacdn.com/stor3462-3230-4561-b136-343865333431/22534730.png",
-        "https://static.tildacdn.com/stor3963-3733-4739-a235-356534326137/52892170.png",
-        "https://static.tildacdn.com/stor3936-3430-4434-b637-306334326338/37225146.png",
-        "https://static.tildacdn.com/stor6462-3238-4830-b036-656562313731/44223110.png",
-        "https://static.tildacdn.com/stor6235-6332-4432-a335-663538643561/28068224.png",
-        "https://static.tildacdn.com/stor6561-6163-4635-b666-613861313161/43164634.png",
-        "https://static.tildacdn.com/stor3565-3238-4838-a434-393663336330/82040327.png",
-        "https://static.tildacdn.com/stor3833-3738-4439-a333-613463303732/91828995.png",
-        "https://static.tildacdn.com/stor6466-6437-4238-a134-373630323064/91481979.png",
-        "https://static.tildacdn.com/stor3361-3866-4635-b465-613938643232/60083460.png",
-        "https://static.tildacdn.com/stor6465-6337-4335-b565-303231623639/27798362.png"
+        "prod_38_0.webp",
+        "prod_38_1.webp",
+        "remote_89089f764f7fd267.webp",
+        "remote_f7b8a41c691d7694.webp",
+        "remote_86fad972becc6c93.webp",
+        "remote_668be92c8913af69.webp",
+        "remote_92576bf2cdbb30cb.webp",
+        "remote_4aa96afeec039c3e.webp",
+        "remote_55a72cdca0b3a09a.webp",
+        "remote_4d0345f951f5b1fd.webp",
+        "remote_d5132e7149f0276e.webp",
+        "remote_3ba416bd2a487d81.webp",
+        "remote_db75374097a48073.webp",
+        "remote_8356479576ec4589.webp"
       ],
       "price": "115900",
       "short_description": "",
@@ -1416,7 +1416,7 @@
         {
           "sku": "46",
           "price": "115900",
-          "img": "https://static.tildacdn.com/stor3264-3138-4338-b937-306635373733/40986881.png"
+          "img": "remote_e058c2b13b7b0b89.webp"
         }
       ],
       "options": [],
@@ -1434,15 +1434,15 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_43_0.png",
-        "prod_43_1.png",
-        "https://static.tildacdn.com/stor6233-3531-4266-b330-653565666231/90118851.png",
-        "https://static.tildacdn.com/stor6130-3231-4261-a435-653732346664/15046873.png",
-        "https://static.tildacdn.com/stor6139-3563-4630-b435-663630666233/81353829.png",
-        "https://static.tildacdn.com/stor3732-3633-4931-a338-623466653361/20641682.png",
-        "https://static.tildacdn.com/stor6331-3939-4932-b962-303263396263/53560207.png",
-        "https://static.tildacdn.com/stor6465-3062-4631-b562-373136363866/81890778.png",
-        "https://static.tildacdn.com/stor3230-6639-4531-b363-303633633662/80444037.png"
+        "prod_43_0.webp",
+        "prod_43_1.webp",
+        "remote_b1f7568921289007.webp",
+        "remote_e257f8da528e0c7f.webp",
+        "remote_6eeccc718102a7c4.webp",
+        "remote_0aacedea746e08a1.webp",
+        "remote_f1e55b49228eaa7f.webp",
+        "remote_2b3aacc39faa62ad.webp",
+        "remote_4bfc0ffaa0fc5ca5.webp"
       ],
       "price": "45900",
       "short_description": "",
@@ -1450,7 +1450,7 @@
         {
           "sku": "51",
           "price": "45900",
-          "img": "https://static.tildacdn.com/stor3163-3735-4033-b339-316461346161/22320026.png"
+          "img": "remote_64bea785a565855c.webp"
         }
       ],
       "options": [],
@@ -1468,16 +1468,16 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_44_0.png",
-        "prod_44_1.png",
-        "https://static.tildacdn.com/stor3538-6335-4738-a439-363735373934/74178903.png",
-        "https://static.tildacdn.com/stor3836-6432-4531-a565-343732363235/43194523.png",
-        "https://static.tildacdn.com/stor3661-3135-4131-b237-356161653034/94197041.png",
-        "https://static.tildacdn.com/stor3961-6437-4338-a631-386261333066/31452014.png",
-        "https://static.tildacdn.com/stor6163-6465-4864-a530-376238333764/51999346.png",
-        "https://static.tildacdn.com/stor3063-3735-4634-b631-613662383536/90719779.png",
-        "https://static.tildacdn.com/stor3661-3362-4365-a163-633037393163/48731323.png",
-        "https://static.tildacdn.com/stor6536-6136-4664-b661-366532613337/39745300.png"
+        "prod_44_0.webp",
+        "prod_44_1.webp",
+        "remote_a87edc90d9f8a3d7.webp",
+        "remote_c4fe1c2d280aeadb.webp",
+        "remote_27c811bc7b911f59.webp",
+        "remote_50f160e7d3b020b9.webp",
+        "remote_294944013cfa543e.webp",
+        "remote_72844989dec0c67b.webp",
+        "remote_114cd9e69fcad033.webp",
+        "remote_a40cea05b96dcbfd.webp"
       ],
       "price": "60900",
       "short_description": "",
@@ -1485,7 +1485,7 @@
         {
           "sku": "52",
           "price": "60900",
-          "img": "https://static.tildacdn.com/stor3538-3934-4639-a461-313162653737/10838761.png"
+          "img": "remote_4ba25368a039e1db.webp"
         }
       ],
       "options": [],
@@ -1503,9 +1503,9 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_45_0.png",
-        "prod_45_1.png",
-        "https://static.tildacdn.com/stor3963-3966-4536-b964-336436376162/30226413.png"
+        "prod_45_0.webp",
+        "prod_45_1.webp",
+        "remote_b4fb8797910b8e23.webp"
       ],
       "price": "89900",
       "short_description": "",
@@ -1513,7 +1513,7 @@
         {
           "sku": "53",
           "price": "89900",
-          "img": "https://static.tildacdn.com/stor3733-3133-4164-a639-396566326434/14140414.png"
+          "img": "remote_2fadf9d8eade7aa9.webp"
         }
       ],
       "options": [],
@@ -1531,16 +1531,16 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_46_0.png",
-        "prod_46_1.png",
-        "https://static.tildacdn.com/stor6130-6536-4462-a131-643231353639/19371806.png",
-        "https://static.tildacdn.com/stor6634-3131-4638-b331-616331396434/60273983.png",
-        "https://static.tildacdn.com/stor3638-3331-4165-a462-383437356164/84817696.png",
-        "https://static.tildacdn.com/stor6662-6463-4561-a561-356262613765/41593521.png",
-        "https://static.tildacdn.com/stor3538-3536-4465-a532-633935646534/10444750.png",
-        "https://static.tildacdn.com/stor3263-6262-4730-a662-303137616331/31959577.png",
-        "https://static.tildacdn.com/stor3031-3133-4531-a434-346631353635/35685433.png",
-        "https://static.tildacdn.com/stor3330-3238-4163-a265-343536643137/16555016.png"
+        "prod_46_0.webp",
+        "prod_46_1.webp",
+        "remote_65efdf34a3f4c878.webp",
+        "remote_08e631aef781f4ba.webp",
+        "remote_252246665682204a.webp",
+        "remote_011a6f9be15e5c54.webp",
+        "remote_0b3e817408249e20.webp",
+        "remote_477918fcb33c5b3e.webp",
+        "remote_4bf849cc881a0020.webp",
+        "remote_9b33aad4f3088520.webp"
       ],
       "price": "109900",
       "short_description": "",
@@ -1548,7 +1548,7 @@
         {
           "sku": "54",
           "price": "109900",
-          "img": "https://static.tildacdn.com/stor6437-3965-4262-b430-343838386534/65004514.png"
+          "img": "remote_8e14ed5fcf446029.webp"
         }
       ],
       "options": [],
@@ -1566,14 +1566,14 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_47_0.png",
-        "prod_47_1.png",
-        "https://static.tildacdn.com/stor3833-3934-4666-b431-353639613532/85892115.png",
-        "https://static.tildacdn.com/stor3039-6133-4631-b237-656463633239/76648140.png",
-        "https://static.tildacdn.com/stor6563-6537-4536-a433-303839616562/39443295.png",
-        "https://static.tildacdn.com/stor6135-3165-4162-b561-333166363662/98729435.png",
-        "https://static.tildacdn.com/stor6166-3634-4635-b661-326562646634/96634245.png",
-        "https://static.tildacdn.com/stor3435-6363-4366-a564-383732386565/74637960.png"
+        "prod_47_0.webp",
+        "prod_47_1.webp",
+        "remote_42e3ad6b7620b6ae.webp",
+        "remote_44361da67b9a0d9c.webp",
+        "remote_efdcc8bb3fbaf044.webp",
+        "remote_20ad6e4d2b3ef120.webp",
+        "remote_bdf7a85163c7922a.webp",
+        "remote_1d6b5ab68a123cfe.webp"
       ],
       "price": "99900",
       "short_description": "",
@@ -1581,7 +1581,7 @@
         {
           "sku": "55",
           "price": "99900",
-          "img": "https://static.tildacdn.com/stor6432-3462-4763-a332-663064326637/36174662.png"
+          "img": "remote_849164846bb99dda.webp"
         }
       ],
       "options": [],
@@ -1599,13 +1599,13 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_48_0.png",
-        "prod_48_1.png",
-        "https://static.tildacdn.com/stor3361-6638-4265-a165-336633306437/24522732.png",
-        "https://static.tildacdn.com/stor3565-3239-4664-b837-346261663334/60958220.png",
-        "https://static.tildacdn.com/stor3465-3666-4532-a634-643935333861/89046876.png",
-        "https://static.tildacdn.com/stor3331-3232-4633-a339-323939306137/69522458.png",
-        "https://static.tildacdn.com/stor3261-3266-4330-a466-373038636463/32886754.png"
+        "prod_48_0.webp",
+        "prod_48_1.webp",
+        "remote_516f40f35ab20f90.webp",
+        "remote_8172313d381baf37.webp",
+        "remote_80fce82df74dcb5e.webp",
+        "remote_553755304fc6de23.webp",
+        "remote_28ca6bdf312e69bd.webp"
       ],
       "price": "57900",
       "short_description": "",
@@ -1613,7 +1613,7 @@
         {
           "sku": "56",
           "price": "57900",
-          "img": "https://static.tildacdn.com/stor6138-3363-4630-b266-643236333831/82516145.png"
+          "img": "remote_593be4073d629487.webp"
         }
       ],
       "options": [],
@@ -1631,14 +1631,14 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_49_0.png",
-        "prod_49_1.png",
-        "https://static.tildacdn.com/stor6161-3835-4563-a163-663238653635/46443433.png",
-        "https://static.tildacdn.com/stor3033-3064-4331-b936-353432636333/71006622.png",
-        "https://static.tildacdn.com/stor3434-3930-4436-a338-656438323236/90724249.png",
-        "https://static.tildacdn.com/stor6131-6236-4036-b264-383339646332/88958425.png",
-        "https://static.tildacdn.com/stor6430-3861-4861-b831-616463633265/83943481.png",
-        "https://static.tildacdn.com/stor6636-6437-4063-a161-623561303039/42696249.png"
+        "prod_49_0.webp",
+        "prod_49_1.webp",
+        "remote_488f78be63c9cc8b.webp",
+        "remote_95547beb06455f10.webp",
+        "remote_ca5bcab7e179d307.webp",
+        "remote_5f17844727b553e2.webp",
+        "remote_6b804708eba2c88b.webp",
+        "remote_1d9f29b3219ac28f.webp"
       ],
       "price": "45900",
       "short_description": "",
@@ -1646,7 +1646,7 @@
         {
           "sku": "57",
           "price": "45900",
-          "img": "https://static.tildacdn.com/stor3132-3532-4531-b133-636530626564/60553076.png"
+          "img": "remote_fc6b3362e6b791b9.webp"
         }
       ],
       "options": [],
@@ -1664,13 +1664,13 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_50_0.png",
-        "prod_50_1.png",
-        "https://static.tildacdn.com/stor3532-3136-4339-a562-303031643132/95080802.png",
-        "https://static.tildacdn.com/stor3633-6266-4062-b535-393833333535/39567336.png",
-        "https://static.tildacdn.com/stor3439-3163-4239-b639-366237643866/49206227.png",
-        "https://static.tildacdn.com/stor6364-6161-4137-a464-343236653637/48868688.png",
-        "https://static.tildacdn.com/stor3362-6166-4264-a237-333230336564/90998655.png"
+        "prod_50_0.webp",
+        "prod_50_1.webp",
+        "remote_3d64adadad5e291d.webp",
+        "remote_6f6f7673413a9070.webp",
+        "remote_b8fc4d6483ee320c.webp",
+        "remote_a50b74529fe371c4.webp",
+        "remote_446f5dea92318564.webp"
       ],
       "price": "18900",
       "short_description": "",
@@ -1678,7 +1678,7 @@
         {
           "sku": "58",
           "price": "18900",
-          "img": "https://static.tildacdn.com/stor3263-3236-4266-a231-353033623865/90305686.png"
+          "img": "remote_681e88d765db87b5.webp"
         }
       ],
       "options": [],
@@ -1696,14 +1696,14 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_51_0.png",
-        "prod_51_1.png",
-        "https://static.tildacdn.com/stor3036-3832-4235-a337-303833623666/39188015.png",
-        "https://static.tildacdn.com/stor6133-6535-4762-a230-396564346465/78638595.png",
-        "https://static.tildacdn.com/stor3066-6132-4039-b830-313963396134/25005264.png",
-        "https://static.tildacdn.com/stor6165-3465-4831-b733-353765336638/40444002.png",
-        "https://static.tildacdn.com/stor3166-3761-4433-b936-356264346437/57653984.png",
-        "https://static.tildacdn.com/stor6539-3232-4539-b438-383034333436/88579971.png"
+        "prod_51_0.webp",
+        "prod_51_1.webp",
+        "remote_553630b360ed8e13.webp",
+        "remote_b1c947249ef53992.webp",
+        "remote_5c0fc19d026a8f5a.webp",
+        "remote_6e60dab2dd03ac3f.webp",
+        "remote_ef953a7d396c3b4d.webp",
+        "remote_7ac96f86ba1de48d.webp"
       ],
       "price": "55900",
       "short_description": "",
@@ -1711,7 +1711,7 @@
         {
           "sku": "60",
           "price": "55900",
-          "img": "https://static.tildacdn.com/stor6632-3664-4734-a234-353663333539/79308119.png"
+          "img": "remote_e2c79c7c8448f7ea.webp"
         }
       ],
       "options": [],
@@ -1729,14 +1729,14 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_52_0.png",
-        "prod_52_1.png",
-        "https://static.tildacdn.com/stor3733-3061-4231-b265-393966653763/79387007.png",
-        "https://static.tildacdn.com/stor6133-6234-4230-b962-633732373736/74396680.png",
-        "https://static.tildacdn.com/stor3939-3335-4661-b861-636664383438/55537369.png",
-        "https://static.tildacdn.com/stor6265-6330-4933-b561-623661326163/94374812.png",
-        "https://static.tildacdn.com/stor6535-3931-4131-b934-626538623365/82270129.png",
-        "https://static.tildacdn.com/stor3233-6230-4265-b839-316138656163/12883153.png"
+        "prod_52_0.webp",
+        "prod_52_1.webp",
+        "remote_1e70f62e9efc9323.webp",
+        "remote_daa44fa0bcd24286.webp",
+        "remote_4e3cac02d1bdb88c.webp",
+        "remote_b1eecca3ac6d6dfc.webp",
+        "remote_58257e455f513f42.webp",
+        "remote_b636408d67154a0a.webp"
       ],
       "price": "73900",
       "short_description": "",
@@ -1744,7 +1744,7 @@
         {
           "sku": "62",
           "price": "73900",
-          "img": "https://static.tildacdn.com/stor3238-6632-4534-b134-666532343739/32969889.png"
+          "img": "remote_039ab65c5f69e619.webp"
         }
       ],
       "options": [],
@@ -1762,17 +1762,17 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_53_0.png",
-        "prod_53_1.png",
-        "https://static.tildacdn.com/stor3161-3431-4537-a264-613534356232/58210207.png",
-        "https://static.tildacdn.com/stor6234-6533-4662-b233-643739356364/54501995.png",
-        "https://static.tildacdn.com/stor6239-6464-4361-a130-316563623833/35447283.png",
-        "https://static.tildacdn.com/stor6238-3033-4439-a436-653535306132/98235030.png",
-        "https://static.tildacdn.com/stor3339-6433-4161-b737-383932333634/36060950.png",
-        "https://static.tildacdn.com/stor3537-3166-4639-a334-313830326364/92608244.png",
-        "https://static.tildacdn.com/stor3238-3531-4561-a362-393438613966/59336294.png",
-        "https://static.tildacdn.com/stor3037-3939-4264-a536-623365333034/63388065.png",
-        "https://static.tildacdn.com/stor3531-3132-4433-b030-613932386333/14001200.png"
+        "prod_53_0.webp",
+        "prod_53_1.webp",
+        "remote_b785b5f2aaf5ec51.webp",
+        "remote_058e853295682110.webp",
+        "remote_9e906ef656adfc19.webp",
+        "remote_a1e8ba4a7028e6ab.webp",
+        "remote_a00155ca92e524d8.webp",
+        "remote_9f6265f6d9ab03b0.webp",
+        "remote_50c563fffb67c6a5.webp",
+        "remote_1cce009954d4cfba.webp",
+        "remote_7ffb9290f8b731b8.webp"
       ],
       "price": "149900",
       "short_description": "",
@@ -1780,7 +1780,7 @@
         {
           "sku": "63",
           "price": "149900",
-          "img": "https://static.tildacdn.com/stor3030-6438-4863-a136-373434383930/90213928.png"
+          "img": "remote_7098d03fd6205fc5.webp"
         }
       ],
       "options": [],
@@ -1798,11 +1798,11 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_54_0.png",
-        "prod_54_1.png",
-        "https://static.tildacdn.com/stor3562-3262-4238-b766-323735646239/11682681.png",
-        "https://static.tildacdn.com/stor3933-6365-4461-b765-346134306463/24664877.png",
-        "https://static.tildacdn.com/stor6430-3564-4363-a432-303837643833/88758238.png"
+        "prod_54_0.webp",
+        "prod_54_1.webp",
+        "remote_17aeb2eff53decb4.webp",
+        "remote_d91cde57e699d860.webp",
+        "remote_8631985f0c53b6f4.webp"
       ],
       "price": "46900",
       "short_description": "",
@@ -1810,7 +1810,7 @@
         {
           "sku": "65",
           "price": "46900",
-          "img": "https://static.tildacdn.com/stor6533-6239-4663-b636-343631633033/62799922.png"
+          "img": "remote_0a244dc70f181321.webp"
         }
       ],
       "options": [],
@@ -1828,14 +1828,14 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_55_0.png",
-        "prod_55_1.png",
-        "https://static.tildacdn.com/stor3734-6131-4530-b634-333232323661/46164008.png",
-        "https://static.tildacdn.com/stor3438-6630-4736-a130-613330666331/56384697.png",
-        "https://static.tildacdn.com/stor3731-6436-4237-b932-363664356434/72533788.png",
-        "https://static.tildacdn.com/stor6361-6538-4164-b638-383766363333/39070115.png",
-        "https://static.tildacdn.com/stor3530-3866-4732-a534-376537383337/55101931.png",
-        "https://static.tildacdn.com/stor3634-6432-4266-b734-316236653632/24566745.png"
+        "prod_55_0.webp",
+        "prod_55_1.webp",
+        "remote_3a6cd85a898bad97.webp",
+        "remote_5a2add10ec990856.webp",
+        "remote_ec8444ded1f938bd.webp",
+        "remote_37f04b55f42c4457.webp",
+        "remote_fd6b0ac7b9f416e4.webp",
+        "remote_1266bc6567bd7db0.webp"
       ],
       "price": "20900",
       "short_description": "",
@@ -1843,7 +1843,7 @@
         {
           "sku": "66",
           "price": "20900",
-          "img": "https://static.tildacdn.com/stor3734-3961-4334-b963-353336646230/98274238.png"
+          "img": "remote_cda9a54d83470fe1.webp"
         }
       ],
       "options": [],
@@ -1861,13 +1861,13 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_56_0.png",
-        "prod_56_1.png",
-        "https://static.tildacdn.com/stor3238-6337-4938-b961-386137376334/23403565.png",
-        "https://static.tildacdn.com/stor3064-6531-4535-a363-393338323039/50616711.png",
-        "https://static.tildacdn.com/stor6662-3936-4562-b665-626237386561/84044014.png",
-        "https://static.tildacdn.com/stor6433-3738-4036-a166-333661663730/84252825.png",
-        "https://static.tildacdn.com/stor3833-6334-4332-b036-356266353837/94981254.png"
+        "prod_56_0.webp",
+        "prod_56_1.webp",
+        "remote_87233d550065c797.webp",
+        "remote_ab3cc0f7d9d1a826.webp",
+        "remote_4aac64704c14137a.webp",
+        "remote_f100ce888149d204.webp",
+        "remote_f1aefb48a0429ccc.webp"
       ],
       "price": "46900",
       "short_description": "",
@@ -1875,7 +1875,7 @@
         {
           "sku": "67",
           "price": "46900",
-          "img": "https://static.tildacdn.com/stor3462-3937-4330-a138-306336336632/51987050.png"
+          "img": "remote_dd522f5e29b79230.webp"
         }
       ],
       "options": [],
@@ -1893,15 +1893,15 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_57_0.png",
-        "prod_57_1.png",
-        "https://static.tildacdn.com/stor6133-3139-4735-b564-303334303936/44569992.png",
-        "https://static.tildacdn.com/stor3432-3939-4766-b236-333638333136/86415485.png",
-        "https://static.tildacdn.com/stor6131-3332-4561-a663-313637613739/11484020.png",
-        "https://static.tildacdn.com/stor3635-6634-4165-a364-633762386164/23999726.png",
-        "https://static.tildacdn.com/stor6330-6662-4535-b632-376335343537/79319924.png",
-        "https://static.tildacdn.com/stor3634-3834-4139-a632-356330306532/33110170.png",
-        "https://static.tildacdn.com/stor3133-3436-4166-b533-336632386666/86956851.png"
+        "prod_57_0.webp",
+        "prod_57_1.webp",
+        "remote_9e356a12c6429d7a.webp",
+        "remote_4465e84968bb1346.webp",
+        "remote_854794fb7238bb08.webp",
+        "remote_a1533465b6c6d23a.webp",
+        "remote_bbc55e1cb2485d52.webp",
+        "remote_b05c94dde363bbfe.webp",
+        "remote_a912ff5049816245.webp"
       ],
       "price": "52900",
       "short_description": "",
@@ -1909,7 +1909,7 @@
         {
           "sku": "68",
           "price": "52900",
-          "img": "https://static.tildacdn.com/stor3963-3730-4838-b130-646164343965/83991810.png"
+          "img": "remote_5eb81d956f165165.webp"
         }
       ],
       "options": [],
@@ -1927,23 +1927,23 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_58_0.png",
-        "prod_58_1.png",
-        "https://static.tildacdn.com/stor3662-6163-4130-b565-666537636436/66070649.png",
-        "https://static.tildacdn.com/stor3166-3431-4833-a239-656163343561/82896759.png",
-        "https://static.tildacdn.com/stor6434-6564-4636-b836-393161323033/75601285.png",
-        "https://static.tildacdn.com/stor3061-3732-4535-b331-646331636338/16096065.png",
-        "https://static.tildacdn.com/stor3763-3737-4235-a364-373234373038/29261776.png",
-        "https://static.tildacdn.com/stor3334-6433-4936-a635-323837663266/58130216.png",
-        "https://static.tildacdn.com/stor3730-6632-4630-a536-666331623735/62110686.png",
-        "https://static.tildacdn.com/stor3235-6237-4266-b333-376563396432/96555899.png",
-        "https://static.tildacdn.com/stor3434-3037-4235-a266-323439616132/22744177.png",
-        "https://static.tildacdn.com/stor3138-6137-4639-b137-653337653635/86886761.png",
-        "https://static.tildacdn.com/stor6633-6365-4238-b337-616334636631/89810440.png",
-        "https://static.tildacdn.com/stor3162-3836-4130-b766-383862393035/21411909.png",
-        "https://static.tildacdn.com/stor3764-3331-4538-b564-656235346566/41523583.png",
-        "https://static.tildacdn.com/stor3436-3363-4737-b762-626233376333/94353724.png",
-        "https://static.tildacdn.com/stor3639-6362-4139-a463-633563636266/70933273.png"
+        "prod_58_0.webp",
+        "prod_58_1.webp",
+        "remote_82bfabb5ff6798c3.webp",
+        "remote_8b99986be22847ff.webp",
+        "remote_48c94a888436bf09.webp",
+        "remote_f9d93bb9c4daa51e.webp",
+        "remote_32337316ac0f927d.webp",
+        "remote_d06688a59c139fa2.webp",
+        "remote_e8ad5a1365db0fda.webp",
+        "remote_976b9594dcb30a01.webp",
+        "remote_569840393fba7ade.webp",
+        "remote_e948242c59245544.webp",
+        "remote_be7851ea5d3bdc74.webp",
+        "remote_1bc8f206fcb45d02.webp",
+        "remote_2e4f4d0c49b43ec5.webp",
+        "remote_1f7941ea447140c2.webp",
+        "remote_9ddabd1d2082ece9.webp"
       ],
       "price": "41900",
       "short_description": "",
@@ -1951,7 +1951,7 @@
         {
           "sku": "69",
           "price": "41900",
-          "img": "https://static.tildacdn.com/stor3036-3032-4966-b363-323561313263/21243422.png"
+          "img": "remote_87200ecf7001347b.webp"
         }
       ],
       "options": [],
@@ -1969,14 +1969,14 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_59_0.png",
-        "prod_59_1.png",
-        "https://static.tildacdn.com/stor6666-6635-4533-b939-373236303931/29373804.png",
-        "https://static.tildacdn.com/stor3763-6265-4765-b930-316266343861/53561025.png",
-        "https://static.tildacdn.com/stor6338-3261-4935-a638-353035386330/81891625.png",
-        "https://static.tildacdn.com/stor3439-6330-4135-b534-353233653738/95312282.png",
-        "https://static.tildacdn.com/stor6330-6335-4039-b636-323138666333/85388038.png",
-        "https://static.tildacdn.com/stor3735-6265-4664-a365-613934363634/79489295.png"
+        "prod_59_0.webp",
+        "prod_59_1.webp",
+        "remote_0fc799b324147185.webp",
+        "remote_97bc41e4a20ab6ab.webp",
+        "remote_d6a6ebf4f8988eff.webp",
+        "remote_f4983947474d2819.webp",
+        "remote_cc9a07a1106633ad.webp",
+        "remote_cc7af07f0e67207b.webp"
       ],
       "price": "59900",
       "short_description": "",
@@ -1984,7 +1984,7 @@
         {
           "sku": "71",
           "price": "59900",
-          "img": "https://static.tildacdn.com/stor3362-3434-4230-b638-643939393833/30697281.png"
+          "img": "remote_1a636916b9ef79c5.webp"
         }
       ],
       "options": [],
@@ -2002,12 +2002,12 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_60_0.png",
-        "prod_60_1.png",
-        "https://static.tildacdn.com/stor3765-3037-4035-a165-386538323437/21916416.png",
-        "https://static.tildacdn.com/stor6139-3364-4135-a134-323861383665/90691852.png",
-        "https://static.tildacdn.com/stor3734-3335-4135-a637-646661643034/41017119.png",
-        "https://static.tildacdn.com/stor3661-6534-4465-a430-346238316438/43222598.png"
+        "prod_60_0.webp",
+        "prod_60_1.webp",
+        "remote_10d65d057eed50bb.webp",
+        "remote_0b7bea41202112d8.webp",
+        "remote_b417aaa87115e0bb.webp",
+        "remote_2b9b85990bc10916.webp"
       ],
       "price": "89900",
       "short_description": "",
@@ -2015,7 +2015,7 @@
         {
           "sku": "70",
           "price": "89900",
-          "img": "https://static.tildacdn.com/stor6432-3265-4636-b661-393265633832/90849359.png"
+          "img": "remote_92d95999e844bf8a.webp"
         }
       ],
       "options": [],
@@ -2033,20 +2033,20 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_61_0.png",
-        "prod_61_1.png",
-        "https://static.tildacdn.com/stor6138-3130-4634-b639-373766633937/91899598.png",
-        "https://static.tildacdn.com/stor6439-6634-4937-b361-376362663733/27803853.png",
-        "https://static.tildacdn.com/stor3333-3339-4038-a439-376438363866/36602269.png",
-        "https://static.tildacdn.com/stor3530-3065-4162-a561-353565386364/92205411.png",
-        "https://static.tildacdn.com/stor3835-6130-4665-b835-363961353030/79856372.png",
-        "https://static.tildacdn.com/stor6433-3335-4834-b266-623538316434/48727761.png",
-        "https://static.tildacdn.com/stor3864-3364-4639-a530-306532396561/36142015.png",
-        "https://static.tildacdn.com/stor6164-3033-4463-b432-323461373961/35619201.png",
-        "https://static.tildacdn.com/stor6331-6430-4133-b561-633264353132/72949156.png",
-        "https://static.tildacdn.com/stor3463-3032-4133-a238-323061366662/29358926.png",
-        "https://static.tildacdn.com/stor3438-3839-4531-b831-366132303836/53817025.png",
-        "https://static.tildacdn.com/stor3934-3635-4737-b230-663935396661/40484237.png"
+        "prod_61_0.webp",
+        "prod_61_1.webp",
+        "remote_109e69b529066133.webp",
+        "remote_85d2de8f7b78d22e.webp",
+        "remote_922530cbf646dcb7.webp",
+        "remote_86aa7d4817577ed0.webp",
+        "remote_ed76ed7708ccfa8d.webp",
+        "remote_777e94a40d8665c5.webp",
+        "remote_d108e1901bf97348.webp",
+        "remote_ee050eed3970e73b.webp",
+        "remote_864172d30d1f5c28.webp",
+        "remote_56cdf074b2609f5f.webp",
+        "remote_53dcfcd3850489e3.webp",
+        "remote_5d5d0b119382558e.webp"
       ],
       "price": "63900",
       "short_description": "",
@@ -2054,7 +2054,7 @@
         {
           "sku": "72",
           "price": "63900",
-          "img": "https://static.tildacdn.com/stor3465-3064-4231-b162-613066396335/99277084.png"
+          "img": "remote_aa26e3eced8c839d.webp"
         }
       ],
       "options": [],
@@ -2072,12 +2072,12 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_62_0.png",
-        "prod_62_1.png",
-        "https://static.tildacdn.com/stor3263-3630-4664-b335-383635363234/82862837.png",
-        "https://static.tildacdn.com/stor6432-3064-4531-a662-616435346631/94120038.png",
-        "https://static.tildacdn.com/stor6663-3062-4466-b864-393764383462/29122503.png",
-        "https://static.tildacdn.com/stor6136-3531-4066-a261-656432373561/18061973.png"
+        "prod_62_0.webp",
+        "prod_62_1.webp",
+        "remote_a3fcdb17d347d298.webp",
+        "remote_c9d8013d52d16d3d.webp",
+        "remote_b84c1c3a8c35eae6.webp",
+        "remote_db04343ee6605618.webp"
       ],
       "price": "68000",
       "short_description": "",
@@ -2085,7 +2085,7 @@
         {
           "sku": "73",
           "price": "68000",
-          "img": "https://static.tildacdn.com/stor3561-3732-4165-b662-393362383432/83262740.png"
+          "img": "remote_dc6e309abd95024d.webp"
         }
       ],
       "options": [],
@@ -2103,14 +2103,14 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_63_0.png",
-        "prod_63_1.png",
-        "https://static.tildacdn.com/stor3365-3865-4463-a366-306334346337/25684030.png",
-        "https://static.tildacdn.com/stor3335-3361-4363-a361-656237386134/92490306.png",
-        "https://static.tildacdn.com/stor6632-3061-4566-b633-303033646265/45594503.png",
-        "https://static.tildacdn.com/stor3030-6534-4231-a163-643538633266/34609154.png",
-        "https://static.tildacdn.com/stor3533-6638-4236-b537-643733323935/51178302.png",
-        "https://static.tildacdn.com/stor3937-3963-4464-a534-336166626233/77867557.png"
+        "prod_63_0.webp",
+        "prod_63_1.webp",
+        "remote_e2b4caf2451e5e74.webp",
+        "remote_90ea204a05d7ba88.webp",
+        "remote_55b39a4e94a2f90b.webp",
+        "remote_874ab1ce8f671025.webp",
+        "remote_55c653acbb6837e8.webp",
+        "remote_ecfd773bf5e0c466.webp"
       ],
       "price": "90900",
       "short_description": "",
@@ -2118,7 +2118,7 @@
         {
           "sku": "74",
           "price": "90900",
-          "img": "https://static.tildacdn.com/stor6363-6335-4562-b466-663631363364/43496621.png"
+          "img": "remote_e2107aa5b90b5133.webp"
         }
       ],
       "options": [],
@@ -2136,16 +2136,16 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_64_0.png",
-        "prod_64_1.png",
-        "https://static.tildacdn.com/stor6130-6536-4462-a131-643231353639/19371806.png",
-        "https://static.tildacdn.com/stor6634-3131-4638-b331-616331396434/60273983.png",
-        "https://static.tildacdn.com/stor3638-3331-4165-a462-383437356164/84817696.png",
-        "https://static.tildacdn.com/stor6662-6463-4561-a561-356262613765/41593521.png",
-        "https://static.tildacdn.com/stor3538-3536-4465-a532-633935646534/10444750.png",
-        "https://static.tildacdn.com/stor3263-6262-4730-a662-303137616331/31959577.png",
-        "https://static.tildacdn.com/stor3031-3133-4531-a434-346631353635/35685433.png",
-        "https://static.tildacdn.com/stor3330-3238-4163-a265-343536643137/16555016.png"
+        "prod_64_0.webp",
+        "prod_64_1.webp",
+        "remote_65efdf34a3f4c878.webp",
+        "remote_08e631aef781f4ba.webp",
+        "remote_252246665682204a.webp",
+        "remote_011a6f9be15e5c54.webp",
+        "remote_0b3e817408249e20.webp",
+        "remote_477918fcb33c5b3e.webp",
+        "remote_4bf849cc881a0020.webp",
+        "remote_9b33aad4f3088520.webp"
       ],
       "price": "105900",
       "short_description": "",
@@ -2153,7 +2153,7 @@
         {
           "sku": "75",
           "price": "105900",
-          "img": "https://static.tildacdn.com/stor6437-3965-4262-b430-343838386534/65004514.png"
+          "img": "remote_8e14ed5fcf446029.webp"
         }
       ],
       "options": [],
@@ -2171,17 +2171,17 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_65_0.png",
-        "prod_65_1.png",
-        "https://static.tildacdn.com/stor6135-6364-4263-a336-336535663332/58120141.png",
-        "https://static.tildacdn.com/stor6465-3339-4465-a234-393630653461/20963523.png",
-        "https://static.tildacdn.com/stor3761-3931-4434-a234-326261356635/73736370.png",
-        "https://static.tildacdn.com/stor3230-3538-4230-a531-376135623263/13405790.png",
-        "https://static.tildacdn.com/stor3639-3366-4534-b663-336263623238/54796737.png",
-        "https://static.tildacdn.com/stor6161-6436-4233-b533-623838383230/32328399.png",
-        "https://static.tildacdn.com/stor3531-6131-4634-b062-626564643737/17491408.png",
-        "https://static.tildacdn.com/stor3434-3238-4536-b430-653736383236/34584533.png",
-        "https://static.tildacdn.com/stor3138-3337-4138-b262-386535633065/94903199.png"
+        "prod_65_0.webp",
+        "prod_65_1.webp",
+        "remote_12da6a375707075b.webp",
+        "remote_27ee7aa8f03531e5.webp",
+        "remote_45e06f0d855f60be.webp",
+        "remote_e6d113dd7b7b17cf.webp",
+        "remote_a2ea6aa94669c780.webp",
+        "remote_53ec12b3cccabfa1.webp",
+        "remote_bcc23fc2765ccdef.webp",
+        "remote_d3612ed80cc4845c.webp",
+        "remote_7f2374e3a53418ff.webp"
       ],
       "price": "34900",
       "short_description": "",
@@ -2189,7 +2189,7 @@
         {
           "sku": "76",
           "price": "34900",
-          "img": "https://static.tildacdn.com/stor3236-3335-4465-a433-396663343034/75441579.png"
+          "img": "remote_0a02b989686a1d20.webp"
         }
       ],
       "options": [],
@@ -2207,17 +2207,17 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_66_0.png",
-        "prod_66_1.png",
-        "https://static.tildacdn.com/stor3565-6262-4333-b632-393536636663/75770811.png",
-        "https://static.tildacdn.com/stor6261-3162-4132-b366-343339323235/40377150.png",
-        "https://static.tildacdn.com/stor3638-3735-4336-b639-313335363366/37617398.png",
-        "https://static.tildacdn.com/stor3934-3631-4438-a630-613633646632/17274781.png",
-        "https://static.tildacdn.com/stor3033-6336-4434-a531-323130303032/65572476.png",
-        "https://static.tildacdn.com/stor3137-6330-4139-b834-353564336230/46920629.png",
-        "https://static.tildacdn.com/stor3034-6466-4565-b064-366639376664/25397203.png",
-        "https://static.tildacdn.com/stor6130-3436-4333-a262-663135343364/78032650.png",
-        "https://static.tildacdn.com/stor3166-6132-4861-a638-386438386436/46412854.png"
+        "prod_66_0.webp",
+        "prod_66_1.webp",
+        "remote_c2e08e9a040e08b4.webp",
+        "remote_812d6bda596561da.webp",
+        "remote_2c9029999a77ad90.webp",
+        "remote_294b1ebe765cc914.webp",
+        "remote_12723a0070e9dbc1.webp",
+        "remote_12909014d3a6dd2f.webp",
+        "remote_1a53958e9d3d2c59.webp",
+        "remote_2e4d43da90be0b3f.webp",
+        "remote_7ea15493e3d79a49.webp"
       ],
       "price": "39900",
       "short_description": "",
@@ -2225,7 +2225,7 @@
         {
           "sku": "77",
           "price": "39900",
-          "img": "https://static.tildacdn.com/stor3264-6536-4436-b735-313466373035/28253587.png"
+          "img": "remote_dd02467cb0f6c53b.webp"
         }
       ],
       "options": [],
@@ -2243,14 +2243,14 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_67_0.png",
-        "prod_67_1.png",
-        "https://static.tildacdn.com/stor6333-6433-4339-b561-646361666661/12080818.png",
-        "https://static.tildacdn.com/stor6132-6430-4736-b635-323166353032/30034916.png",
-        "https://static.tildacdn.com/stor3262-3166-4434-a562-386335376262/42091674.png",
-        "https://static.tildacdn.com/stor6531-6631-4136-b438-636362653338/28392147.png",
-        "https://static.tildacdn.com/stor6361-6662-4564-a536-356633633430/15124535.png",
-        "https://static.tildacdn.com/stor3732-6336-4233-b930-393132643038/76146400.png"
+        "prod_67_0.webp",
+        "prod_67_1.webp",
+        "remote_a2aa3fea09179ca3.webp",
+        "remote_9e9a3fa96cff4bde.webp",
+        "remote_b428d32788a7744f.webp",
+        "remote_6ab85697f88d8739.webp",
+        "remote_b59293b55eb4416e.webp",
+        "remote_21ae502745daec2d.webp"
       ],
       "price": "38900",
       "short_description": "",
@@ -2258,7 +2258,7 @@
         {
           "sku": "78",
           "price": "38900",
-          "img": "https://static.tildacdn.com/stor3165-6134-4636-b530-316632346137/89397246.png"
+          "img": "remote_ed09b161afd2273a.webp"
         }
       ],
       "options": [],
@@ -2276,13 +2276,13 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_68_0.png",
-        "prod_68_1.png",
-        "https://static.tildacdn.com/stor6432-3862-4234-b165-616134316165/27394168.png",
-        "https://static.tildacdn.com/stor3666-3539-4166-b233-313237313437/41443655.png",
-        "https://static.tildacdn.com/stor3535-3366-4930-a461-633131363361/24548745.png",
-        "https://static.tildacdn.com/stor3561-3563-4961-a233-393631303331/42323438.png",
-        "https://static.tildacdn.com/stor3035-3361-4164-b831-643737313661/34939138.png"
+        "prod_68_0.webp",
+        "prod_68_1.webp",
+        "remote_e35d27e5c515265b.webp",
+        "remote_2ad994934ef34228.webp",
+        "remote_9c2b0661139918c9.webp",
+        "remote_b024433029684bf7.webp",
+        "remote_f880f676258c0735.webp"
       ],
       "price": "54900",
       "short_description": "",
@@ -2290,7 +2290,7 @@
         {
           "sku": "80",
           "price": "54900",
-          "img": "https://static.tildacdn.com/stor3163-3239-4365-a433-353835643839/97388383.png"
+          "img": "remote_498e67b10470af4e.webp"
         }
       ],
       "options": [],
@@ -2308,28 +2308,28 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_69_0.png",
-        "prod_69_1.png",
-        "https://static.tildacdn.com/stor3032-3763-4134-b438-313761363138/13568873.png",
-        "https://static.tildacdn.com/stor6366-3362-4566-a139-323431366536/45920339.png",
-        "https://static.tildacdn.com/stor3337-3534-4232-b136-313166383562/49158040.png",
-        "https://static.tildacdn.com/stor6463-6630-4766-b165-626236373939/17881212.png",
-        "https://static.tildacdn.com/stor3130-3239-4535-b338-613764383032/46592820.png",
-        "https://static.tildacdn.com/stor3035-3961-4861-b037-386236353065/26332522.png",
-        "https://static.tildacdn.com/stor3836-3238-4862-b637-356564326362/78286971.png",
-        "https://static.tildacdn.com/stor3366-3234-4763-b961-653031643531/26658700.png",
-        "https://static.tildacdn.com/stor6331-6666-4434-b530-333135383432/38156150.png",
-        "https://static.tildacdn.com/stor3537-6538-4934-a433-313637396461/20011013.png",
-        "https://static.tildacdn.com/stor3961-6332-4331-b030-383031313336/61579576.png",
-        "https://static.tildacdn.com/stor3732-3530-4736-b062-363636326666/15015348.png",
-        "https://static.tildacdn.com/stor6432-6265-4035-a362-313161326161/47680907.png",
-        "https://static.tildacdn.com/stor3839-6130-4464-a561-326338303834/32114141.png",
-        "https://static.tildacdn.com/stor3035-6261-4930-b238-363764656665/29363736.png",
-        "https://static.tildacdn.com/stor6366-3364-4235-b830-383734396462/92792044.png",
-        "https://static.tildacdn.com/stor6466-3137-4264-b866-313963616564/30250788.png",
-        "https://static.tildacdn.com/stor6437-3534-4962-b135-376439626535/28807445.png",
-        "https://static.tildacdn.com/stor6536-3062-4264-b933-363765373063/49867392.png",
-        "https://static.tildacdn.com/stor3063-3636-4933-b435-333437343461/34127285.png"
+        "prod_69_0.webp",
+        "prod_69_1.webp",
+        "remote_0f73aed6b81cd209.webp",
+        "remote_c5b9b9650b36fa0d.webp",
+        "remote_e6babe726d8367df.webp",
+        "remote_29afa44d213b7224.webp",
+        "remote_68f5300afc701985.webp",
+        "remote_6f4c77de9b469e83.webp",
+        "remote_4e0cd1046e2a3b65.webp",
+        "remote_5e02ef32d651005c.webp",
+        "remote_3700b30b165d73d7.webp",
+        "remote_079677358d962879.webp",
+        "remote_668a1ca7522df0b0.webp",
+        "remote_b3322b14ef197d02.webp",
+        "remote_9f7ebb59e2e223be.webp",
+        "remote_eb7b8d7068e088cf.webp",
+        "remote_b9bc43a4d7df3323.webp",
+        "remote_4d2938d1ed1d8c1d.webp",
+        "remote_53073af360d2248a.webp",
+        "remote_0cedfadcc3e69b0b.webp",
+        "remote_af96e437960dd95f.webp",
+        "remote_cdff350a8ce38c9e.webp"
       ],
       "price": "53000",
       "short_description": "",
@@ -2337,7 +2337,7 @@
         {
           "sku": "84",
           "price": "53000",
-          "img": "https://static.tildacdn.com/stor3837-6630-4131-b231-666365346566/35548134.png"
+          "img": "remote_911686958ba396c6.webp"
         }
       ],
       "options": [],
@@ -2355,15 +2355,15 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_70_0.png",
-        "prod_70_1.png",
-        "https://static.tildacdn.com/stor3939-3235-4836-b932-633735633634/79163840.png",
-        "https://static.tildacdn.com/stor3235-6466-4663-b434-613365636366/62980404.png",
-        "https://static.tildacdn.com/stor6433-3633-4431-b937-313539373335/37013627.png",
-        "https://static.tildacdn.com/stor3030-6165-4264-a636-343533623837/78965984.png",
-        "https://static.tildacdn.com/stor3963-6164-4437-b665-666663646162/34087283.png",
-        "https://static.tildacdn.com/stor3062-3434-4264-a561-333866323362/29500395.png",
-        "https://static.tildacdn.com/stor6437-3535-4633-b530-383839663735/87974344.png"
+        "prod_70_0.webp",
+        "prod_70_1.webp",
+        "remote_7df862ca550a594b.webp",
+        "remote_d062d3685ceaed1b.webp",
+        "remote_4c8a1f1a6d417644.webp",
+        "remote_dce739a52703d23a.webp",
+        "remote_2f310d0208f7dede.webp",
+        "remote_9812cd5f442afdf1.webp",
+        "remote_737c5c21615286e7.webp"
       ],
       "price": "47000",
       "short_description": "",
@@ -2371,7 +2371,7 @@
         {
           "sku": "85",
           "price": "47000",
-          "img": "https://static.tildacdn.com/stor3735-6165-4165-b531-383163306239/53531428.png"
+          "img": "remote_21b677aae562763a.webp"
         }
       ],
       "options": [],
@@ -2389,13 +2389,13 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_71_0.png",
-        "prod_71_1.png",
-        "https://static.tildacdn.com/stor3333-6563-4532-a462-623835643461/23427590.png",
-        "https://static.tildacdn.com/stor3530-3538-4739-b466-373732316530/54309510.png",
-        "https://static.tildacdn.com/stor3537-6632-4539-a537-616238326638/95403677.png",
-        "https://static.tildacdn.com/stor3632-6230-4066-b437-373030303863/86621599.png",
-        "https://static.tildacdn.com/stor6239-3234-4536-b661-313134333831/47583391.png"
+        "prod_71_0.webp",
+        "prod_71_1.webp",
+        "remote_9c35f96ab6a39412.webp",
+        "remote_aef0380f22bd0a92.webp",
+        "remote_c198db79685aa55f.webp",
+        "remote_0ef8b42e2d484ffb.webp",
+        "remote_1b36af5b039525e7.webp"
       ],
       "price": "47000",
       "short_description": "",
@@ -2403,7 +2403,7 @@
         {
           "sku": "86",
           "price": "47000",
-          "img": "https://static.tildacdn.com/stor3733-3436-4937-a666-393564636166/70433471.png"
+          "img": "remote_1dc547ef76b519de.webp"
         }
       ],
       "options": [],
@@ -2421,21 +2421,21 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_72_0.png",
-        "prod_72_1.png",
-        "https://static.tildacdn.com/stor3039-3533-4435-a661-356366303366/64492226.png",
-        "https://static.tildacdn.com/stor3639-3164-4464-a235-313162393434/85593704.png",
-        "https://static.tildacdn.com/stor3965-6233-4161-b138-623832343039/98680594.png",
-        "https://static.tildacdn.com/stor3463-3435-4930-b835-353635303363/48953681.png",
-        "https://static.tildacdn.com/stor6332-6134-4566-b234-643230313336/82233596.png",
-        "https://static.tildacdn.com/stor3265-3664-4437-b738-353738333633/11846320.png",
-        "https://static.tildacdn.com/stor6536-6364-4134-a333-373138623762/38472404.png",
-        "https://static.tildacdn.com/stor6462-6635-4336-b862-333066653464/75312013.png",
-        "https://static.tildacdn.com/stor3064-3166-4738-b830-393635323632/37274858.png",
-        "https://static.tildacdn.com/stor3930-3831-4230-a165-643030353437/69614310.png",
-        "https://static.tildacdn.com/stor6561-3038-4336-b961-663332636666/29205556.png",
-        "https://static.tildacdn.com/stor3435-6535-4864-b136-386136396530/81499056.png",
-        "https://static.tildacdn.com/stor3535-6665-4533-b962-613133303165/57108845.png"
+        "prod_72_0.webp",
+        "prod_72_1.webp",
+        "remote_b69d26ca47e0d685.webp",
+        "remote_497ba594a28403bd.webp",
+        "remote_c900ad37bb59897d.webp",
+        "remote_741f5b6542de5ec8.webp",
+        "remote_2fd36457539a2250.webp",
+        "remote_5558dc858a77961b.webp",
+        "remote_945b23d291360c44.webp",
+        "remote_af70718e7eb0f1ce.webp",
+        "remote_d0b035f36a7b756c.webp",
+        "remote_f2f701381c73d054.webp",
+        "remote_8a8c81a01cde0477.webp",
+        "remote_dd2426d480fa5f87.webp",
+        "remote_afa68c0082adcc24.webp"
       ],
       "price": "120000",
       "short_description": "",
@@ -2443,7 +2443,7 @@
         {
           "sku": "81",
           "price": "120000",
-          "img": "https://static.tildacdn.com/stor6439-6162-4437-b531-316336616431/51086592.png"
+          "img": "remote_7b1cce67fb50740b.webp"
         }
       ],
       "options": [],
@@ -2461,14 +2461,14 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_73_0.png",
-        "prod_73_1.png",
-        "https://static.tildacdn.com/stor6235-3031-4634-b966-656232386339/46145647.png",
-        "https://static.tildacdn.com/stor3339-6434-4962-b630-643233323630/32119870.png",
-        "https://static.tildacdn.com/stor6436-6463-4633-b039-356331663637/34337574.png",
-        "https://static.tildacdn.com/stor3735-3037-4932-a261-306439333031/26084170.png",
-        "https://static.tildacdn.com/stor3731-3539-4535-b362-333765623034/88801602.png",
-        "https://static.tildacdn.com/stor3437-3462-4236-b337-396532363663/76618731.png"
+        "prod_73_0.webp",
+        "prod_73_1.webp",
+        "remote_cea625ff9286f37d.webp",
+        "remote_34804b361c90a7dc.webp",
+        "remote_dfabc8f3eb6763bd.webp",
+        "remote_c8db0928052c8112.webp",
+        "remote_da92e911777b5dab.webp",
+        "remote_c59d564d91dff91b.webp"
       ],
       "price": "125000",
       "short_description": "",
@@ -2476,7 +2476,7 @@
         {
           "sku": "87",
           "price": "125000",
-          "img": "https://static.tildacdn.com/stor6264-3030-4231-a663-326665303534/87539586.png"
+          "img": "remote_714e04739f8d2b47.webp"
         }
       ],
       "options": [],
@@ -2494,12 +2494,12 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_74_0.png",
-        "prod_74_1.png",
-        "https://static.tildacdn.com/stor3130-6137-4664-a334-643931376464/96981427.png",
-        "https://static.tildacdn.com/stor3435-3934-4236-a137-646337383237/90139099.png",
-        "https://static.tildacdn.com/stor6635-6162-4866-b938-646233616332/69364899.png",
-        "https://static.tildacdn.com/stor6538-3833-4538-a532-666266343961/60696447.png"
+        "prod_74_0.webp",
+        "prod_74_1.webp",
+        "remote_4b97d4aef24d7097.webp",
+        "remote_527137a8d589cd23.webp",
+        "remote_024c7f695a5a1149.webp",
+        "remote_2c690ad181edb11c.webp"
       ],
       "price": "230000",
       "short_description": "",
@@ -2507,7 +2507,7 @@
         {
           "sku": "88",
           "price": "230000",
-          "img": "https://static.tildacdn.com/stor3464-3639-4336-b663-303133376661/50823190.png"
+          "img": "remote_57b507c899e21463.webp"
         }
       ],
       "options": [],
@@ -2525,11 +2525,11 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_75_0.png",
-        "prod_75_1.png",
-        "https://static.tildacdn.com/stor6163-3635-4539-b132-356337653635/67891983.png",
-        "https://static.tildacdn.com/stor6530-3537-4634-b134-643336366466/65398829.png",
-        "https://static.tildacdn.com/stor6138-3431-4632-b434-316465343932/61081733.png"
+        "prod_75_0.webp",
+        "prod_75_1.webp",
+        "remote_22d2fe359f6b45d6.webp",
+        "remote_a913dc358ec59c12.webp",
+        "remote_b7f7a4833cc8b1f9.webp"
       ],
       "price": "66900",
       "short_description": "",
@@ -2537,7 +2537,7 @@
         {
           "sku": "89",
           "price": "66900",
-          "img": "https://static.tildacdn.com/stor3437-6262-4233-b161-376331313035/54690497.png"
+          "img": "remote_2a3074266f8cd061.webp"
         }
       ],
       "options": [],
@@ -2555,24 +2555,24 @@
       "views": 0,
       "manual": "",
       "photos": [
-        "prod_76_0.png",
-        "prod_76_1.png",
-        "https://static.tildacdn.com/stor3234-3232-4332-a665-313261346637/22052677.png",
-        "https://static.tildacdn.com/stor6533-6237-4534-a230-646364653938/73494375.png",
-        "https://static.tildacdn.com/stor3736-3535-4539-b131-373731373464/96317037.png",
-        "https://static.tildacdn.com/stor3138-6566-4762-b231-643366393631/40487183.png",
-        "https://static.tildacdn.com/stor6165-3062-4838-b331-626535303731/47264117.png",
-        "https://static.tildacdn.com/stor6434-6133-4364-b463-366537636662/54883045.png",
-        "https://static.tildacdn.com/stor3034-3836-4630-b165-383934656238/77803188.png",
-        "https://static.tildacdn.com/stor3265-3638-4937-b562-653130343337/98951749.png",
-        "https://static.tildacdn.com/stor3836-6132-4836-a463-626338363735/40330951.png",
-        "https://static.tildacdn.com/stor6463-6233-4635-a531-643564346264/97169633.png",
-        "https://static.tildacdn.com/stor3530-6539-4265-b461-393530383531/77877311.png",
-        "https://static.tildacdn.com/stor3138-6436-4038-b737-383661656233/33370494.png",
-        "https://static.tildacdn.com/stor3837-3962-4836-b764-393233386138/41062579.png",
-        "https://static.tildacdn.com/stor3534-3934-4136-b938-623237383230/56723856.png",
-        "https://static.tildacdn.com/stor3232-6462-4535-a361-623135653837/59654832.png",
-        "https://static.tildacdn.com/stor3235-3562-4533-b633-633436383431/22659767.png"
+        "prod_76_0.webp",
+        "prod_76_1.webp",
+        "remote_2a83981927472917.webp",
+        "remote_9b66c6c9749a24cd.webp",
+        "remote_4117fab493b556cd.webp",
+        "remote_7ba2c23aafe3740f.webp",
+        "remote_646f1ebbb776ba3e.webp",
+        "remote_3cbbb3de69c5590c.webp",
+        "remote_130a72318d533890.webp",
+        "remote_99ee139cb97cfa0c.webp",
+        "remote_7a3c94c28d3b9285.webp",
+        "remote_d29f87fbbc391df1.webp",
+        "remote_91dd451fc8a44426.webp",
+        "remote_3eaa698994329b42.webp",
+        "remote_9370d9fced89e051.webp",
+        "remote_42a23934d532a1dd.webp",
+        "remote_1a32bf8b68c78fea.webp",
+        "remote_b03d703e6c6d9780.webp"
       ],
       "price": "",
       "short_description": "",
@@ -2580,7 +2580,7 @@
         {
           "sku": "90",
           "price": "",
-          "img": "https://static.tildacdn.com/stor3939-3033-4535-a234-363666636637/44359551.png"
+          "img": "remote_d6b6038a2e6dfcf5.webp"
         }
       ],
       "options": [],
@@ -2694,14 +2694,14 @@
   "banners": [
     {
       "id": 4,
-      "image": "banner_403dfee2f7be4904b2339293205c3f46.png",
+      "image": "banner_403dfee2f7be4904b2339293205c3f46.webp",
       "text": "Добро пожаловать в INMOVE! Широкий выбор электротранспорта",
       "link": "https://t.me/INMOVE812",
       "sort_order": 3
     },
     {
       "id": 5,
-      "image": "banner_58085d3160964a36af13a525b0f53ec7.jpeg",
+      "image": "banner_58085d3160964a36af13a525b0f53ec7.webp",
       "text": "Скидка 10% на всю технику!",
       "link": "http://localhost:5000/?sort=price_asc",
       "sort_order": 4

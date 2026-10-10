@@ -6,12 +6,12 @@
     <meta name="keywords" content="{{ moto.name }}, купить {{ moto.name }}, INMOVE, электротранспорт, Санкт-Петербург">
     <meta property="og:title" content="{{ moto.name }} — INMOVE">
     <meta property="og:description" content="{{ (moto.short_description or moto.description)[:200] }}">
-    <meta property="og:image" content="{{ (moto.photos[0] if moto.photos else 'inmove_logo.png')|photo_url }}">
+    <meta property="og:image" content="{{ (moto.photos[0] if moto.photos else 'inmove_logo.webp')|photo_url }}">
     <meta property="og:type" content="product">
     <meta property="og:url" content="https://in-move.online/moto/{{ moto.id }}">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="canonical" href="https://in-move.online/moto/{{ moto.id }}">
-    <link rel="icon" type="image/png" href="/static/inmove_logo.png">
+    <link rel="icon" type="image/png" href="/static/inmove_logo.webp">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ moto.name }} — INMOVE</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -170,7 +170,7 @@
 </head>
 <body>
     <div class="back-nav">
-        <div class="logo-small"><img src="/static/inmove_logo.png" alt="">INMOVE</div>
+        <div class="logo-small"><img src="/static/inmove_logo.webp" alt="">INMOVE</div>
         <a href="/" class="back-link">← Назад в каталог</a>
         <div class="breadcrumbs">
             <span class="sep">/</span>
@@ -191,7 +191,7 @@
             <img src="{{ photo|photo_url }}" alt="{{ moto.name }}" class="{% if loop.first %}active{% endif %}">
             {% endfor %}
             {% else %}
-            <div class="no-photo-placeholder" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;"><img src="/static/inmove_logo.png" alt="INMOVE" style="width:64px;height:64px;opacity:0.2;"></div>
+            <div class="no-photo-placeholder" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;"><img src="/static/inmove_logo.webp" alt="INMOVE" style="width:64px;height:64px;opacity:0.2;"></div>
             {% endif %}
             <button class="gal-arrow gal-prev" onclick="changeSlide(-1)">&#10094;</button>
             <button class="gal-arrow gal-next" onclick="changeSlide(1)">&#10095;</button>
@@ -244,7 +244,7 @@
                     <div class="related-grid">
                         {% for r in related %}
                         <a href="/moto/{{ r.id }}" class="related-item">
-                            <img src="{{ (r.photos[0]|photo_url) if r.photos else '/static/inmove_logo.png' }}" alt="{{ r.name }}">
+                            <img src="{{ (r.photos[0]|photo_url) if r.photos else '/static/inmove_logo.webp' }}" alt="{{ r.name }}">
                             <span>{{ r.name }}</span>
                         </a>
                         {% endfor %}

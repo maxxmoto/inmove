@@ -20,7 +20,7 @@ app.config['MANUAL_FOLDER'] = os.path.join(BASE_DIR, 'static', 'manuals')
 @app.template_filter('photo_url')
 def photo_url(path):
     if not path:
-        return '/static/inmove_logo.png'
+        return '/static/inmove_logo.webp'
     if path.startswith(('http://', 'https://')):
         return path
     if path.startswith('/'):
@@ -73,7 +73,7 @@ def get_cart_items(db):
             continue
         photos = json.loads(d.get('photos', '[]'))
         price = int(float(d.get('price', 0)))
-        items.append({'id': d['id'], 'name': d['name'], 'price': price, 'photo': photos[0] if photos else 'inmove_logo.png', 'quantity': qty})
+        items.append({'id': d['id'], 'name': d['name'], 'price': price, 'photo': photos[0] if photos else 'inmove_logo.webp', 'quantity': qty})
         total += price * qty
     return items, total
 
@@ -170,6 +170,10 @@ def migrate_from_json():
         s = data.get('stats', {})
         if 'total_visits' in s:
             db.execute("UPDATE stats SET value=? WHERE key='total_visits'", (s['total_visits'],))
+        for b in data.get('banners', []):
+            db.execute("INSERT INTO banners (id, image, text, link, sort_order) VALUES (?, ?, ?, ?, ?)",
+                (b.get('id', 0), b.get('image', ''), b.get('text', ''),
+                 b.get('link', ''), b.get('sort_order', 0)))
 
     reviews_file = os.path.join(BASE_DIR, 'reviews.json')
     if os.path.exists(reviews_file):
